@@ -130,7 +130,7 @@ export const skillDetails = {
       "Module pattern, tree-shakable exports, and dynamic imports for bundle size reduction"
     ],
     relatedTech: ["Node.js", "React.js", "Next.js", "Express.js", "REST APIs"],
-    relatedProjects: ["integral-web-solution", "shreeji-sales-corporation", "fitcart", "pixelvault"],
+    relatedProjects: ["mahadev-plastic", "shreeji-sales-corporation", "fitcart", "pixelvault"],
     businessValue: "Clean, idiomatic JavaScript reduces application bundle size, speeds up initial page load, minimizes client crashes, and lowers long-term maintenance overhead for production teams.",
     faqs: [
       {
@@ -178,7 +178,7 @@ export const skillDetails = {
       "Context API for scoped theme and global user preference states without bloat"
     ],
     relatedTech: ["Next.js", "JavaScript (ES6+)", "HTML5", "CSS3", "React Helmet"],
-    relatedProjects: ["integral-web-solution", "shreeji-sales-corporation", "fitcart"],
+    relatedProjects: ["mahadev-plastic", "shreeji-sales-corporation", "fitcart"],
     businessValue: "Modular React components enable rapid feature development, consistent brand design systems across platforms, and snappy user interfaces that drive higher conversion and retention.",
     faqs: [
       {
@@ -274,7 +274,7 @@ export const skillDetails = {
       "Graceful degradation and centralized error handling middleware"
     ],
     relatedTech: ["Express.js", "JavaScript (ES6+)", "Nodemailer", "Linux", "PM2"],
-    relatedProjects: ["integral-web-solution", "shreeji-sales-corporation", "pixelvault"],
+    relatedProjects: ["mahadev-plastic", "shreeji-sales-corporation", "pixelvault"],
     businessValue: "Node.js ensures rapid API response times, shared language semantics between frontend and backend, and low server resource overhead on production VPS hosting.",
     faqs: [
       {
@@ -322,7 +322,7 @@ export const skillDetails = {
       "JSON payload size limits and honeypot spam protection"
     ],
     relatedTech: ["Node.js", "REST APIs", "Nodemailer", "MySQL", "MongoDB"],
-    relatedProjects: ["integral-web-solution", "shreeji-sales-corporation", "pixelvault"],
+    relatedProjects: ["mahadev-plastic", "shreeji-sales-corporation", "pixelvault"],
     businessValue: "Express provides a lightweight, battle-tested framework with zero runtime bloat, allowing customized API routing and effortless integration with existing enterprise systems.",
     faqs: [
       {
@@ -418,7 +418,7 @@ export const skillDetails = {
       "Connection pooling and disconnection resilience in containerized and serverless environments"
     ],
     relatedTech: ["Node.js", "Express.js", "MySQL", "Firestore", "REST APIs"],
-    relatedProjects: ["integral-web-solution", "pixelvault", "shreeji-sales-corporation"],
+    relatedProjects: ["mahadev-plastic", "pixelvault", "shreeji-sales-corporation"],
     businessValue: "MongoDB allows agile feature iterations with schema flexibility while delivering high-speed document retrieval and rich aggregation for modern web applications.",
     faqs: [
       {
@@ -514,7 +514,7 @@ export const skillDetails = {
       "Zero-downtime application deployments via Git hooks and PM2 reload"
     ],
     relatedTech: ["Linux & Ubuntu", "Nginx", "Apache", "PM2", "SSL / Certbot"],
-    relatedProjects: ["integral-web-solution", "erpnext-vps-deployment"],
+    relatedProjects: ["mahadev-plastic", "erpnext-vps-deployment"],
     businessValue: "Self-hosted VPS environments reduce ongoing cloud hosting costs by up to 80% while providing complete control over server hardware, security policies, and application topology.",
     faqs: [
       {
@@ -562,7 +562,7 @@ export const skillDetails = {
       "Shell automation scripts for periodic backups, log rotation, and server health checks"
     ],
     relatedTech: ["VPS Deployment", "Nginx", "Apache", "SSH", "PM2"],
-    relatedProjects: ["erpnext-vps-deployment", "integral-web-solution"],
+    relatedProjects: ["erpnext-vps-deployment", "mahadev-plastic"],
     businessValue: "Direct Linux system administration capability ensures fast resolution of production infrastructure outages without depending on external managed services.",
     faqs: [
       {
@@ -658,7 +658,7 @@ export const skillDetails = {
       "Apache security hardening: disabling directory listing (`Options -Indexes`) and hiding version banners"
     ],
     relatedTech: ["Linux & Ubuntu", "VPS Deployment", "Nginx", "Technical SEO", "PM2"],
-    relatedProjects: ["integral-web-solution", "shreeji-sales-corporation"],
+    relatedProjects: ["mahadev-plastic", "shreeji-sales-corporation"],
     businessValue: "Robust Apache configuration enables reliable multi-domain hosting, seamless URL migrations with zero SEO rank loss, and enterprise proxy routing.",
     faqs: [
       {
@@ -706,7 +706,7 @@ export const skillDetails = {
       "Core Web Vitals alignment: LCP, CLS, and INP metrics directly impacting search rankings"
     ],
     relatedTech: ["Schema Markup", "Next.js", "React Helmet", "Google Search Console", "Apache"],
-    relatedProjects: ["shreeji-sales-corporation", "integral-web-solution", "kavya-fragrances"],
+    relatedProjects: ["shreeji-sales-corporation", "mahadev-plastic", "kavya-fragrances"],
     businessValue: "Technical SEO ensures that high-quality web applications are discoverable, attract organic commercial leads without ongoing ad spend, and rank sustainably across international markets.",
     faqs: [
       {
@@ -754,7 +754,7 @@ export const skillDetails = {
       "Automated validation against Google Rich Results Test and Schema.org Validator"
     ],
     relatedTech: ["Technical SEO", "Next.js", "React.js", "HTML5", "Google Search Console"],
-    relatedProjects: ["shreeji-sales-corporation", "integral-web-solution"],
+    relatedProjects: ["shreeji-sales-corporation", "mahadev-plastic"],
     businessValue: "Valid structured data enhances search engine understanding, establishes entity authority in Google Knowledge Graphs, and qualifies pages for prominent rich result treatments.",
     faqs: [
       {

@@ -25,7 +25,7 @@ export const navLinks = [
     dropdownItems: [
       { name: "All Projects", href: "/projects", desc: "Complete portfolio archive" },
       { name: "FitCart (Shopify Headless)", href: "/projects/fitcart", desc: "Next.js + Shopify Storefront GraphQL" },
-      { name: "Integral Web Solution", href: "/projects/integral-web-solution", desc: "React + Node.js VPS deployment" },
+      { name: "Mahadev Plastic Website", href: "/projects/mahadev-plastic", desc: "Next.js 14 + Express + SEO Blog CMS" },
       { name: "SIMPOVENT® B2B Platform", href: "/projects/shreeji-sales-corporation", desc: "Next.js + CFM calculator + SEO" },
       { name: "Kavya Fragrances", href: "/projects/kavya-fragrances", desc: "AI scent engine with Groq Llama 3.1" },
       { name: "PixelVault E-Commerce", href: "/projects/pixelvault", desc: "Digital wallpapers + Stripe checkout" },
@@ -61,7 +61,7 @@ export const footerLinks = {
   ],
   projects: [
     { label: "FitCart Headless Store", href: "/projects/fitcart" },
-    { label: "Integral Web Solution", href: "/projects/integral-web-solution" },
+    { label: "Mahadev Plastic Website", href: "/projects/mahadev-plastic" },
     { label: "SIMPOVENT® B2B Platform", href: "/projects/shreeji-sales-corporation" },
     { label: "Kavya Fragrances AI", href: "/projects/kavya-fragrances" },
     { label: "PixelVault Wallpaper Store", href: "/projects/pixelvault" },

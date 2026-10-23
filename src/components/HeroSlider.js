@@ -22,7 +22,7 @@ const slides = [
     title: "Self-Hosted Linux VPS Infrastructure & Reverse Proxy Management",
     subtitle: "Hands-on experience provisioning Contabo Linux VPS environments, configuring Apache Virtual Hosts and Nginx reverse proxies, automating Let's Encrypt SSL certificates, and managing 24/7 uptime with PM2 daemons.",
     tags: ["Ubuntu Linux", "Contabo VPS", "Apache Virtual Hosts", "Nginx Reverse Proxy", "PM2 Daemons", "Certbot SSL"],
-    primaryCta: { label: "View VPS Deployments ↗", href: "/projects/integral-web-solution" },
+    primaryCta: { label: "View Full-Stack B2B Build ↗", href: "/projects/mahadev-plastic" },
     secondaryCta: { label: "Explore DevOps Skills", href: "/skills/vps-deployment" }
   },
   {

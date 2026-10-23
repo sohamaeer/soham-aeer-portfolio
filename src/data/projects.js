@@ -81,73 +81,80 @@ export const projects = [
   },
 
   {
-    slug: "integral-web-solution",
-    name: "Integral Web Solution — Full Stack Production Website",
-    shortName: "Integral Web Solution",
-    headline: "Corporate full-stack web application featuring React frontend, Node.js backend, automated Nodemailer lead workflows, and Contabo Linux VPS deployment.",
+    slug: "mahadev-plastic",
+    name: "Mahadev Plastic — Acrylic Sheet Manufacturer Website",
+    shortName: "Mahadev Plastic",
+    headline: "Full-stack production B2B marketing website, product inquiry pipeline, and private admin SEO & Blog CMS portal for an industrial acrylic sheet manufacturer.",
     category: "Full Stack Applications",
     featured: true,
-    badge: "Full Stack & DevOps",
-    image: "/images/soham-aeer-workspace.webp",
-    imageAlt: "Integral Web Solution production application development and Linux VPS server management",
-    githubUrl: "https://github.com/Sohamayer/integral-web-solution",
-    liveUrl: null,
-    role: "Full Stack Developer & DevOps Engineer",
-    timeline: "Nov 2025 – Present",
-    client: "Integral Web Solution",
-    techStack: ["React.js", "Node.js", "Express.js", "Nodemailer", "Ubuntu Linux", "Contabo VPS", "Apache", "Reverse Proxy", "PM2", "SSL / Certbot", "Technical SEO"],
-    overview: "Integral Web Solution is a comprehensive corporate web application built to represent the company's full digital agency offerings, client portfolio, and lead-generation channels. Beyond frontend development in React, I built a secure Node.js backend to handle client inquiries, automated transactional notifications via Nodemailer, configured a self-hosted Contabo Linux VPS with Apache Virtual Hosts and reverse proxy routing, secured the domain with Let's Encrypt SSL, and managed daemon uptime via PM2.",
-    problem: "The company required an authoritative, high-performance web platform capable of capturing corporate leads, delivering instant email confirmations to prospective clients, and running reliably on self-hosted VPS infrastructure alongside several other client staging sites without server conflicts or performance degradation.",
+    badge: "Full Stack & CMS",
+    image: "/images/projects/mahadev-plastic.png",
+    imageAlt: "Mahadev Plastics full-stack acrylic sheet manufacturer website homepage hero with live product showcase and inquiry engine",
+    githubUrl: "https://github.com/sohamaeer/mahadev-plastic",
+    liveUrl: "https://mahadevplastic.com",
+    role: "Full Stack Developer & Technical SEO Specialist",
+    timeline: "2024",
+    client: "Mahadev Plastic (Talasari, Maharashtra)",
+    techStack: ["Next.js 14 (App Router)", "TypeScript 5.6", "Node.js", "Express.js 4", "Tailwind CSS 3", "Nodemailer 6", "HMAC-SHA256 Auth", "JSON Flat-File DB", "Technical SEO", "Schema.org (JSON-LD)"],
+    overview: "Mahadev Plastic is a full-stack production B2B web platform for a leading acrylic sheet manufacturer based in Achhad Industrial Estate, Talasari, Maharashtra. Engineered to drive nationwide commercial inquiries, the platform features a responsive Next.js 14 App Router frontend wrapped by a custom Express 4 server, an automated 3-way Nodemailer lead dispatch pipeline, persistent JSON flat-file storage for technical blogs, a private HMAC-SHA256 authenticated Admin CMS with rich SEO controls, and comprehensive Schema.org structured data (Product, FAQPage, BreadcrumbList).",
+    problem: "The client required an authoritative, high-performance web presence to market their manufacturing capabilities across India (Cast Acrylic, Transparent, Frosted, Fluorescent, and MOP Acrylic Sheets). The platform needed to capture commercial purchase inquiries, deliver multi-party notifications, maintain an active technical content marketing hub via an internal admin CMS, and rank prominently on Google for highly competitive B2B industrial search terms.",
     responsibilities: [
-      "Engineered the responsive React.js frontend interface with clean navigation and interactive service showcases.",
-      "Built the Node.js/Express backend service to process lead submissions and automate two-way Nodemailer workflows.",
-      "Provisioned and configured a Contabo Ubuntu Linux VPS with Apache Virtual Hosts, reverse proxy routing, and PM2 process management.",
-      "Installed and automated Let's Encrypt SSL certificates with Certbot.",
-      "Configured Google Workspace and Microsoft business email DNS records (MX, SPF, DKIM, DMARC) for seamless communication.",
-      "Implemented on-page SEO, metadata, Open Graph cards, and XML sitemaps to drive corporate organic search visibility."
+      "Built the Next.js 14 App Router application with TypeScript 5.6 and Tailwind CSS 3, featuring an animated homepage hero slider, product mega-dropdown, and breadcrumb banners.",
+      "Developed a custom Express 4 Node.js wrapper server to mount Next.js and handle backend REST APIs for inquiries, contact forms, and admin CMS endpoints.",
+      "Engineered an automated 3-way HTML email notification system via Nodemailer 6: customer confirmation, owner lead notification to mahadevplastic2019@gmail.com, and technical audit log to the agency.",
+      "Architected a private Admin CMS (/admin) secured by HMAC-SHA256 token authentication with a full blog CRUD manager, image upload pipeline (base64 to public storage), and schedule/publish toggles.",
+      "Implemented a lightweight, zero-database-overhead runtime JSON flat-file storage engine (data/blogs.json) for persistent blog management.",
+      "Designed comprehensive on-page and technical SEO: 3-tier keyword targeting (high-volume, medium, long-tail), canonical URLs, dynamic XML sitemaps, robots.txt, and targeted AI Overview / SGE search optimization hooks.",
+      "Injected complete Schema.org JSON-LD data including Product (with SKU, MPN, brand, and AggregateOffer price ranges), FAQPage, and BreadcrumbList schemas across all product pages."
     ],
     architecture: {
-      frontend: "React.js single-page application with modular component architecture and responsive CSS.",
-      backend: "Node.js and Express.js REST server handling inquiry validation, rate limiting, and email dispatch.",
-      mail: "Nodemailer transport integrated with company SMTP server delivering instant admin alerts and client receipts.",
-      server: "Contabo Linux VPS (Ubuntu) running Apache with mod_proxy forwarding external traffic to PM2-managed Node daemon.",
-      security: "UFW firewall configuration, SSL/TLS certificates via Certbot, and CORS origin restrictions."
+      frontend: "Next.js 14 App Router with React Server Components for fast pre-rendered catalog pages, sticky responsive navigation with search routing, and floating WhatsApp action triggers.",
+      server: "Custom Express 4 server wrapping the Next.js runtime, attaching API middleware for inquiry capture and admin CMS REST endpoints.",
+      adminCms: "Private admin portal (/admin) secured by HMAC-SHA256 signed session tokens, featuring rich blog editor with SEO metadata controls, keyword mapping, and image uploads.",
+      emailEngine: "Nodemailer 6 automated 3-recipient dispatch: branded buyer confirmation, factory owner lead notification with direct WhatsApp/Call CTAs, and technical audit log.",
+      dataStorage: "Zero-overhead persistent JSON flat-file database (data/blogs.json) enabling dynamic article creation, editing, and publishing without database infrastructure costs.",
+      seo: "Automated /sitemap.xml and /robots.txt, 11+ focus keywords in root layout, Product schemas with INR price ranges, and per-page AI Overview hooks."
     },
     keyFeatures: [
-      "Responsive service showcase with interactive feature sections.",
-      "Automated dual-email inquiry pipeline (instant company notification + branded user confirmation).",
-      "Contabo Linux VPS hosting configured with Apache Virtual Hosts and reverse proxy.",
-      "PM2 process daemon ensuring continuous 24/7 uptime and automated restart on system boot.",
-      "Google Workspace & Microsoft 365 business email administration and DNS configuration.",
-      "Comprehensive Technical SEO implementation targeting agency keywords."
+      "Full-stack Next.js 14 App Router frontend with custom Express 4 server architecture.",
+      "Dynamic product catalog hub for 5 primary acrylic sheet lines (Cast, Transparent, Frosted, Fluorescent, MOP).",
+      "Interactive product inquiry engine with 3-way automated HTML email dispatch via Nodemailer.",
+      "Protected Admin CMS with HMAC-SHA256 token auth, blog CRUD dashboard, and image upload pipeline.",
+      "Comprehensive 3-tier SEO keyword matrix with dynamic canonicalization and AI Overview hooks.",
+      "Schema.org structured data: Product (AggregateOffer INR), FAQPage, and BreadcrumbList.",
+      "Zero-database-overhead persistent JSON storage engine for dynamic content."
     ],
     technicalChallenges: [
       {
-        challenge: "Hosting multiple client domains on a single Contabo VPS without port conflicts or SSL collisions.",
-        solution: "Configured individual Apache VirtualHost blocks for each domain, binding public ports 80/443 to internal application ports using `ProxyPass` and `ProxyPassReverse`, combined with domain-specific Certbot certificates."
+        challenge: "Wrapping Next.js 14 within a custom Express server while maintaining fast API response times and proper asset routing.",
+        solution: "Configured Express to pass page requests directly to Next.js's request handler (`app.getRequestHandler()`) while intercepting `/api/*` and `/admin/*` routes through dedicated Express router middleware with input validation."
       },
       {
-        challenge: "Ensuring high transactional email deliverability and preventing spam folder classification.",
-        solution: "Configured authentic SPF, DKIM, and DMARC TXT records in domain DNS and implemented sanitized HTML email templates with plain-text fallback alternatives."
+        challenge: "Securing the Admin CMS without a heavy external database or complex identity provider.",
+        solution: "Implemented an HMAC-SHA256 signed token authentication strategy with 7-day expiration cookies, validating credentials against server-side environment variables and shielding admin routes."
+      },
+      {
+        challenge: "Achieving high organic Google search ranking against established commercial acrylic competitors.",
+        solution: "Engineered a 3-tier supportive keyword strategy across all product routes, injected valid Product and FAQPage JSON-LD schemas, and integrated concise AI Overview hooks optimized for Google SGE summaries."
       }
     ],
-    seoImplementation: "Implemented targeted agency metadata, Open Graph preview tags, XML sitemap generation, and clean URL structure, contributing to visibility in corporate agency search results.",
+    seoImplementation: "Implemented comprehensive metadata across root and product pages, dynamic sitemap indexing all product lines and blogs, Schema.org Product (INR ranges), FAQPage, BreadcrumbList, and 3-tier keyword optimization for national search queries.",
     faqs: [
       {
-        question: "What was your exact role on the Integral Web Solution project?",
-        answer: "I served as the full-stack developer and infrastructure engineer: writing the React frontend, coding the Node.js backend, configuring the Contabo VPS, setting up Apache reverse proxies, and managing business email administration."
+        question: "How does the custom Express server integrate with Next.js 14?",
+        answer: "The Express server boots first, initializes the Next.js application instance, attaches body-parsing and authentication middleware, routes API requests (/api/inquiry, /api/contact, /api/admin) through Express endpoints, and delegates page rendering to Next.js."
       },
       {
-        question: "How is the Node.js backend managed on the Contabo VPS?",
-        answer: "The Node.js backend runs under PM2 in cluster mode. Apache acts as the reverse proxy, terminating SSL and routing incoming requests to localhost:PORT."
+        question: "How does the automated 3-way email pipeline work for Mahadev Plastic?",
+        answer: "When a buyer submits an inquiry, Nodemailer dispatches 3 customized HTML emails: a branded confirmation to the buyer, a detailed lead alert to the factory owner (mahadevplastic2019@gmail.com) with click-to-call CTAs, and a technical audit log to the agency."
       },
       {
-        question: "How does the email notification system work?",
-        answer: "When a lead fills out the contact form, the Node.js service validates the input and uses Nodemailer to dispatch an alert to the internal team and a confirmation receipt to the lead."
+        question: "How is security handled for the private Admin CMS?",
+        answer: "Access to /admin is protected by HMAC-SHA256 signed session tokens. Requests without valid tokens are redirected to /admin/login, ensuring secure content and blog management."
       },
       {
-        question: "How were business emails configured for this project?",
-        answer: "I managed business email setup via Google Workspace and Microsoft services, configuring MX, SPF, DKIM, and DMARC DNS records to ensure zero downtime and high inbox deliverability."
+        question: "What structured data is implemented for Mahadev Plastic products?",
+        answer: "Every acrylic sheet page includes Product schema with SKU, MPN, brand, and AggregateOffer price ranges in INR, along with FAQPage schema for rich Google search snippet eligibility."
       }
     ]
   },
