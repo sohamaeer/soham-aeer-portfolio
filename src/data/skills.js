@@ -688,50 +688,54 @@ export const skillDetails = {
 
   "technical-seo": {
     slug: "technical-seo",
-    name: "Technical SEO & Search Architecture",
+    name: "Technical & AI-Assisted On-Page SEO",
     category: "Search Engine Optimization",
-    badge: "Search Specialist",
-    h1: "Technical SEO Audits, Search Architecture & 20+ Production Optimizations",
-    summary: "Comprehensive Technical & On-Page SEO: crawlability, XML sitemaps, robots.txt, canonical tag strategy, 301 redirect migrations, schema structured data, and international ranking optimizations across 20+ live client websites.",
-    description: "Technical SEO is a core pillar of my engineering approach. Having executed search engine optimizations across 20+ client websites at Integral Web Solution—successfully targeting competitive search markets in the United States and Middle East countries—I build websites that search engines can effortlessly crawl, parse, and index. Working closely with AI-assisted On-Page content workflows, I eliminate crawl budget waste, prevent duplicate content through canonicalization, and structure site hierarchy for high organic relevance and top Google rankings.",
+    badge: "Technical & On-Page Specialist",
+    h1: "Technical SEO & AI-Powered On-Page Optimization (Human Tone & Full Parameters)",
+    summary: "Full-spectrum SEO engineering: combining server-level crawlability, XML sitemaps, JSON-LD schema, and 301 redirects with AI-assisted On-Page SEO engineered in a natural, authentic human tone satisfying every on-page ranking parameter across 20+ live client websites.",
+    description: "Search engine optimization is most effective when technical infrastructure and on-page content work in complete harmony. Having optimized 20+ commercial client websites at Integral Web Solution—successfully ranking across highly competitive US and Middle East search markets—my approach bridges deep technical architecture with high-impact, AI-assisted On-Page SEO.\n\nOn the technical side, I build fast, crawlable web systems: eliminating crawl traps, deploying dynamic XML sitemaps with accurate timestamps, managing robots.txt crawl directives, enforcing canonical URLs to eliminate duplicate content penalties, implementing 50+ legacy 301 redirect mappings during website redesigns, and injecting valid JSON-LD structured schemas.\n\nOn the on-page side, I leverage modern AI tools as research and drafting accelerators to craft comprehensive content tailored to target user intent. Crucially, every AI draft is rigorously refined with human-in-the-loop editing to ensure the writing maintains an authentic, natural, and conversational human tone—completely eliminating robotic clichés, unnatural sentence structures, and keyword stuffing. I systematically optimize every on-page ranking parameter: high-CTR title tags (under 60 chars), persuasive meta descriptions (under 155 chars), strict single <h1> semantic document hierarchies, nested <h2>-<h4> headings, natural keyword density, context-driven internal linking, clean URL slugs, and keyword-rich image alt tags.",
     howIUse: [
-      "Performing comprehensive technical SEO audits inspecting indexation, status codes, and crawl traps.",
-      "Structuring dynamic XML sitemaps with accurate `<lastmod>` timestamps and clean robots.txt directives.",
-      "Implementing 301 redirect maps during website redesigns to protect existing rankings and organic backlinks.",
-      "Optimizing on-page headings (H1-H6), semantic metadata, Open Graph cards, and image alt text for targeted keywords.",
-      "Pairing technical architecture with AI-assisted On-Page content written in an authentic, natural human tone."
+      "Executing comprehensive technical SEO audits inspecting indexation, status codes, and crawl traps across 20+ live client websites.",
+      "Using AI tools to analyze search intent, cluster commercial keywords, and draft comprehensive on-page copy.",
+      "Refining AI outputs with human editorial craftsmanship to achieve an authentic, natural human tone that engages real readers and avoids robotic AI artifacts.",
+      "Systematically optimizing all on-page parameters: unique title tags, CTR meta descriptions, single semantic <h1>, and hierarchical <h2>-<h4> tags.",
+      "Designing contextual internal linking networks and descriptive image alt tags to distribute PageRank and boost accessibility.",
+      "Structuring dynamic Next.js XML sitemaps with accurate <lastmod> timestamps and clean robots.txt directives.",
+      "Mapping and deploying 50+ legacy 301 permanent redirects during website migrations to preserve organic backlink equity."
     ],
     implementationConcepts: [
-      "Canonical URL architecture preventing duplicate content across protocols, query strings, and subdomains",
-      "Crawl budget optimization via selective robots.txt disallow rules and header directives",
-      "Status code precision (200, 301, 404, 410) and eliminating redirect chains",
-      "Core Web Vitals alignment: LCP, CLS, and INP metrics directly impacting search rankings"
+      "AI-Assisted Human Tone Engineering: Natural conversational cadence, readability scoring, and elimination of robotic AI phrasing",
+      "Full On-Page Parameters Checklist: Meta title (50-60 chars), meta description (140-155 chars), single semantic H1, H2-H4 nesting, clean URLs, and image alt text",
+      "Technical Crawlability & Indexation: robots.txt directives, dynamic XML sitemaps, and canonical tag architecture",
+      "Schema Structured Data: JSON-LD Person, Organization, Product, and FAQPage schemas matching visible content",
+      "301 Redirect Architecture: Eliminating 404 crawl errors and preserving existing organic rankings during site overhauls",
+      "Core Web Vitals & Server Performance: Next.js SSG/SSR rendering speed directly reinforcing on-page organic ranking"
     ],
     relatedTech: ["Schema Markup", "Next.js", "React Helmet", "Google Search Console", "Apache"],
     relatedProjects: ["shreeji-sales-corporation", "mahadev-plastic", "kavya-fragrances"],
-    businessValue: "Technical SEO ensures that high-quality web applications are discoverable, attract organic commercial leads without ongoing ad spend, and rank sustainably across international markets.",
+    businessValue: "Combining technical crawlability with AI-powered, human-toned on-page content allows businesses to rank sustainably for high-intent search terms across international markets (US & Middle East), turning organic searchers into qualified commercial inquiries without recurring ad spend.",
     faqs: [
       {
-        question: "What was your approach to optimizing 20+ websites for international search?",
-        answer: "I conducted comprehensive audits identifying crawl errors, missing metadata, and thin content. I targeted regional search intents (US and Middle East regions), optimized metadata and headings, fixed 301 redirects, and verified indexing via Google Search Console."
+        question: "How do you combine Technical SEO with AI-assisted On-Page SEO?",
+        answer: "Technical SEO ensures that search engine bots can crawl, render, and index your website with zero crawl errors, valid schema, and fast Core Web Vitals. On-Page SEO ensures that once search engines index your pages, the content answers the user's search query better than competitors. By pairing robust server architecture with AI-drafted, human-refined on-page copy, pages achieve both rapid indexation and high organic rankings."
       },
       {
-        question: "How do you prevent duplicate content penalties across dynamic pages?",
-        answer: "By implementing absolute, self-referential canonical tags (`<link rel='canonical' href='...' />`) on every indexable page and ensuring parameter-based filtering URLs point to primary canonical representations."
+        question: "How do you ensure AI-generated on-page content sounds natural and human?",
+        answer: "I use AI as a research and initial drafting assistant, never as an unreviewed publisher. Every draft undergoes rigorous human editing: eliminating telltale robotic transitions ('delve into', 'in conclusion', 'testament to'), rephrasing stiff sentences into conversational natural English, adding real-world domain nuances, and structuring content with scannable bullet points and bold callouts that real people enjoy reading."
       },
       {
-        question: "How do you configure an XML sitemap and robots.txt in Next.js?",
-        answer: "I use Next.js `sitemap.js` to dynamically generate XML entries with change frequencies and last-modified dates, and `robots.js` to define crawl rules, disallow private API routes, and point crawlers to the sitemap URL."
+        question: "What specific on-page parameters do you optimize on every client page?",
+        answer: "Every page is systematically calibrated against: 1) Unique meta title (50–60 characters featuring primary target keyword and brand name), 2) Compelling meta description (140–155 characters with a clear call-to-action), 3) Single semantic <h1> tag aligned with search intent, 4) Logically nested <h2> through <h4> headings targeting secondary keyword variations, 5) Clean, lowercase, hyphenated URL slugs, 6) Descriptive image alt attributes for SEO and accessibility, 7) Contextual internal anchor text, and 8) Open Graph cards for social sharing."
       },
       {
-        question: "What steps do you take in Google Search Console post-deployment?",
-        answer: "I verify property ownership, submit the XML sitemap, inspect primary URLs for indexability, check for mobile usability issues, and monitor the Performance report for keyword impressions and click trends."
+        question: "What was your approach to optimizing 20+ websites for international search (US & Middle East)?",
+        answer: "I conducted in-depth audits identifying technical crawl traps, broken links, and thin content. I targeted regional search intents across the United States and Middle East countries, aligned localized keywords with human-toned on-page content, fixed 301 redirects, injected valid JSON-LD schemas, and actively verified indexing and query performance via Google Search Console."
       }
     ],
     seo: {
-      title: "Technical SEO Specialist | Soham Aeer Portfolio",
-      description: "Learn how Soham Aeer implements technical SEO audits, XML sitemaps, 301 redirect architectures, and international search ranking strategies.",
-      keywords: ["Technical SEO specialist", "SEO developer India", "website migration SEO", "XML sitemap robots.txt", "international SEO developer"]
+      title: "Technical & AI-Assisted On-Page SEO Specialist | Soham Aeer Portfolio",
+      description: "Discover how Soham Aeer combines technical SEO audits, schema markup, and 301 redirects with AI-assisted On-Page SEO crafted in natural human tone across 20+ websites.",
+      keywords: ["Technical SEO specialist", "AI On Page SEO human tone", "on page SEO parameters", "international SEO developer", "SEO audits India", "XML sitemap schema markup"]
     }
   },
 
