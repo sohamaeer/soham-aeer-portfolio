@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="logo-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="logo-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#6366F1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded emblem -->
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="url(#logo-bg)" stroke="#1E293B" stroke-width="20" />
+  
+  <!-- Subtle inner border -->
+  <rect x="40" y="40" width="432" height="432" rx="88" fill="none" stroke="rgba(56, 189, 248, 0.2)" stroke-width="6" />
+
+  <!-- Monogram SA with code brackets -->
+  <g fill="none" stroke="url(#logo-accent)" stroke-width="36" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Opening Bracket < -->
+    <path d="M 140 180 L 80 256 L 140 332" />
+    
+    <!-- Letter S -->
+    <path d="M 270 195 C 270 180, 240 170, 215 170 C 180 170, 170 195, 170 215 C 170 260, 270 250, 270 295 C 270 330, 240 342, 210 342 C 180 342, 160 325, 160 305" />
+
+    <!-- Letter A -->
+    <path d="M 290 342 L 340 170 L 390 342" />
+    <path d="M 308 285 L 372 285" />
+
+    <!-- Closing Slash / > -->
+    <path d="M 430 180 L 410 332" />
+  </g>
+</svg>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import HeroSlider from "@/components/HeroSlider";
 import ProjectCard from "@/components/ProjectCard";
 import { personalInfo } from "@/data/personalInfo";
 import { projects } from "@/data/projects";
@@ -8,8 +9,8 @@ import { certifications } from "@/data/certifications";
 import "@/styles/home.css";
 
 export const metadata = {
-  title: "Soham Aeer | Full Stack Developer | React, Next.js, Node.js & VPS Deployment",
-  description: "Official portfolio of Soham Aeer. Full-stack developer with real-world production experience in React, Next.js, Node.js, Linux VPS deployment, Technical SEO across 20+ websites, and AI API integrations.",
+  title: "Soham Aeer | Full Stack Developer | React, Next.js, Node.js & Express.js",
+  description: "Official portfolio of Soham Aeer, Full Stack Developer specializing in React.js, Next.js, Node.js, and Express.js, with hands-on Linux VPS deployment, Technical SEO, and AI integrations.",
   alternates: {
     canonical: "/"
   }
@@ -21,128 +22,9 @@ export default function HomePage() {
   return (
     <>
       {/* ===================================================================
-          1. CORPORATE HERO BANNER
+          1. HERO SLIDER WITH DYNAMIC BACKGROUND IMAGES
           =================================================================== */}
-      <section className="hero-section" aria-label="Professional Introduction">
-        <div className="container">
-          <div className="hero-grid">
-            <div className="hero-content">
-              <div className="hero-badge">
-                ★ Full Stack Developer &bull; DevOps &bull; Technical SEO
-              </div>
-
-              <h1 className="hero-title">
-                Engineering <span>Production Web Applications</span> &amp; Self-Hosted Linux Infrastructure.
-              </h1>
-
-              <p className="hero-bio">
-                I am <strong>{personalInfo.name}</strong>, a Full Stack Developer at <strong>Integral Web Solution</strong>. 
-                I deliver complete web platforms from responsive <strong>React &amp; Next.js</strong> frontends with zero framework bloat 
-                to scalable <strong>Node.js</strong> backends, <strong>Contabo Linux VPS hosting</strong> (Apache, Nginx, PM2, SSL), 
-                <strong>Technical SEO</strong> across 20+ international websites, and high-speed <strong>AI API integrations</strong>.
-              </p>
-
-              {/* Concrete Capabilities Checkpoints */}
-              <div className="hero-checkpoints">
-                <div className="hero-checkpoint-item">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Full-Stack Engineering: React.js, Next.js App Router, Node.js &amp; Express</span>
-                </div>
-                <div className="hero-checkpoint-item">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Linux VPS Hosting: Contabo VPS, Ubuntu, Apache Virtual Hosts, Nginx &amp; PM2</span>
-                </div>
-                <div className="hero-checkpoint-item">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Technical SEO: 20+ Websites Ranked in US &amp; Middle East Search Markets</span>
-                </div>
-                <div className="hero-checkpoint-item">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Modern Integrations: Headless Shopify, GraphQL, OAuth 2.0 PKCE &amp; Groq Llama 3.1</span>
-                </div>
-              </div>
-
-              {/* High-Impact Actions */}
-              <div className="hero-actions">
-                <Link href="/projects" className="btn btn-accent btn-lg">
-                  Explore Production Projects ↗
-                </Link>
-
-                <a
-                  href={personalInfo.resumePath}
-                  download
-                  className="btn btn-secondary btn-lg"
-                  aria-label="Download Soham Aeer's verified Resume (PDF)"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                    <polyline points="7 10 12 15 17 10"></polyline>
-                    <line x1="12" y1="15" x2="12" y2="3"></line>
-                  </svg>
-                  Download Resume (PDF)
-                </a>
-
-                <a href={`tel:${personalInfo.phone}`} className="btn btn-outline btn-lg" style={{ borderColor: "rgba(255,255,255,0.3)", color: "#FFFFFF" }}>
-                  Call Direct: {personalInfo.phoneDisplay}
-                </a>
-              </div>
-            </div>
-
-            {/* Profile & Live Server Metrics Card */}
-            <div className="hero-profile-card">
-              <div className="hero-photo-wrap">
-                <Image
-                  src={personalInfo.profileImage}
-                  alt="Soham Aeer, Full Stack Developer and DevOps Engineer"
-                  fill
-                  sizes="(max-width: 992px) 100vw, 420px"
-                  priority
-                />
-              </div>
-
-              <div className="hero-card-meta">
-                <div className="hero-card-name">{personalInfo.name}</div>
-                <div className="hero-card-role">Full Stack Developer &bull; Integral Web Solution</div>
-              </div>
-
-              <div className="hero-infra-box">
-                <div className="hero-infra-row">
-                  <span className="hero-infra-label">Active Role</span>
-                  <span className="hero-infra-val" style={{ color: "#F3F4F6" }}>Full Stack Developer</span>
-                </div>
-                <div className="hero-infra-row">
-                  <span className="hero-infra-label">VPS Hosting</span>
-                  <span className="hero-infra-val">Contabo Ubuntu Linux</span>
-                </div>
-                <div className="hero-infra-row">
-                  <span className="hero-infra-label">Web Servers</span>
-                  <span className="hero-infra-val">Apache &amp; Nginx Reverse Proxy</span>
-                </div>
-                <div className="hero-infra-row">
-                  <span className="hero-infra-label">Process Daemons</span>
-                  <span className="hero-infra-val">PM2 Cluster Active</span>
-                </div>
-                <div className="hero-infra-row">
-                  <span className="hero-infra-label">SEO Track Record</span>
-                  <span className="hero-infra-val">20+ Sites (US &amp; Middle East)</span>
-                </div>
-                <div className="hero-infra-row">
-                  <span className="hero-infra-label">Availability</span>
-                  <span className="hero-infra-val">Full-Time &amp; High-Impact Roles</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroSlider />
 
       {/* ===================================================================
           2. CORPORATE STATS RIBBON
@@ -160,7 +42,7 @@ export default function HomePage() {
             </div>
             <div className="stat-box">
               <div className="stat-number">100%</div>
-              <div className="stat-text">Self-Hosted VPS &amp; Server Independence</div>
+              <div className="stat-text">Full-Stack Lifecycle Delivery (UI to Server)</div>
             </div>
             <div className="stat-box">
               <div className="stat-number">99.9%</div>
@@ -171,42 +53,44 @@ export default function HomePage() {
       </section>
 
       {/* ===================================================================
-          3. CORPORATE BRIEFING: ABOUT SOHAM AEER
+          3. FULL STACK DEVELOPER PROFILE & BRIEFING
           =================================================================== */}
       <section className="section-py" style={{ backgroundColor: "var(--bg-surface-elevated)" }} aria-labelledby="about-brief-title">
         <div className="container">
-          <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "48px", alignItems: "center" }}>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "40px", alignItems: "center" }}>
-              <div style={{ position: "relative", aspectRatio: "4/3", borderRadius: "var(--radius-md)", overflow: "hidden", border: "1px solid var(--border-medium)", boxShadow: "var(--shadow-md)" }}>
-                <Image
-                  src={personalInfo.workspaceImage}
-                  alt="Soham Aeer in development workspace"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 500px"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "48px", alignItems: "center" }}>
+            <div style={{ position: "relative", aspectRatio: "4/3", borderRadius: "var(--radius-md)", overflow: "hidden", border: "1px solid var(--border-medium)", boxShadow: "var(--shadow-md)" }}>
+              <Image
+                src={personalInfo.workspaceImage}
+                alt="Soham Aeer in development workspace"
+                fill
+                sizes="(max-width: 768px) 100vw, 550px"
+                style={{ objectFit: "cover" }}
+              />
+            </div>
 
-              <div>
-                <span className="section-eyebrow">Professional Profile</span>
-                <h2 id="about-brief-title" className="section-title">
-                  Bridging Application Development with Infrastructure Management
-                </h2>
-                <p style={{ color: "var(--text-secondary)", fontSize: "1.02rem", lineHeight: "1.7", marginBottom: "16px" }}>
-                  Most web developers stop once the code runs on their local machine. At <strong>Integral Web Solution</strong>, my responsibilities extend across the entire production lifecycle: writing clean React and Next.js applications, building resilient Node.js backends, provisioning Contabo Linux VPS servers, setting up Apache and Nginx reverse proxies, automating Let&apos;s Encrypt SSL certificates, configuring domain DNS and business email systems, and resolving critical server errors.
-                </p>
-                <p style={{ color: "var(--text-muted)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "24px" }}>
-                  Holding a B.Sc. in Information Technology from Viva College (2022–2025) and verified certifications from CodeSignal and Microsoft Learn, I bring an engineering mindset focused on measurable business outcomes, speed, and reliability.
-                </p>
+            <div>
+              <span className="section-eyebrow">Full Stack Specialization</span>
+              <h2 id="about-brief-title" className="section-title">
+                Full Stack Developer Delivering Resilient Web Systems
+              </h2>
+              <p style={{ color: "var(--text-secondary)", fontSize: "1.05rem", lineHeight: "1.7", marginBottom: "16px" }}>
+                My core expertise is <strong>Full Stack Web Development</strong> using <strong>React.js, Next.js App Router, Node.js, and Express.js</strong>. 
+                At <strong>Integral Web Solution</strong> in Mumbai, I engineer scalable client platforms, custom portals, and modern e-commerce stores with sub-second responsiveness and clean component architecture.
+              </p>
+              <p style={{ color: "var(--text-muted)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "24px" }}>
+                As powerful force multipliers, I manage self-hosted <strong>Contabo Linux VPS servers</strong> (Apache Virtual Hosts, Nginx reverse proxy, Let&apos;s Encrypt SSL, PM2), execute <strong>Technical SEO</strong> across 20+ websites targeting US and Middle East search regions, and integrate modern <strong>AI/LLM APIs</strong> (Groq Cloud Llama 3.1).
+              </p>
 
-                <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
-                  <Link href="/about" className="btn btn-primary">
-                    Read Full Profile &amp; Workflow ↗
-                  </Link>
-                  <Link href="/experience" className="btn btn-secondary">
-                    View Integral Web Solution Timeline
-                  </Link>
-                </div>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
+                <Link href="/about" className="btn btn-primary">
+                  Read Full Developer Bio ↗
+                </Link>
+                <Link href="/experience" className="btn btn-secondary">
+                  View Experience Timeline
+                </Link>
+                <Link href="/skills" className="btn btn-outline">
+                  Browse Skills Directory
+                </Link>
               </div>
             </div>
           </div>
@@ -214,17 +98,17 @@ export default function HomePage() {
       </section>
 
       {/* ===================================================================
-          4. FEATURED PRODUCTION PROJECTS (CATALOG STYLE)
+          4. FEATURED PRODUCTION PROJECTS
           =================================================================== */}
       <section className="section-py" aria-labelledby="featured-projects-title">
         <div className="container">
           <div className="section-header">
             <span className="section-eyebrow">Production Portfolio</span>
             <h2 id="featured-projects-title" className="section-title">
-              Featured Web Applications &amp; Infrastructure Case Studies
+              Featured Web Applications &amp; Case Studies
             </h2>
             <p className="section-desc">
-              Real projects engineered for production: verified source code repositories, actual live deployments, and documented technical problem-solving.
+              Every project below represents hands-on full-stack engineering, verified code repositories, and real architectural problem-solving.
             </p>
           </div>
 
@@ -243,17 +127,17 @@ export default function HomePage() {
       </section>
 
       {/* ===================================================================
-          5. "WHY CHOOSE SOHAM AEER" (Modeled after Nikam Scientific & Mahadev Plastic)
+          5. "WHY HIRE SOHAM AEER"
           =================================================================== */}
       <section className="section-py" style={{ backgroundColor: "var(--bg-surface-elevated)" }} aria-labelledby="why-choose-title">
         <div className="container">
           <div className="section-header section-header-center">
-            <span className="section-eyebrow">The Engineering Difference</span>
+            <span className="section-eyebrow">The Engineering Advantage</span>
             <h2 id="why-choose-title" className="section-title">
-              Why Companies &amp; Engineering Teams Hire Me
+              Why Engineering Teams Hire Me for Full Stack Roles
             </h2>
             <p className="section-desc">
-              I eliminate the friction between frontend UI design, backend API engineering, self-hosted Linux server deployment, and search engine discovery.
+              I eliminate the traditional handoff friction between UI design, backend services, self-hosted server deployment, and search engine indexation.
             </p>
           </div>
 
@@ -266,9 +150,9 @@ export default function HomePage() {
                   <line x1="12" y1="17" x2="12" y2="21"></line>
                 </svg>
               </div>
-              <h3 className="why-title">1. End-to-End Technical Ownership</h3>
+              <h3 className="why-title">1. Full-Stack End-to-End Ownership</h3>
               <p className="why-desc">
-                From initial component architecture in Next.js to database modeling, Nodemailer email workflows, and production server setup, I take complete responsibility for delivering functioning systems.
+                From initial responsive UI architecture in Next.js to database design, Nodemailer transactional workflows, and server deployment, I take complete responsibility for delivering production features.
               </p>
             </div>
 
@@ -279,9 +163,9 @@ export default function HomePage() {
                   <line x1="12" y1="19" x2="20" y2="19"></line>
                 </svg>
               </div>
-              <h3 className="why-title">2. Self-Hosted VPS Independence</h3>
+              <h3 className="why-title">2. Self-Hosted VPS &amp; DevOps</h3>
               <p className="why-desc">
-                Proven hands-on experience provisioning Contabo Linux VPS servers, configuring Apache Virtual Hosts, setting up Nginx reverse proxies, and maintaining 24/7 uptime via PM2 process daemons.
+                Hands-on experience provisioning Contabo Linux VPS servers, configuring Apache Virtual Hosts and Nginx reverse proxies, automating SSL certificates, and keeping daemons alive with PM2.
               </p>
             </div>
 
@@ -292,9 +176,9 @@ export default function HomePage() {
                   <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                 </svg>
               </div>
-              <h3 className="why-title">3. Proven International SEO Results</h3>
+              <h3 className="why-title">3. Proven International SEO Track Record</h3>
               <p className="why-desc">
-                Successfully contributed to ranking 20+ production websites in competitive search markets across the United States and Middle East countries via schema markup, XML sitemaps, and 301 redirects.
+                Contributed to ranking 20+ production websites in US and Middle East search regions via dynamic schema markup, self-referential canonical tags, XML sitemaps, and clean 301 redirects.
               </p>
             </div>
 
@@ -308,7 +192,7 @@ export default function HomePage() {
               </div>
               <h3 className="why-title">4. Headless Commerce &amp; Integrations</h3>
               <p className="why-desc">
-                Deep experience decoupling storefronts using Shopify Storefront API over GraphQL, building customer accounts via OAuth 2.0 PKCE, Stripe checkouts, and custom calculation engines.
+                Experience decoupling storefronts using Shopify Storefront API over GraphQL, OAuth 2.0 PKCE customer accounts, localized GST tax logic, and Stripe payment gateway checkouts.
               </p>
             </div>
 
@@ -322,7 +206,7 @@ export default function HomePage() {
               </div>
               <h3 className="why-title">5. High-Speed AI &amp; LLM Integrations</h3>
               <p className="why-desc">
-                Integrating Groq Cloud LPU inference running Meta&apos;s Llama 3.1 to build sub-second personalized consultation engines, structured system prompt engineering, and input sanitization.
+                Connecting Groq Cloud LPU inference running Meta&apos;s Llama 3.1 to web apps, structured prompt engineering, and context-aware recommendation workflows in commercial web applications.
               </p>
             </div>
 
@@ -334,7 +218,7 @@ export default function HomePage() {
               </div>
               <h3 className="why-title">6. Production Troubleshooting &amp; Uptime</h3>
               <p className="why-desc">
-                Direct experience resolving live production outages, diagnosing SSL certificate conflicts, fixing 403 Forbidden permission errors, and recovering server resources under heavy load.
+                Direct experience diagnosing live server conflicts, Let&apos;s Encrypt certificate renewal issues, 403 Forbidden directory permissions, and memory bottlenecks under heavy worker load.
               </p>
             </div>
           </div>
@@ -381,7 +265,7 @@ export default function HomePage() {
 
           <div style={{ textAlign: "center", marginTop: "32px" }}>
             <Link href="/skills" className="btn btn-secondary">
-              View Complete Skills Hub &amp; Detail Pages ↗
+              View Complete Skills Hub (16 Detail Pages) ↗
             </Link>
           </div>
         </div>
@@ -414,7 +298,7 @@ export default function HomePage() {
                     style={{ objectFit: "contain", padding: "8px" }}
                   />
                 </div>
-                <span className="badge badge-gold" style={{ width: "fit-content", marginBottom: "8px" }}>
+                <span className="badge badge-navy" style={{ width: "fit-content", marginBottom: "8px" }}>
                   {cert.issuer}
                 </span>
                 <h3 style={{ fontSize: "1.1rem", fontWeight: 700, marginBottom: "8px" }}>{cert.title}</h3>
@@ -439,24 +323,24 @@ export default function HomePage() {
         <div className="container">
           <div className="cta-banner">
             <div className="cta-banner-content">
-              <span className="badge badge-gold" style={{ marginBottom: "16px", background: "rgba(245, 158, 11, 0.2)", color: "#FCD34D" }}>
-                Available for Immediate Opportunities
+              <span className="badge badge-navy" style={{ marginBottom: "16px", color: "#38BDF8", background: "rgba(37, 99, 235, 0.2)" }}>
+                Available for Full Stack Opportunities
               </span>
               <h2 className="cta-title">
-                Need an Experienced Full-Stack Developer &amp; DevOps Specialist?
+                Looking for a Reliable Full Stack Developer?
               </h2>
               <p className="cta-desc">
-                Whether you need a full-stack Next.js developer, self-hosted Linux VPS deployment, or an international Technical SEO overhaul, let&apos;s discuss how I can create immediate value for your business.
+                Whether you need a Next.js/React full-stack engineer, self-hosted Linux VPS deployment, or international Technical SEO optimization, let&apos;s discuss how I can add immediate value to your engineering team.
               </p>
               <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "14px" }}>
-                <Link href="/contact" className="btn btn-accent btn-lg">
+                <Link href="/contact" className="btn btn-primary btn-lg">
                   Get in Touch Today ↗
                 </Link>
-                <a href={personalInfo.resumePath} download className="btn btn-secondary btn-lg" style={{ color: "#00072A" }}>
+                <a href={personalInfo.resumePath} download className="btn btn-secondary btn-lg">
                   Download Resume (PDF)
                 </a>
                 <a href={`tel:${personalInfo.phone}`} className="btn btn-outline btn-lg" style={{ borderColor: "rgba(255,255,255,0.4)", color: "#FFFFFF" }}>
-                  Direct Call: {personalInfo.phoneDisplay}
+                  Call Direct: {personalInfo.phoneDisplay}
                 </a>
               </div>
             </div>

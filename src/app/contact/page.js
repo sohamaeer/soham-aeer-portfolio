@@ -18,21 +18,24 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="container" style={{ paddingBottom: "80px", paddingTop: "32px" }}>
-      <Breadcrumbs items={breadcrumbItems} />
+    <>
+      {/* Subpage Hero Banner with Background Image */}
+      <section className="page-hero-banner" aria-label="Contact Page Introduction">
+        <div className="container">
+          <Breadcrumbs items={breadcrumbItems} />
+          <span className="section-eyebrow">Direct Communication</span>
+          <h1 className="section-title">
+            Get in Touch for Opportunities &amp; Collaborations
+          </h1>
+          <p className="section-desc">
+            I welcome full-time software engineering roles, high-impact contract web applications, Linux VPS infrastructure setups, and Technical SEO audits. 
+            Use the secure form below or reach out directly via email or phone.
+          </p>
+        </div>
+      </section>
 
-      <div className="section-header" style={{ marginBottom: "24px" }}>
-        <span className="section-eyebrow">Direct Communication</span>
-        <h1 className="section-title">
-          Get in Touch for Opportunities & Collaborations
-        </h1>
-        <p className="section-desc">
-          I welcome full-time software engineering roles, high-impact contract web applications, Linux VPS infrastructure setups, and Technical SEO audits. 
-          Use the secure form below or reach out directly via email or phone.
-        </p>
-      </div>
-
-      <div className="contact-layout">
+      <div className="container" style={{ paddingBottom: "80px", paddingTop: "40px" }}>
+        <div className="contact-layout">
         {/* Left Information Panel */}
         <div className="contact-info-panel">
           <div className="contact-direct-card">
@@ -107,5 +110,6 @@ export default function ContactPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

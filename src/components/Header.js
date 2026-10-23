@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import ThemeToggle from "./ThemeToggle";
@@ -13,13 +12,11 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
 
-  // Close mobile drawer on route transition
   useEffect(() => {
     setMobileMenuOpen(false);
     setOpenDropdown(null);
   }, [pathname]);
 
-  // Lock body scroll when mobile menu is open
   useEffect(() => {
     if (mobileMenuOpen) {
       document.body.style.overflow = "hidden";
@@ -37,7 +34,7 @@ export default function Header() {
 
   return (
     <>
-      {/* Top Utility Bar (Direct Contact & Availability) */}
+      {/* Top Utility Bar */}
       <div className="top-header">
         <div className="container">
           <div className="top-header-inner">
@@ -59,7 +56,11 @@ export default function Header() {
                 <a href={`mailto:${personalInfo.email}`}>{personalInfo.email}</a>
               </div>
 
-              <div className="top-header-item" style={{ display: "none" }}>
+              <div className="top-header-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
                 <span>{personalInfo.location}</span>
               </div>
             </div>
@@ -67,7 +68,7 @@ export default function Header() {
             <div className="top-header-right">
               <div className="top-header-status">
                 <span className="top-status-dot"></span>
-                <span>Available for Full-Stack & VPS Roles</span>
+                <span>Available for Full-Stack Roles</span>
               </div>
 
               <div style={{ display: "flex", gap: "12px", alignItems: "center" }}>
@@ -75,17 +76,17 @@ export default function Header() {
                   href={personalInfo.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: "#E5E7EB", fontSize: "0.8rem", fontWeight: 600 }}
+                  style={{ color: "#E2E8F0", fontSize: "0.8rem", fontWeight: 600 }}
                   aria-label="GitHub Profile"
                 >
                   GitHub ↗
                 </a>
-                <span style={{ color: "#4B5563" }}>|</span>
+                <span style={{ color: "#475569" }}>|</span>
                 <a
                   href={personalInfo.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: "#E5E7EB", fontSize: "0.8rem", fontWeight: 600 }}
+                  style={{ color: "#E2E8F0", fontSize: "0.8rem", fontWeight: 600 }}
                   aria-label="LinkedIn Profile"
                 >
                   LinkedIn ↗
@@ -96,24 +97,25 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Main Corporate Header */}
+      {/* Main Header with Logo Emblem */}
       <header className="site-header">
         <div className="container">
           <div className="main-header-inner">
-            {/* Brand Identity */}
+            {/* Brand Logo with Custom Emblem (No Photo) */}
             <Link href="/" className="brand-link" aria-label="Soham Aeer - Home">
-              <div className="brand-avatar">
-                <Image
-                  src={personalInfo.profileImage}
-                  alt="Soham Aeer portrait"
-                  fill
-                  sizes="46px"
-                  priority
-                />
+              <div className="brand-logo-emblem">
+                <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="48" height="48" rx="10" fill="#0F172A" stroke="#1E3A8A" strokeWidth="2" />
+                  <path d="M12 18L7 24L12 30" stroke="#38BDF8" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M36 18L41 24L36 30" stroke="#38BDF8" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M22 17C22 15.5 20.5 14.5 19 14.5C17 14.5 16 16 16 17.5C16 20.5 22 20 22 23C22 25.5 20 26.5 18 26.5C16 26.5 15 25 15 23.5" stroke="#60A5FA" strokeWidth="2.2" strokeLinecap="round"/>
+                  <path d="M26 26.5L29.5 14.5L33 26.5" stroke="#60A5FA" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M27.5 22.5H31.5" stroke="#60A5FA" strokeWidth="2" strokeLinecap="round"/>
+                </svg>
               </div>
               <div className="brand-text">
                 <span className="brand-name">{personalInfo.name}</span>
-                <span className="brand-role">Full Stack Developer & DevOps</span>
+                <span className="brand-role">Full Stack Developer</span>
               </div>
             </Link>
 
@@ -173,7 +175,6 @@ export default function Header() {
                 href={personalInfo.resumePath}
                 download
                 className="btn btn-secondary btn-sm"
-                style={{ display: "none" }}
               >
                 Resume PDF
               </a>
@@ -182,7 +183,7 @@ export default function Header() {
                 Get In Touch ↗
               </Link>
 
-              {/* Mobile Menu Toggle Button */}
+              {/* Mobile Menu Button */}
               <button
                 type="button"
                 className="mobile-menu-btn"
@@ -219,7 +220,7 @@ export default function Header() {
           <div className="mobile-nav-header">
             <div className="brand-text">
               <span className="brand-name">{personalInfo.name}</span>
-              <span className="brand-role">Menu</span>
+              <span className="brand-role">Full Stack Developer</span>
             </div>
             <button
               type="button"

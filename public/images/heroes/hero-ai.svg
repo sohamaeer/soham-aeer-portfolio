@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ai-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090E1B" />
+      <stop offset="50%" stop-color="#0E1628" />
+      <stop offset="100%" stop-color="#070A14" />
+    </linearGradient>
+    <linearGradient id="deep-indigo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0.15" />
+    </linearGradient>
+    <pattern id="hex-grid" width="60" height="104" patternUnits="userSpaceOnUse" patternTransform="scale(1)">
+      <path d="M 30 0 L 60 17.3 L 60 52 L 30 69.3 L 0 52 L 0 17.3 Z" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1" />
+      <path d="M 30 52 L 60 69.3 L 60 104 L 30 121.3 L 0 104 L 0 69.3 Z" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#ai-bg)" />
+  <rect width="100%" height="100%" fill="url(#hex-grid)" />
+
+  <circle cx="30%" cy="50%" r="600" fill="url(#deep-indigo)" />
+  <circle cx="75%" cy="30%" r="500" fill="url(#deep-indigo)" />
+
+  <!-- Neural Mesh and Headless API Vector Rays -->
+  <g stroke="rgba(99, 102, 241, 0.25)" stroke-width="1.5" fill="none">
+    <line x1="300" y1="300" x2="600" y2="450" />
+    <line x1="600" y1="450" x2="900" y2="350" />
+    <line x1="900" y1="350" x2="1200" y2="550" />
+    <line x1="1200" y1="550" x2="1500" y2="400" />
+    <line x1="600" y1="450" x2="650" y2="700" />
+    <line x1="900" y1="350" x2="950" y2="650" />
+    <line x1="650" y1="700" x2="950" y2="650" />
+    <line x1="950" y1="650" x2="1200" y2="550" />
+  </g>
+
+  <g fill="#818CF8">
+    <circle cx="300" cy="300" r="4" />
+    <circle cx="600" cy="450" r="5" />
+    <circle cx="900" cy="350" r="5" />
+    <circle cx="1200" cy="550" r="5" />
+    <circle cx="1500" cy="400" r="4" />
+    <circle cx="650" cy="700" r="4" />
+    <circle cx="950" cy="650" r="5" />
+  </g>
+</svg>

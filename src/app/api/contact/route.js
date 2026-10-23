@@ -217,7 +217,7 @@ ${message.trim()}
             <div class="message-box">${cleanMessage}</div>
 
             <div class="footer">
-              Automated transmission from Soham Aeer Portfolio System (Virar, India).
+              Automated transmission from Soham Aeer Portfolio System (Mumbai, India).
             </div>
           </div>
         </body>
@@ -245,7 +245,7 @@ Message: ${message.trim()}
 Best regards,
 Soham Aeer
 Full Stack Developer | React.js | Next.js | Node.js | DevOps
-Virar, Maharashtra, India
+Mumbai, Maharashtra, India
 Email: sohamayer516@gmail.com
 Phone: +91 9322577858
 GitHub: https://github.com/sohamaeer/

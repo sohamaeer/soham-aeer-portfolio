@@ -1,8 +1,9 @@
 export const personalInfo = {
   name: "Soham Aeer",
-  headline: "Full Stack Developer | React.js | Next.js | Node.js | DevOps & VPS Deployment",
+  headline: "Full Stack Developer | React.js | Next.js | Node.js | Express.js",
+  subHeadline: "Full Stack Developer with hands-on experience engineering production web applications using React.js, Next.js, Node.js, and Express.js, backed by self-hosted Linux VPS deployment, Technical SEO across 20+ websites, and AI API integrations.",
   shortBio: "Full Stack Developer with hands-on experience engineering and deploying production web applications using React.js, Next.js, Node.js, and Express.js. Specialized in Linux VPS infrastructure, reverse proxies, Technical SEO across 20+ websites, and AI API integrations.",
-  location: "Virar, Maharashtra, India",
+  location: "Mumbai, Maharashtra, India",
   email: "sohamayer516@gmail.com",
   phone: "+91 9322577858",
   phoneDisplay: "+91 93225 77858",
@@ -16,18 +17,18 @@ export const personalInfo = {
     title: "Full Stack Developer",
     company: "Integral Web Solution",
     period: "Nov 2025 – Present",
-    location: "Virar (W), Maharashtra, India"
+    location: "Mumbai, Maharashtra, India"
   },
   education: {
     degree: "B.Sc. Information Technology",
     institution: "Viva College",
-    location: "Virar, Maharashtra",
+    location: "Mumbai, Maharashtra, India",
     period: "2022 – 2025"
   },
   metrics: [
-    { label: "Production Websites & Portals", value: "6+" },
+    { label: "Production Web Applications", value: "6+" },
     { label: "Websites SEO Optimized", value: "20+" },
-    { label: "International Search Regions Targeted", value: "US & Middle East" },
-    { label: "VPS & Infrastructure Uptime Focus", value: "99.9%" }
+    { label: "International Search Markets", value: "US & Middle East" },
+    { label: "Production VPS Uptime Focus", value: "99.9%" }
   ]
 };

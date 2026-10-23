@@ -2,17 +2,17 @@ export const experienceData = [
   {
     company: "Integral Web Solution",
     role: "Full Stack Developer",
-    location: "Virar (W), Maharashtra, India",
+    location: "Mumbai, Maharashtra, India",
     period: "Nov 2025 – Present",
     type: "Full-Time",
-    headline: "End-to-end full stack development, Linux VPS server infrastructure, technical SEO for 20+ websites, and business email administration.",
-    summary: "At Integral Web Solution, I operate across the complete software delivery lifecycle. My role bridges modern frontend user interface development with React and Next.js, resilient backend API engineering in Node.js and Express, Contabo Linux VPS server provisioning, multi-tenant Apache/Nginx reverse proxying, Technical SEO execution across international search markets, and troubleshooting live production incidents.",
+    headline: "Full-stack web application engineering, self-hosted Linux VPS server infrastructure, technical SEO across 20+ websites, and business email administration.",
+    summary: "At Integral Web Solution, I operate primarily as a Full Stack Developer, bridging modern frontend user interface development in React and Next.js with resilient backend API engineering in Node.js and Express. As key force multipliers, I manage self-hosted Contabo Linux VPS servers, multi-tenant Apache/Nginx reverse proxying, Technical SEO execution across international search markets, and live production troubleshooting.",
     responsibilities: [
       {
-        category: "Full-Stack Application Engineering",
+        category: "Full-Stack Application Engineering (Primary Focus)",
         items: [
-          "Developed and deployed multiple full-stack production applications using React.js, Next.js, Node.js, and Express.js.",
-          "Built and deployed client websites including corporate agency platforms, industrial portals, and e-commerce stores.",
+          "Developed and deployed multiple full-stack production web applications using React.js, Next.js, Node.js, and Express.js.",
+          "Built and deployed client platforms including corporate web applications, portals, and e-commerce stores.",
           "Integrated third-party services including Stripe payments, Nodemailer, and AI LLM APIs (Groq Llama 3.1).",
           "Engineered secure backend services with defensive input sanitization, rate limiting, and CORS policies."
         ]
@@ -56,7 +56,7 @@ export const experienceData = [
 export const educationData = [
   {
     institution: "Viva College",
-    location: "Virar, Maharashtra, India",
+    location: "Mumbai, Maharashtra, India",
     degree: "Bachelor of Science in Information Technology (B.Sc. IT)",
     period: "2022 – 2025",
     focus: "Software Engineering, Database Management Systems, Data Structures & Algorithms, Computer Networks, Web Technologies, and Operating Systems."

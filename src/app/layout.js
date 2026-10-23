@@ -26,8 +26,16 @@ export const metadata = {
     "Technical SEO India",
     "Contabo VPS",
     "Shopify Headless Commerce",
-    "Virar Developer"
+    "Mumbai Developer",
+    "Full Stack Developer Mumbai"
   ],
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" }
+    ],
+    apple: "/favicon.svg"
+  },
   authors: [{ name: personalInfo.name, url: personalInfo.siteUrl }],
   creator: personalInfo.name,
   openGraph: {
@@ -86,7 +94,7 @@ export default function RootLayout({ children }) {
     },
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Virar",
+      "addressLocality": "Mumbai",
       "addressRegion": "Maharashtra",
       "addressCountry": "India"
     },
@@ -111,6 +119,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body>
