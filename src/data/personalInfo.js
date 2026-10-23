@@ -1,8 +1,8 @@
 export const personalInfo = {
   name: "Soham Aeer",
   headline: "Full Stack Developer | React.js | Next.js | Node.js | Express.js",
-  subHeadline: "Full Stack Developer with hands-on experience engineering production web applications using React.js, Next.js, Node.js, and Express.js, backed by self-hosted Linux VPS deployment, Technical SEO across 20+ websites, and AI API integrations.",
-  shortBio: "Full Stack Developer with hands-on experience engineering and deploying production web applications using React.js, Next.js, Node.js, and Express.js. Specialized in Linux VPS infrastructure, reverse proxies, Technical SEO across 20+ websites, and AI API integrations.",
+  subHeadline: "Full Stack Developer with hands-on experience engineering production web applications using React.js, Next.js, Node.js, and Express.js, backed by self-hosted Linux VPS & DNS management, Technical & AI-assisted On-Page SEO across 20+ websites, and AI API integrations.",
+  shortBio: "Full Stack Developer with hands-on experience engineering and deploying production web applications using React.js, Next.js, Node.js, and Express.js. Specialized in Linux VPS infrastructure, domain DNS records management, Technical & AI-assisted On-Page SEO across 20+ websites, and AI API integrations.",
   location: "Mumbai, Maharashtra, India",
   email: "sohamayer516@gmail.com",
   phone: "+91 9322577858",

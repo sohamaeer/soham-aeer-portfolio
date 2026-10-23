@@ -124,10 +124,6 @@ export default function ProjectCaseStudyPage({ params }) {
             <span className="case-meta-label">Category</span>
             <span className="case-meta-val">{project.category}</span>
           </div>
-          <div className="case-meta-item">
-            <span className="case-meta-label">Timeline</span>
-            <span className="case-meta-val">{project.timeline}</span>
-          </div>
         </div>
 
         {/* Hero Screenshot */}

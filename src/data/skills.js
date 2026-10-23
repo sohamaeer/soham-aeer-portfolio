@@ -48,25 +48,26 @@ export const skillCategories = [
     skills: [
       { name: "Linux & Ubuntu Server Management", slug: "linux-server-management", level: "Advanced", primary: true },
       { name: "VPS Deployment (Contabo / Cloud)", slug: "vps-deployment", level: "Advanced", primary: true },
+      { name: "Domain DNS Records Management (A, CNAME, MX, TXT, SPF, DKIM)", slug: "dns-management", level: "Advanced", primary: true },
       { name: "Nginx Reverse Proxy & Configuration", slug: "nginx-configuration", level: "Advanced", primary: true },
       { name: "Apache Virtual Hosts & Routing", slug: "apache-server-configuration", level: "Advanced", primary: true },
       { name: "SSL Certificates & Certbot Automation", slug: "vps-deployment", level: "Advanced", primary: false },
       { name: "PM2 Process Daemon Management", slug: "vps-deployment", level: "Advanced", primary: false },
-      { name: "SSH & Git-Based Server Workflows", slug: "linux-server-management", level: "Advanced", primary: false },
-      { name: "Domain, DNS, & Business Email Routing", slug: "vps-deployment", level: "Advanced", primary: false }
+      { name: "SSH & Git-Based Server Workflows", slug: "linux-server-management", level: "Advanced", primary: false }
     ]
   },
   {
     id: "seo",
-    title: "Technical SEO & Search Architecture",
+    title: "Technical & AI-Powered On-Page SEO",
     icon: "Search",
-    description: "Architecting search engine crawlability, schema structured data, indexation rules, and performance audits for international reach.",
+    description: "Architecting crawlable search infrastructure, valid JSON-LD schema, and AI-assisted On-Page SEO written in an authentic, natural human tone meeting all on-page parameters (title tags, meta descriptions, semantic H1-H6 hierarchies, keyword mapping, internal linking, and image alt attributes).",
     skills: [
       { name: "Technical SEO Implementation", slug: "technical-seo", level: "Advanced", primary: true },
+      { name: "AI-Powered On-Page SEO (Natural Human Tone)", slug: "on-page-seo", level: "Advanced", primary: true },
       { name: "Schema Markup & JSON-LD", slug: "schema-markup", level: "Advanced", primary: true },
+      { name: "On-Page SEO Parameters (Meta, H1-H6, URLs, Alt)", slug: "on-page-seo", level: "Advanced", primary: false },
       { name: "XML Sitemaps & Robots.txt Directives", slug: "technical-seo", level: "Advanced", primary: false },
       { name: "301 Redirect Architecture & Migrations", slug: "technical-seo", level: "Advanced", primary: false },
-      { name: "On-Page SEO & Content Optimization", slug: "technical-seo", level: "Advanced", primary: false },
       { name: "International SEO (US & Middle East)", slug: "technical-seo", level: "Advanced", primary: false }
     ]
   },
@@ -691,13 +692,14 @@ export const skillDetails = {
     category: "Search Engine Optimization",
     badge: "Search Specialist",
     h1: "Technical SEO Audits, Search Architecture & 20+ Production Optimizations",
-    summary: "Comprehensive technical SEO: crawlability, XML sitemaps, robots.txt, canonical tag strategy, 301 redirect migrations, and international ranking optimizations.",
-    description: "Technical SEO is a core pillar of my engineering approach. Having executed search engine optimizations across 20+ client websites at Integral Web Solution—successfully targeting competitive search markets in the United States and Middle East countries—I build websites that search engines can effortlessly crawl, parse, and index. I eliminate crawl budget waste, prevent duplicate content through canonicalization, and structure site hierarchy for high organic relevance.",
+    summary: "Comprehensive Technical & On-Page SEO: crawlability, XML sitemaps, robots.txt, canonical tag strategy, 301 redirect migrations, schema structured data, and international ranking optimizations across 20+ live client websites.",
+    description: "Technical SEO is a core pillar of my engineering approach. Having executed search engine optimizations across 20+ client websites at Integral Web Solution—successfully targeting competitive search markets in the United States and Middle East countries—I build websites that search engines can effortlessly crawl, parse, and index. Working closely with AI-assisted On-Page content workflows, I eliminate crawl budget waste, prevent duplicate content through canonicalization, and structure site hierarchy for high organic relevance and top Google rankings.",
     howIUse: [
       "Performing comprehensive technical SEO audits inspecting indexation, status codes, and crawl traps.",
       "Structuring dynamic XML sitemaps with accurate `<lastmod>` timestamps and clean robots.txt directives.",
       "Implementing 301 redirect maps during website redesigns to protect existing rankings and organic backlinks.",
-      "Optimizing on-page headings, semantic metadata, Open Graph cards, and image alt text for targeted keywords."
+      "Optimizing on-page headings (H1-H6), semantic metadata, Open Graph cards, and image alt text for targeted keywords.",
+      "Pairing technical architecture with AI-assisted On-Page content written in an authentic, natural human tone."
     ],
     implementationConcepts: [
       "Canonical URL architecture preventing duplicate content across protocols, query strings, and subdomains",
@@ -874,6 +876,111 @@ export const skillDetails = {
       title: "AI & LLM API Integration Developer | Soham Aeer Portfolio",
       description: "Discover Soham Aeer's AI integration capabilities: Groq Cloud, Llama 3.1 inference, prompt engineering, and intelligent web application features.",
       keywords: ["AI API integration", "Groq Llama 3.1 developer", "LLM web integration", "AI developer India", "prompt engineering developer"]
+    }
+  },
+
+  "on-page-seo": {
+    slug: "on-page-seo",
+    name: "AI-Powered On-Page SEO & Content Architecture",
+    category: "Search Engine Optimization",
+    badge: "Content & On-Page Specialist",
+    h1: "AI-Assisted On-Page SEO with Authentic, Natural Human-Tone Content",
+    summary: "Engineering end-to-end On-Page SEO using advanced AI tooling to research and draft engaging, human-sounding content that strictly satisfies every on-page ranking parameter without robotic phrasing or keyword stuffing.",
+    description: "Search engines reward content that delivers genuine, human-first value. I specialize in leveraging modern AI tools as creative amplifiers to research, outline, and craft comprehensive on-page copy written in a warm, conversational, and professional human tone. Every piece of content is rigorously refined to fulfill all critical on-page ranking parameters—including CTR-optimized meta titles, descriptive meta descriptions, semantic H1 through H6 hierarchies, natural keyword integration, contextual internal linking, descriptive image alt text, and mobile-friendly typography—ensuring both top search rankings and exceptional user engagement.",
+    howIUse: [
+      "Utilizing AI workflows to research user search intent and outline comprehensive, audience-centric page structures.",
+      "Refining AI outputs with meticulous human editing to eliminate repetitive filler, robotic jargon, and unnatural sentence patterns.",
+      "Crafting compelling meta titles (under 60 chars) and meta descriptions (under 160 chars) that drive high organic CTR.",
+      "Structuring strict semantic document hierarchies with a single <h1> and logically nested <h2>-<h4> heading tags.",
+      "Optimizing on-page keyword density and semantic LSI terms naturally within headings, introductory paragraphs, and body copy.",
+      "Implementing context-rich internal linking strategies that distribute PageRank and keep visitors engaged.",
+      "Writing descriptive, keyword-relevant alt attributes for every image to maximize Google Images and screen-reader accessibility."
+    ],
+    implementationConcepts: [
+      "Human-in-the-loop AI content engineering: ensuring natural readability, conversational cadence, and zero AI artifacts",
+      "Comprehensive on-page checklist: Title tag, Meta description, H1-H6 semantic nesting, canonical URL, Open Graph cards",
+      "Semantic keyword mapping and search intent alignment (informational, transactional, commercial, navigational)",
+      "Internal anchor text optimization passing contextual topical authority across service and product silos",
+      "Readability and engagement signals: short paragraphs, bulleted lists, highlight callouts, and clear CTAs",
+      "Media optimization: descriptive WebP/AVIF file naming, explicit dimensions, and contextual alt tags"
+    ],
+    relatedTech: ["Technical SEO", "Schema Markup", "Next.js", "React Helmet", "Google Search Console"],
+    relatedProjects: ["shreeji-sales-corporation", "mahadev-plastic", "kavya-fragrances"],
+    businessValue: "AI-assisted on-page SEO creates organic landing pages that rank for high-intent search terms while reading like they were handcrafted by an industry expert, dramatically boosting dwell time, organic leads, and brand trust.",
+    faqs: [
+      {
+        question: "How do you ensure AI-generated SEO content sounds human and natural?",
+        answer: "I treat AI tools as first-draft research engines, not final publishers. Every draft undergoes human editorial refinement—stripping away clichéd transitional phrases ('delve into', 'in conclusion', 'testament to'), rebalancing sentence rhythms, inserting real-world industry terminology, and ensuring the tone matches the exact persona of the target audience."
+      },
+      {
+        question: "What core on-page parameters do you optimize on every page?",
+        answer: "Every page is optimized across: 1) Unique meta title (50-60 characters with primary keyword and brand), 2) Compelling meta description (140-155 characters with CTA), 3) Single semantic H1 tag matching the user's primary search intent, 4) Hierarchical H2-H4 tags containing secondary keywords, 5) Clean, lowercase, hyphenated URL slugs, 6) Descriptive image alt text, 7) Contextual internal and external links, and 8) Valid Open Graph social metadata."
+      },
+      {
+        question: "How does On-Page SEO work together with Technical SEO?",
+        answer: "Technical SEO ensures that search engine crawlers can efficiently crawl, render, and index your pages with fast Core Web Vitals, valid schema, and clean sitemaps. On-Page SEO ensures that once Google indexes the page, its content, relevance, and human readability satisfy search intent and rank at the top of SERPs."
+      },
+      {
+        question: "Does Google penalize AI-assisted content?",
+        answer: "Google's official Search guidelines explicitly state that they reward high-quality content regardless of how it is produced, as long as it demonstrates E-E-A-T (Experience, Expertise, Authoritativeness, and Trustworthiness) and is created for people rather than search engine manipulation. My human-refined approach aligns 100% with Google's helpful content guidelines."
+      }
+    ],
+    seo: {
+      title: "AI-Powered On-Page SEO Specialist | Natural Human-Tone Content | Soham Aeer",
+      description: "Learn how Soham Aeer implements AI-assisted On-Page SEO with authentic, natural human-tone copy, semantic H1-H6 structures, meta optimization, and complete on-page parameters.",
+      keywords: ["On-Page SEO specialist", "AI SEO content human tone", "on-page parameters optimization", "semantic heading hierarchy SEO", "meta title description optimization", "SEO developer India"]
+    }
+  },
+
+  "dns-management": {
+    slug: "dns-management",
+    name: "Domain DNS Records & Name Server Management",
+    category: "DevOps & Infrastructure",
+    badge: "DNS & Domain Admin",
+    h1: "Domain DNS Records, Cloudflare & Enterprise Mail Server Administration",
+    summary: "Expert configuration of domain DNS records (A, AAAA, CNAME, MX, TXT, SPF, DKIM, DMARC), Cloudflare proxy management, and business email routing with zero downtime.",
+    description: "Reliable DNS configuration is the bedrock of production web deployment and corporate communications. I manage domain name records across leading registrars and Cloudflare DNS, configuring root and subdomain routing (`A`, `CNAME`) to VPS IP addresses, implementing reverse proxies, automating SSL certificate verification via ACME/Certbot DNS-01 challenges, and orchestrating enterprise business email setups (Google Workspace, Microsoft 365, cPanel webmail) with robust `MX`, `SPF`, `DKIM`, and `DMARC` authentication for maximum email deliverability and spoofing prevention.",
+    howIUse: [
+      "Configuring A and AAAA records pointing apex domains and subdomains to VPS server IPv4/IPv6 addresses.",
+      "Setting up CNAME aliases for www redirects, staging environments, and CDN endpoints.",
+      "Configuring MX records for Google Workspace, Microsoft 365, and Zoho Mail with zero email downtime during migrations.",
+      "Authoring SPF (Sender Policy Framework) and DKIM (DomainKeys Identified Mail) TXT records to prevent email spoofing.",
+      "Deploying DMARC policies (`p=none`, `p=quarantine`, `p=reject`) to ensure inbox deliverability for business communications.",
+      "Configuring Cloudflare DNS, proxying (Orange Cloud vs. Gray Cloud), page rules, and SSL/TLS encryption modes.",
+      "Handling DNS propagation timing with calibrated TTL (Time to Live) values before server and hosting migrations."
+    ],
+    implementationConcepts: [
+      "DNS Record Types: A (IPv4), AAAA (IPv6), CNAME (Canonical Name), MX (Mail Exchange), TXT (Text verification)",
+      "Email Authentication: SPF records (`v=spf1 include:_spf.google.com ~all`), DKIM 2048-bit keys, DMARC alignment",
+      "Cloudflare DNS Management: Edge SSL, DNSSEC, origin certificates, and bypass for direct SSH/FTP ports",
+      "Apex vs. Subdomain routing: CNAME flattening, ALIAS / ANAME records at the zone apex",
+      "TTL (Time to Live) tuning: Lowering TTL to 300s prior to migrations, increasing to standard 3600s/86400s post-launch"
+    ],
+    relatedTech: ["Contabo VPS", "Ubuntu Server", "Nginx", "Apache", "SSL / Let's Encrypt", "Google Workspace"],
+    relatedProjects: ["mahadev-plastic", "shreeji-sales-corporation", "erpnext-vps-deployment"],
+    businessValue: "Flawless DNS management ensures 100% web domain availability, protects brand authority from email spoofing, and guarantees business-critical email communications never miss a message during infrastructure updates.",
+    faqs: [
+      {
+        question: "How do you migrate business email to Google Workspace without dropping emails?",
+        answer: "I first provision all user mailboxes and aliases in Google Workspace, lower the MX record TTL to 300 seconds 24 hours prior to the switch, update the MX records with Google's priority servers (`1 ASPMX.L.GOOGLE.COM`, etc.), verify SPF and DKIM TXT records, and synchronize historical email archives via Google Workspace Data Migration Service."
+      },
+      {
+        question: "What is the difference between an A Record and a CNAME record?",
+        answer: "An A record directly maps a domain or subdomain name to a numerical IPv4 address (e.g. pointing `api.domain.com` to `161.97.100.25`). A CNAME (Canonical Name) record aliases one domain name to another domain name (e.g. pointing `www.domain.com` to `domain.com`)."
+      },
+      {
+        question: "Why are SPF and DKIM records essential for custom domain email?",
+        answer: "Without SPF and DKIM, receiving mail servers (such as Gmail, Yahoo, and Outlook) cannot verify that outgoing emails actually originated from your authorized mail server. In 2024, Google and Yahoo enforce strict SPF/DKIM authentication; emails lacking these records are rejected or marked as spam."
+      },
+      {
+        question: "How do you manage DNS on Cloudflare without breaking SSH or non-HTTP ports?",
+        answer: "Cloudflare's HTTP proxy (Orange Cloud) only handles standard web traffic (ports 80, 443). For SSH access or direct VPS management, I create an unproxied DNS record (Gray Cloud, DNS-only, e.g., `ssh.domain.com` or direct VPS IP) so administrative connections bypass Cloudflare's HTTP proxy."
+      }
+    ],
+    seo: {
+      title: "Domain DNS Records & Cloudflare Specialist | Soham Aeer Portfolio",
+      description: "Learn how Soham Aeer manages domain DNS records (A, CNAME, MX, TXT, SPF, DKIM), Cloudflare DNS proxying, and enterprise email routing with zero downtime.",
+      keywords: ["Domain DNS management", "Cloudflare DNS specialist", "MX records Google Workspace", "SPF DKIM TXT setup", "DNS administrator India", "VPS DNS routing"]
     }
   }
 };

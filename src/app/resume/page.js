@@ -98,8 +98,8 @@ export default function ResumePage() {
             <h3 className="resume-section-title">Professional Summary</h3>
             <p className="resume-body-text">
               Full Stack Developer with hands-on experience building and deploying production web applications using 
-              <strong> React.js, Next.js, Node.js, and Express.js</strong>. Experienced in <strong>VPS deployment, Apache/Nginx, Reverse Proxy, SSL, PM2, domain and DNS management</strong>, and business email administration. Skilled in implementing 
-              <strong> Technical SEO</strong>, including schema markup, XML sitemaps, metadata optimization, and search-focused website improvements. Experienced in integrating 
+              <strong> React.js, Next.js, Node.js, and Express.js</strong>. Experienced in <strong>VPS deployment (Contabo), Apache/Nginx reverse proxies, SSL, PM2, domain DNS records management (A, CNAME, MX, TXT, Cloudflare)</strong>, and business email administration. Skilled in implementing 
+              <strong> Technical SEO</strong> (JSON-LD schema markup, XML sitemaps, canonicals) and <strong>AI-assisted On-Page SEO</strong> (crafting authentic, natural human-tone content satisfying all on-page parameters including H1-H6 semantic hierarchies, meta titles, descriptions, and image alt tags). Experienced in integrating 
               <strong> AI/LLM APIs</strong> (Groq Llama 3.1) and third-party services to build functional, scalable web solutions. Strong exposure to client projects, production troubleshooting, and end-to-end web application deployment.
             </p>
           </section>
@@ -114,7 +114,7 @@ export default function ResumePage() {
               </div>
               <div className="resume-skill-row">
                 <span className="resume-skill-cat">Frontend:</span>
-                <span className="resume-skill-items">React.js, Next.js, Responsive Web Design, React Helmet</span>
+                <span className="resume-skill-items">React.js, Next.js (App Router), Responsive Web Design, React Helmet</span>
               </div>
               <div className="resume-skill-row">
                 <span className="resume-skill-cat">Backend:</span>
@@ -122,15 +122,15 @@ export default function ResumePage() {
               </div>
               <div className="resume-skill-row">
                 <span className="resume-skill-cat">Databases:</span>
-                <span className="resume-skill-items">MySQL, MongoDB, Firestore</span>
+                <span className="resume-skill-items">MySQL, MariaDB, MongoDB, Firestore</span>
               </div>
               <div className="resume-skill-row">
                 <span className="resume-skill-cat">DevOps &amp; Infra:</span>
-                <span className="resume-skill-items">Apache, Nginx, VPS Hosting, Reverse Proxy, SSH, Ubuntu Linux, PM2</span>
+                <span className="resume-skill-items">Contabo VPS, Ubuntu Linux, Apache Virtual Hosts, Nginx Reverse Proxy, Domain DNS Management (A, CNAME, MX, TXT, SPF, DKIM, Cloudflare), SSL / Let&apos;s Encrypt, PM2, SSH</span>
               </div>
               <div className="resume-skill-row">
-                <span className="resume-skill-cat">Technical SEO:</span>
-                <span className="resume-skill-items">Technical SEO, Schema Markup, XML Sitemap, Robots.txt, Keyword Research, Content Optimization, ON Page SEO, Backlink Strategy</span>
+                <span className="resume-skill-cat">Technical &amp; On-Page SEO:</span>
+                <span className="resume-skill-items">Technical SEO, AI-Powered On-Page SEO (Natural Human Tone), All On-Page Parameters (Title Tags, Meta Descriptions, H1-H6 Semantic Hierarchy, Clean URLs, Image Alt Text, Internal Linking), Schema Markup (JSON-LD), XML Sitemaps, Robots.txt, Keyword Intent Mapping, 20+ Sites Optimized</span>
               </div>
               <div className="resume-skill-row">
                 <span className="resume-skill-cat">AI / Gen AI:</span>

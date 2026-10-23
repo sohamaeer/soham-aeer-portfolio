@@ -78,7 +78,7 @@ export default function HomePage() {
                 At <strong>Integral Web Solution</strong> in Mumbai, I engineer scalable client platforms, custom portals, and modern e-commerce stores with sub-second responsiveness and clean component architecture.
               </p>
               <p style={{ color: "var(--text-muted)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "24px" }}>
-                As powerful force multipliers, I manage self-hosted <strong>Contabo Linux VPS servers</strong> (Apache Virtual Hosts, Nginx reverse proxy, Let&apos;s Encrypt SSL, PM2), execute <strong>Technical SEO</strong> across 20+ websites targeting US and Middle East search regions, and integrate modern <strong>AI/LLM APIs</strong> (Groq Cloud Llama 3.1).
+                As powerful force multipliers, I manage self-hosted <strong>Contabo Linux VPS servers</strong> (domain DNS records management, Apache Virtual Hosts, Nginx reverse proxy, Let&apos;s Encrypt SSL, PM2), execute <strong>Technical &amp; AI-assisted On-Page SEO</strong> (natural human tone, all on-page parameters) across 20+ websites targeting US and Middle East search regions, and integrate modern <strong>AI/LLM APIs</strong> (Groq Cloud Llama 3.1).
               </p>
 
               <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
@@ -86,7 +86,7 @@ export default function HomePage() {
                   Read Full Developer Bio ↗
                 </Link>
                 <Link href="/experience" className="btn btn-secondary">
-                  View Experience Timeline
+                  View Professional Experience
                 </Link>
                 <Link href="/skills" className="btn btn-outline">
                   Browse Skills Directory

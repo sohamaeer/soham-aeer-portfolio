@@ -28,18 +28,19 @@ export const experienceData = [
         ]
       },
       {
-        category: "Technical SEO & International Search Rankings",
+        category: "Technical & AI-Assisted On-Page SEO",
         items: [
-          "Executed Technical SEO optimizations across 20+ client websites, including keyword research, metadata optimization, and backlink strategies.",
-          "Contributed to ranking websites in competitive international search regions, including US and Middle East countries.",
-          "Implemented comprehensive on-page SEO: React Helmet, dynamic JSON-LD schema markup, XML sitemaps, and Open Graph previews.",
+          "Executed Technical and On-Page SEO optimizations across 20+ client websites, targeting competitive international search regions (US & Middle East).",
+          "Leveraged AI tools to research and craft natural, human-tone content that strictly adheres to all on-page SEO parameters without robotic phrasing or keyword stuffing.",
+          "Implemented comprehensive on-page parameters: unique meta titles, CTR meta descriptions, H1-H6 semantic hierarchies, contextual internal linking, and descriptive image alt tags.",
+          "Engineered dynamic JSON-LD schema markup, XML sitemaps, canonical URL structures, and Open Graph previews.",
           "Mapped and deployed 50+ legacy 301 permanent redirects during major website redesigns to eliminate 404 drops and protect search equity."
         ]
       },
       {
-        category: "Domain, DNS & Business Email Administration",
+        category: "Domain DNS Records & Business Email Administration",
         items: [
-          "Managed domain and DNS records (A, CNAME, MX, TXT, SPF, DKIM, DMARC) across domain registrars and web servers.",
+          "Managed domain and DNS records (A, CNAME, MX, TXT, SPF, DKIM, DMARC) across domain registrars and Cloudflare with zero web or email downtime.",
           "Administered Google Workspace and Microsoft 365 business email environments, provisioning user accounts and configuring Gmail client routing.",
           "Successfully migrated legacy webmail mailboxes to newly provisioned Google Workspace accounts with zero data loss or communication downtime."
         ]

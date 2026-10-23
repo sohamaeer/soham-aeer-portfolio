@@ -22,17 +22,17 @@ export const navLinks = [
           { name: "Node.js Services", href: "/skills/node-js", desc: "Backend runtime & microservices" },
           { name: "Express.js REST APIs", href: "/skills/express-js", desc: "Routing, middleware & validation" },
           { name: "Contabo Linux VPS", href: "/skills/vps-deployment", desc: "Ubuntu server management & SSH" },
-          { name: "Nginx Reverse Proxy", href: "/skills/nginx-configuration", desc: "Virtual hosts & Let's Encrypt SSL" },
-          { name: "PM2 Process Cluster", href: "/skills/pm2-process-management", desc: "Zero-downtime 24/7 uptime daemons" }
+          { name: "Domain DNS Records", href: "/skills/dns-management", desc: "A, CNAME, MX, TXT & Cloudflare" },
+          { name: "Nginx Reverse Proxy", href: "/skills/nginx-configuration", desc: "Virtual hosts & Let's Encrypt SSL" }
         ]
       },
       {
         title: "Growth & Specialized",
         items: [
-          { name: "Technical SEO (20+ Sites)", href: "/skills/technical-seo", desc: "JSON-LD schema & 301 redirect maps" },
+          { name: "Technical SEO (20+ Sites)", href: "/skills/technical-seo", desc: "Crawlability, JSON-LD schema & 301 maps" },
+          { name: "AI-Powered On-Page SEO", href: "/skills/on-page-seo", desc: "Human tone, natural flow & all on-page parameters" },
           { name: "Shopify Headless", href: "/skills/shopify-headless-commerce", desc: "Storefront API, GraphQL & OAuth PKCE" },
-          { name: "AI & Groq Integration", href: "/skills/ai-api-integration", desc: "Meta Llama 3.1 sub-second inference" },
-          { name: "ERPNext v15 Deployments", href: "/skills/erpnext-deployment", desc: "Frappe bench, MariaDB & Redis" }
+          { name: "AI & Groq Integration", href: "/skills/ai-api-integration", desc: "Meta Llama 3.1 sub-second inference" }
         ]
       }
     ],
@@ -41,8 +41,9 @@ export const navLinks = [
       { name: "React.js Architecture", href: "/skills/react-js", desc: "Component architecture & custom hooks" },
       { name: "Next.js App Router", href: "/skills/next-js", desc: "Server Components & dynamic SSR" },
       { name: "Node.js & Express.js", href: "/skills/node-js", desc: "Backend runtime & REST APIs" },
+      { name: "Domain DNS Management", href: "/skills/dns-management", desc: "A, CNAME, MX, TXT records & Cloudflare" },
       { name: "Linux VPS Deployment", href: "/skills/vps-deployment", desc: "Ubuntu, Apache & Nginx" },
-      { name: "Technical SEO Audits", href: "/skills/technical-seo", desc: "JSON-LD across 20+ websites" },
+      { name: "Technical & On-Page SEO", href: "/skills/technical-seo", desc: "AI-assisted natural tone & 20+ websites" },
       { name: "Shopify Headless", href: "/skills/shopify-headless-commerce", desc: "Storefront API & GraphQL" },
       { name: "AI & Groq API", href: "/skills/ai-api-integration", desc: "Llama 3.1 inference engine" }
     ]

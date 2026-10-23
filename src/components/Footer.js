@@ -43,7 +43,7 @@ export default function Footer() {
               </svg>
             </Link>
             <p className="footer-brand-desc">
-              Full Stack Developer specializing in production-grade React.js, Next.js, and Node.js web applications, backed by Linux VPS infrastructure deployment, Technical SEO across 20+ websites, and high-performance AI API integrations.
+              Full Stack Developer specializing in production-grade React.js, Next.js, and Node.js web applications, backed by Linux VPS &amp; domain DNS administration, Technical &amp; AI-assisted On-Page SEO across 20+ websites, and high-performance AI API integrations.
             </p>
             <div className="status-pill" style={{ width: "fit-content" }}>
               <span className="status-dot"></span>

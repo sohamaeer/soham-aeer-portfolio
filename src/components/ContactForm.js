@@ -206,8 +206,8 @@ export default function ContactForm() {
               className="form-select"
             >
               <option value="Full-Stack Project">Full-Stack Web Development</option>
-              <option value="DevOps & VPS Deployment">DevOps, VPS & Server Setup</option>
-              <option value="Technical SEO Audit">Technical SEO & Architecture</option>
+              <option value="DevOps & VPS Deployment">DevOps, VPS & Domain DNS Setup</option>
+              <option value="Technical & On-Page SEO">Technical & On-Page SEO (AI-Assisted)</option>
               <option value="Shopify Headless Commerce">Headless E-Commerce / Shopify</option>
               <option value="AI / LLM API Integration">AI & LLM API Integration</option>
               <option value="Full-Time / Contract Hiring">Full-Time / Contract Role</option>

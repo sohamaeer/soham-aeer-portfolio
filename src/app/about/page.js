@@ -65,7 +65,7 @@ export default function AboutPage() {
               </p>
 
               <p>
-                What sets my engineering approach apart is that I do not stop at local development. I have hands-on experience provisioning self-hosted <strong>Contabo Linux VPS servers</strong>, configuring Apache Virtual Hosts and Nginx reverse proxies, managing background PM2 daemons, and executing Technical SEO across 20+ production websites in US and Middle East markets.
+                What sets my engineering approach apart is that I do not stop at local development. I have hands-on experience provisioning self-hosted <strong>Contabo Linux VPS servers</strong>, managing domain DNS records (A, CNAME, MX, TXT, Cloudflare), configuring Apache Virtual Hosts and Nginx reverse proxies, managing background PM2 daemons, and executing <strong>Technical &amp; AI-assisted On-Page SEO</strong> across 20+ production websites targeting US and Middle East search markets.
               </p>
 
               <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", marginTop: "12px" }}>
@@ -114,10 +114,10 @@ export default function AboutPage() {
                   <polyline points="4 17 10 11 4 5"></polyline>
                   <line x1="12" y1="19" x2="20" y2="19"></line>
                 </svg>
-                2. DevOps &amp; VPS Autonomy
+                2. DevOps, VPS &amp; DNS Management
               </h3>
               <p className="about-pillar-desc">
-                I don&apos;t depend on external DevOps engineers to launch my code. I provision self-hosted Linux VPS environments (Ubuntu), set up Apache Virtual Hosts and Nginx reverse proxies, configure PM2 process daemons, and manage Let&apos;s Encrypt SSL certificates independently.
+                I don&apos;t depend on external DevOps engineers to launch my code. I provision self-hosted Linux VPS environments (Ubuntu), configure domain DNS records (A, CNAME, MX, TXT, Cloudflare), set up Apache Virtual Hosts and Nginx reverse proxies, configure PM2 process daemons, and manage Let&apos;s Encrypt SSL certificates independently.
               </p>
             </div>
 
@@ -127,10 +127,10 @@ export default function AboutPage() {
                   <circle cx="11" cy="11" r="8"></circle>
                   <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                 </svg>
-                3. Technical SEO &amp; Organic Reach
+                3. Technical &amp; AI-Powered On-Page SEO
               </h3>
               <p className="about-pillar-desc">
-                Having optimized 20+ websites for international search markets (US &amp; Middle East), I build search crawlability, JSON-LD schemas, and 301 redirect maps directly into application code.
+                Having optimized 20+ websites for international search markets (US &amp; Middle East), I architect search crawlability, JSON-LD schemas, and 301 redirect maps. Additionally, I utilize AI tools to generate high-intent on-page content calibrated in a natural, human tone that strictly satisfies every on-page SEO parameter.
               </p>
             </div>
 
