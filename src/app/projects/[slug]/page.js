@@ -266,7 +266,7 @@ export default function ProjectCaseStudyPage({ params }) {
                   <li key={op.slug} className="widget-link-item">
                     <Link href={`/projects/${op.slug}`}>
                       <span>{op.shortName || op.name}</span>
-                      <span>↗</span>
+                      <span className="widget-link-arrow">↗</span>
                     </Link>
                   </li>
                 ))}

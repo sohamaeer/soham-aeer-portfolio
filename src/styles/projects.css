@@ -213,3 +213,83 @@
   color: var(--text-secondary);
   background-color: var(--bg-surface);
 }
+
+/* --- Case Study Sidebar Widgets --- */
+.skill-sidebar,
+.case-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.sidebar-widget {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 24px;
+  box-shadow: var(--shadow-card);
+  transition: all var(--transition-fast);
+}
+
+.sidebar-widget:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-medium);
+}
+
+.widget-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--border-subtle);
+  letter-spacing: -0.01em;
+}
+
+.widget-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.widget-link-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.widget-link-item a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.widget-link-item a:hover {
+  background-color: var(--bg-surface-muted);
+  color: var(--primary);
+  border-color: var(--primary);
+  transform: translateX(3px);
+}
+
+.widget-link-arrow {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: transform var(--transition-fast);
+}
+
+.widget-link-item a:hover .widget-link-arrow {
+  transform: translate(2px, -2px);
+}
