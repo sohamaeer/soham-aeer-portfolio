@@ -11,13 +11,43 @@ export default function Footer() {
         <div className="footer-top">
           {/* Brand & Bio Column */}
           <div className="footer-brand">
-            <h3 className="footer-brand-title">{personalInfo.name}</h3>
+            <Link href="/" aria-label="Soham Aeer Home" style={{ display: "inline-block", marginBottom: "4px" }}>
+              <svg viewBox="0 0 240 44" width="220" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="ftr-logo-left" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#1E40AF" />
+                    <stop offset="100%" stopColor="#1D4ED8" />
+                  </linearGradient>
+                  <linearGradient id="ftr-logo-right" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#0284C7" />
+                    <stop offset="100%" stopColor="#0369A1" />
+                  </linearGradient>
+                  <linearGradient id="ftr-logo-top" x1="0%" y1="100%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#38BDF8" />
+                    <stop offset="100%" stopColor="#60A5FA" />
+                  </linearGradient>
+                </defs>
+                <g transform="translate(2, 2)">
+                  <polygon points="20,2 38,12 20,22 2,12" fill="url(#ftr-logo-top)" />
+                  <polygon points="2,12 20,22 20,38 2,28" fill="url(#ftr-logo-left)" />
+                  <polygon points="20,22 38,12 38,28 20,38" fill="url(#ftr-logo-right)" />
+                  <polyline points="10,18 20,24 20,32" stroke="#FFFFFF" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+                  <polyline points="30,18 20,12 10,18" stroke="#0F172A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" opacity="0.6" />
+                  <circle cx="20" cy="22" r="3" fill="#FFFFFF" />
+                </g>
+                <g transform="translate(54, 8)">
+                  <text x="0" y="18" fill="#FFFFFF" fontFamily="'Plus Jakarta Sans', system-ui, sans-serif" fontSize="18" fontWeight="800" letterSpacing="0.04em">SOHAM AEER</text>
+                  <circle cx="132" cy="13" r="3" fill="#38BDF8" />
+                  <text x="0" y="31" fill="#38BDF8" fontFamily="'Plus Jakarta Sans', system-ui, sans-serif" fontSize="9.5" fontWeight="700" letterSpacing="0.14em">FULL STACK DEVELOPER</text>
+                </g>
+              </svg>
+            </Link>
             <p className="footer-brand-desc">
-              {personalInfo.headline}
+              Full Stack Developer specializing in production-grade React.js, Next.js, and Node.js web applications, backed by Linux VPS infrastructure deployment, Technical SEO across 20+ websites, and high-performance AI API integrations.
             </p>
             <div className="status-pill" style={{ width: "fit-content" }}>
               <span className="status-dot"></span>
-              <span>Available for Full-Time Roles & Contracts</span>
+              <span>Available for Full-Time Roles &amp; Contracts</span>
             </div>
 
             <div className="footer-contact-list" style={{ marginTop: "8px" }}>

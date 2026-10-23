@@ -5,17 +5,46 @@ export const navLinks = [
     label: "Skills",
     href: "/skills",
     hasDropdown: true,
+    isMegaMenu: true,
+    megaMenuColumns: [
+      {
+        title: "Full-Stack Frontend",
+        items: [
+          { name: "React.js Architecture", href: "/skills/react-js", desc: "Component architecture & state hooks" },
+          { name: "Next.js App Router", href: "/skills/next-js", desc: "Server Components & dynamic SSR" },
+          { name: "JavaScript (ES6+)", href: "/skills/javascript", desc: "Async patterns, closures & DOM API" },
+          { name: "CSS3 & Modern Styling", href: "/skills/css3", desc: "Zero-bloat responsive design" }
+        ]
+      },
+      {
+        title: "Backend & Infrastructure",
+        items: [
+          { name: "Node.js Services", href: "/skills/node-js", desc: "Backend runtime & microservices" },
+          { name: "Express.js REST APIs", href: "/skills/express-js", desc: "Routing, middleware & validation" },
+          { name: "Contabo Linux VPS", href: "/skills/vps-deployment", desc: "Ubuntu server management & SSH" },
+          { name: "Nginx Reverse Proxy", href: "/skills/nginx-configuration", desc: "Virtual hosts & Let's Encrypt SSL" },
+          { name: "PM2 Process Cluster", href: "/skills/pm2-process-management", desc: "Zero-downtime 24/7 uptime daemons" }
+        ]
+      },
+      {
+        title: "Growth & Specialized",
+        items: [
+          { name: "Technical SEO (20+ Sites)", href: "/skills/technical-seo", desc: "JSON-LD schema & 301 redirect maps" },
+          { name: "Shopify Headless", href: "/skills/shopify-headless-commerce", desc: "Storefront API, GraphQL & OAuth PKCE" },
+          { name: "AI & Groq Integration", href: "/skills/ai-api-integration", desc: "Meta Llama 3.1 sub-second inference" },
+          { name: "ERPNext v15 Deployments", href: "/skills/erpnext-deployment", desc: "Frappe bench, MariaDB & Redis" }
+        ]
+      }
+    ],
     dropdownItems: [
       { name: "All Skills Hub", href: "/skills", desc: "Complete categorized directory" },
-      { name: "JavaScript (ES6+)", href: "/skills/javascript", desc: "Core language & async patterns" },
-      { name: "React.js", href: "/skills/react-js", desc: "Component architecture & custom hooks" },
-      { name: "Next.js", href: "/skills/next-js", desc: "App Router & Server Components" },
-      { name: "Node.js", href: "/skills/node-js", desc: "Backend runtime & services" },
-      { name: "Express.js", href: "/skills/express-js", desc: "REST APIs & middleware" },
-      { name: "VPS Deployment", href: "/skills/vps-deployment", desc: "Linux servers, PM2 & reverse proxies" },
-      { name: "Technical SEO", href: "/skills/technical-seo", desc: "Audits, schema & rankings across 20+ sites" },
-      { name: "Shopify Headless", href: "/skills/shopify-headless-commerce", desc: "Storefront API, GraphQL & OAuth PKCE" },
-      { name: "AI API Integration", href: "/skills/ai-api-integration", desc: "Groq Cloud & Llama 3.1" }
+      { name: "React.js Architecture", href: "/skills/react-js", desc: "Component architecture & custom hooks" },
+      { name: "Next.js App Router", href: "/skills/next-js", desc: "Server Components & dynamic SSR" },
+      { name: "Node.js & Express.js", href: "/skills/node-js", desc: "Backend runtime & REST APIs" },
+      { name: "Linux VPS Deployment", href: "/skills/vps-deployment", desc: "Ubuntu, Apache & Nginx" },
+      { name: "Technical SEO Audits", href: "/skills/technical-seo", desc: "JSON-LD across 20+ websites" },
+      { name: "Shopify Headless", href: "/skills/shopify-headless-commerce", desc: "Storefront API & GraphQL" },
+      { name: "AI & Groq API", href: "/skills/ai-api-integration", desc: "Llama 3.1 inference engine" }
     ]
   },
   {

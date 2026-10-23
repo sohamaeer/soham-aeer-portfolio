@@ -148,6 +148,56 @@ export default function Header() {
                 const isActive = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href));
 
                 if (item.hasDropdown) {
+                  if (item.isMegaMenu) {
+                    return (
+                      <div key={item.label} className="nav-item-dropdown nav-item-mega">
+                        <Link
+                          href={item.href}
+                          className={`nav-link ${isActive ? "active" : ""}`}
+                          aria-haspopup="true"
+                        >
+                          {item.label}
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                          </svg>
+                        </Link>
+
+                        <div className="dropdown-menu mega-menu" role="menu">
+                          <div className="mega-menu-grid">
+                            {item.megaMenuColumns.map((col, idx) => (
+                              <div key={idx} className="mega-menu-col">
+                                <span className="mega-col-heading">{col.title}</span>
+                                {col.items.map((subItem) => (
+                                  <Link
+                                    key={subItem.href}
+                                    href={subItem.href}
+                                    className="mega-item-link"
+                                    role="menuitem"
+                                  >
+                                    <span className="mega-item-title">
+                                      {subItem.name}
+                                      <span className="mega-item-arrow">↗</span>
+                                    </span>
+                                    <span className="mega-item-desc">{subItem.desc}</span>
+                                  </Link>
+                                ))}
+                              </div>
+                            ))}
+                          </div>
+
+                          <div className="mega-menu-footer">
+                            <span style={{ fontSize: "0.82rem", color: "var(--text-muted)" }}>
+                              Looking for complete proficiency verification?
+                            </span>
+                            <Link href="/skills" className="mega-footer-link">
+                              Explore All 16 Verified Technical Skills &amp; FAQs ↗
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  }
+
                   return (
                     <div key={item.label} className="nav-item-dropdown">
                       <Link
