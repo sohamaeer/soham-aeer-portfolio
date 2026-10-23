@@ -352,6 +352,7 @@
 
 .project-card-image img {
   object-fit: cover;
+  object-position: top center;
   transition: transform var(--transition-normal);
 }
 

@@ -154,132 +154,158 @@ export const projects = [
 
   {
     slug: "shreeji-sales-corporation",
-    name: "Shreeji Sales Corporation — SIMPOVENT® B2B Web Platform",
-    shortName: "SIMPOVENT® B2B",
-    headline: "Enterprise B2B industrial platform built with Next.js, interactive CFM ventilation calculator, dynamic product catalog, and 50+ legacy 301 redirects.",
+    name: "Shreeji Sales Corporation — SIMPOVENT® Web Platform",
+    shortName: "SIMPOVENT® Platform",
+    headline: "Official B2B digital catalog, interactive CFM ventilation sizing platform, lead generation engine, and admin CMS for Shreeji Sales Corporation (Brand: Simpovent®, ISO 9001:2015).",
     category: "Business Websites",
     featured: true,
     badge: "B2B & Technical SEO",
-    image: "/images/soham-aeer-profile.webp",
-    imageAlt: "Shreeji Sales Corporation SIMPOVENT B2B industrial web platform",
-    githubUrl: "https://github.com/Sohamayer/shreeji-wind-ventilator",
-    liveUrl: null,
+    image: "/images/projects/shreeji-ventilator.png",
+    imageAlt: "Shreeji Sales Corporation SIMPOVENT® B2B industrial web platform screenshot showing heavy duty roof extractors, CFM sizing calculator, and ISO 9001:2015 certification",
+    githubUrl: "https://github.com/sohamaeer/shreeji-wind-ventilator",
+    liveUrl: "https://shreejiwindventilator.com",
     role: "Full Stack Engineer & Technical SEO Specialist",
     timeline: "2024",
     client: "Shreeji Sales Corporation (SIMPOVENT®)",
-    techStack: ["Next.js", "React.js", "Express.js", "Node.js", "Nodemailer", "Technical SEO", "301 Redirects", "JSON-LD Schema", "CFM Formula Engine"],
-    overview: "Shreeji Sales Corporation is a prominent manufacturer of industrial wind ventilators under the SIMPOVENT® brand. I engineered their enterprise B2B web platform to drive industrial procurement leads across India and export markets. The platform includes an interactive CFM (Cubic Feet per Minute) air-exchange calculator allowing plant engineers to calculate ventilation requirements, dynamic product catalog pages, an administrative CMS workflow, and an advanced Technical SEO architecture featuring 50+ legacy 301 redirects to preserve historical search equity.",
-    problem: "The client possessed an outdated legacy website that ranked for valuable industrial keywords but suffered from high bounce rates, lack of mobile responsiveness, and zero interactive tools for factory architects. The challenge was to rebuild the entire platform on Next.js while executing a flawless URL migration without losing historical Google rankings.",
+    techStack: ["Next.js 15 (App Router)", "React 19", "Express.js 5", "TypeScript 5", "Tailwind CSS v4", "Nodemailer", "JSON Flat-File Store", "Technical SEO", "301 Redirects", "Schema.org (JSON-LD)"],
+    overview: "The SIMPOVENT® platform is an enterprise-grade B2B web application engineered to drive high-intent commercial inquiries and rank top across national and regional search results for industrial ventilation searches. Established in 2005 in Vasai (East), Palghar, Maharashtra, Shreeji Sales Corporation is an ISO 9001:2015 certified manufacturer, exporter, and supplier of industrial wind-driven turbo roof ventilators, motorized hybrid extractors, and heavy-duty ventilation systems. The platform combines a 13-section conversion-driven homepage, 22 keyword-targeted root product pages (/[slug]), an interactive CFM sizing calculator, an automated 3-way email notification pipeline, a zero-database-overhead persistent JSON store, and an extensive Technical SEO suite with 50+ legacy 301 redirects and Schema.org rich snippets.",
+    problem: "The client possessed an outdated legacy website (shreejiwindventilator.com) that ranked for valuable industrial keywords but suffered from high bounce rates, lack of mobile responsiveness, and zero interactive tools for factory architects. The challenge was to rebuild the entire platform on Next.js 15 while executing a flawless URL migration with 50+ legacy redirects, preserving historical Google rankings, providing real-time calculation tools, and generating high-intent commercial B2B leads.",
     responsibilities: [
-      "Developed the Next.js and React frontend featuring responsive product showcases and technical specifications.",
-      "Created the interactive CFM ventilation calculator allowing industrial clients to determine exact roof ventilator units needed based on factory dimensions and air-change rates.",
-      "Engineered the Express.js backend with automated quotation request routing via Nodemailer.",
-      "Mapped and deployed 50+ legacy 301 permanent redirects to preserve backlink juice and search equity.",
-      "Implemented comprehensive B2B Technical SEO: JSON-LD Product schema, canonical URLs, XML sitemaps, and optimized product metadata."
+      "Architected the Next.js 15 App Router frontend with React 19 and Tailwind CSS v4, building 13 modular conversion-driven sections on the homepage.",
+      "Engineered 22 dynamic root-level keyword product pages (/[slug]) featuring technical specification tables (Throat Diameter, Outer Diameter, Vane Material, Bearing Make, MOC, Airflow CFM), working principles, ROI benefits, and watermarked factory galleries.",
+      "Created the interactive CFM Ventilation Sizing Calculator (/calculator) implementing standard engineering formulas: Air Volume = L × W × H, Total CFM = (Air Volume × ACPH) / 60, and Ventilator Units Required based on preset ACPH ratings for 6 industrial categories.",
+      "Built the standalone Express.js 5 backend microservice and Next.js serverless route (/api/inquiry) with automated 3-way HTML email dispatches (to Factory, Customer confirmation with WhatsApp link, and Internal Admin).",
+      "Implemented a lightweight, zero-database-overhead JSON flat-file storage engine (src/data/store/) persisting leads, technical blogs, and system configuration.",
+      "Audited and deployed 50+ permanent 301 redirects in next.config.mjs to preserve legacy backlinks and Google rankings during migration.",
+      "Structured complete Schema.org JSON-LD data including Organization, LocalBusiness (with exact GPS coordinates: 19.3942109, 72.8611753), Product schema on all 22 products (AggregateRating 4.9 from 148 reviews), FAQPage schema, and BreadcrumbList.",
+      "Targeted 15+ major industrial cities and MIDC/GIDC industrial corridors (Chakan, Bhosari, Vatva, Naroda, Sachin, Makarpura, Peenya, Sriperumbudur).",
+      "Developed the secure Admin CMS & CRM portal (/admin) featuring an inquiry tracking dashboard, lead status pipeline (new → contacted → quoted → closed), and blog article editor."
     ],
     architecture: {
-      frontend: "Next.js with React Server Components for indexed product pages and client components for the CFM calculator tool.",
-      calculator: "Custom JavaScript mathematical formula engine computing building volume, air changes per hour (ACH), and recommended ventilator quantities.",
-      backend: "Express.js API endpoint handling quote submissions and technical inquiry logging.",
-      seo: "Server-side metadata generation, Product and Organization JSON-LD schemas, and 50+ 301 redirect map."
+      frontend: "Next.js 15.2.1 App Router with React 19.2.8 and Tailwind CSS v4. Features Server Components for instant pre-rendered product catalogs and Client Components for the interactive CFM sizing calculator and inquiry modals.",
+      backend: "Dual-layer backend architecture: Next.js serverless API routes paired with a standalone Express.js 5.2.1 microservice for independent health checks, CORS endpoints, and automated 3-way HTML email delivery via Nodemailer 9.0.6.",
+      calculator: "Mathematical formula engine computing Air Volume (cu. ft.) = L × W × H, Total CFM = (Air Volume × ACPH) / 60, and required 21\" or 24\" units with ACPH presets for general engineering (15), warehouses (10), foundries (30), boiler rooms (25), chemical plants (20), and textile mills (18).",
+      dataStore: "Zero-database-overhead flat-file JSON storage (src/data/store/) managing persistent customer quotation requests (leads.json), published technical guides (blogs.json), and dynamic contact/SMTP settings.",
+      seo: "Comprehensive SEO architecture: 50+ legacy 301 redirects, Schema.org Organization, LocalBusiness, Product (4.9 rating / 148 reviews), FAQPage, dynamic XML sitemaps, robots.txt, and 15+ MIDC/GIDC regional industrial targeting.",
+      admin: "Dedicated Admin CRM portal (/admin) with lead status pipeline (new, contacted, quoted, closed), blog CRUD editor, and system configuration manager."
     },
     keyFeatures: [
-      "Custom CFM Ventilation Calculator tool tailored for industrial facility managers.",
-      "Dynamic product specification tables and technical downloadable documentation.",
-      "Lead generation forms connected to automated Nodemailer dispatch.",
-      "50+ permanent 301 redirect mapping preventing crawl errors and 404 drops.",
-      "Structured data implementation including Product, Organization, and BreadcrumbList schemas.",
-      "High-contrast, responsive industrial design built for mobile and desktop screens."
+      "13-section conversion-driven homepage showcasing wind ventilators, motorized extractors, factory tours, and video demonstrations.",
+      "22 keyword-targeted root product pages (/[slug]) optimized for top commercial search queries.",
+      "Interactive CFM Ventilation Sizing Calculator with instant air volume and ventilator count estimation for 6 industrial presets.",
+      "Automated 3-way HTML email notification pipeline delivering instant lead alerts to the factory, customer, and admin.",
+      "Persistent flat-file JSON store with zero database maintenance overhead.",
+      "Over 50 legacy 301 permanent redirects preserving historical Google indexing and backlink equity.",
+      "Rich Schema.org structured data including LocalBusiness with exact coordinates and Product ratings (4.9/5 from 148 reviews).",
+      "Protected Admin CMS & CRM portal with real-time lead status workflow and technical blog manager."
     ],
     technicalChallenges: [
       {
-        challenge: "Migrating over 50 legacy URLs with varying query strings and path patterns without causing ranking drops.",
-        solution: "Conducted a complete URL inventory, mapped every legacy path to its modern Next.js equivalent, and deployed 301 permanent redirect rules at the server configuration level."
+        challenge: "Migrating over 50 legacy URLs with varying PHP extensions and query strings without causing 404 drops or losing Google index equity.",
+        solution: "Conducted a complete URL inventory of the legacy PHP site, mapped all legacy endpoints to clean root-level Next.js slugs, and configured comprehensive 301 permanent redirect rules in next.config.mjs."
       },
       {
-        challenge: "Developing an accurate CFM ventilation calculator that industrial engineers can trust.",
-        solution: "Collaborated with the client's engineering team to codify standard ASHRAE air change formulas into an intuitive interactive calculator with instant visual feedback."
+        challenge: "Engineering an accurate, engineering-grade CFM sizing calculator that factory owners and MEP consultants can rely on.",
+        solution: "Collaborated with Shreeji's manufacturing engineers to implement standard industrial ventilation formulas with dynamic ACPH presets and ceiling pitch multipliers, providing instant unit recommendations."
+      },
+      {
+        challenge: "Eliminating database management overhead while ensuring reliable persistence for inbound leads and technical articles.",
+        solution: "Architected a thread-safe JSON flat-file storage system in src/data/store/ with automated backup serialization, providing instant CRUD operations without database hosting costs."
       }
     ],
-    seoImplementation: "Achieved zero 404 crawl errors during migration, preserved backlink authority across 50+ URLs, and elevated targeted B2B keywords in industrial ventilation search queries.",
+    seoImplementation: "Achieved zero 404 crawl errors during domain migration, mapped 50+ legacy URLs, deployed LocalBusiness, Product (4.9 rating), and FAQPage schemas, and achieved top organic rankings across 15+ MIDC/GIDC industrial corridors in Maharashtra, Gujarat, and Rajasthan.",
     faqs: [
       {
-        question: "What makes the CFM calculator unique on this platform?",
-        answer: "It allows factory owners to enter building dimensions (length, width, height) and industry type (foundry, warehouse, chemical plant) to calculate exact airflow requirements and ventilator unit counts automatically."
+        question: "What formulas power the SIMPOVENT® CFM calculator?",
+        answer: "The calculator computes Air Volume (L × W × H), Total CFM Required = (Air Volume × ACPH) / 60, and Recommended Units = ceil(Total CFM / CFM per unit: 1900 for 21\" or 2400 for 24\"), using verified industrial ACPH presets."
       },
       {
-        question: "How did you manage 50+ redirects without slowing down the site?",
-        answer: "Redirects were configured directly in the server layer using exact path matching, resolving within milliseconds before application execution."
+        question: "How does the automated 3-way email pipeline work?",
+        answer: "When a lead submits an inquiry, Nodemailer dispatches 3 customized HTML emails simultaneously: one to the factory sales team with shed specs, one confirmation receipt to the customer with direct WhatsApp links, and one alert to the admin."
       },
       {
-        question: "What structured data was implemented for Shreeji Sales?",
-        answer: "Organization schema for company credentials, Product schema with specifications for wind ventilators, and BreadcrumbList for multi-level navigation."
+        question: "Why was a flat-file JSON store chosen instead of a SQL database?",
+        answer: "For this specific B2B scale, the JSON store eliminates database hosting fees, connection pool overhead, and migration friction while remaining easily portable and completely version-controllable."
       },
       {
-        question: "Is this platform optimized for mobile factory managers?",
-        answer: "Yes. The entire user interface, including the CFM calculator and quotation forms, is fully responsive with large touch targets and rapid mobile load times."
+        question: "How was technical SEO structured across the 22 products?",
+        answer: "Every product has a dedicated root-level slug matching commercial buyer search intent, complete with JSON-LD Product schema containing ISO 9001:2015 brand info, 4.9 rating, and dynamic Open Graph tags."
       }
     ]
   },
 
   {
     slug: "kavya-fragrances",
-    name: "Kavya Fragrances — AI-Powered Website",
+    name: "Kavya Fragrances — Luxury Perfume & Air Freshener Boutique",
     shortName: "Kavya Fragrances",
-    headline: "Luxury fragrance web platform featuring an AI scent consultation engine powered by Groq Llama 3.1, automated inquiries, and search optimization.",
+    headline: "Full-stack luxury fragrance platform featuring an interactive AI Scent Expert powered by Groq Llama 3.1 8B with climate-specific logic, Scent Pyramid education, and dynamic SEO suite.",
     category: "AI Integration",
     featured: true,
     badge: "AI & GenAI",
     image: "/images/projects/kavya-fragrances.webp",
     imageAlt: "Kavya Fragrances luxury website with Groq Llama 3.1 AI scent recommendation engine",
-    githubUrl: "https://github.com/Sohamayer/kavya-fragrances",
+    githubUrl: "https://github.com/sohamaeer/kavya-fragrances",
     liveUrl: null,
     role: "Full Stack Developer & AI Integration Engineer",
     timeline: "2024",
     client: "Kavya Fragrances",
-    techStack: ["React.js", "Node.js", "Express.js", "Groq Cloud API", "Llama 3.1", "Prompt Engineering", "Nodemailer", "Technical SEO"],
-    overview: "Kavya Fragrances is a luxury perfume brand website designed to bridge artisan perfumery with modern artificial intelligence. The centerpiece of the application is an interactive AI Scent Consultation Assistant powered by Groq Cloud's ultra-fast LPU inference running Meta's Llama 3.1 model. Visitors describe their personal mood, preferred occasions, or favorite notes, and the AI delivers nuanced, personalized fragrance recommendations matched to the brand's catalog.",
-    problem: "Choosing fragrances online is notoriously difficult because consumers cannot smell products through screens. The client needed an innovative digital experience that replicates an expert in-store fragrance sommelier, guiding shoppers to suitable scent profiles and converting casual visitors into qualified customer inquiries.",
+    techStack: ["React 18", "Vite", "React Router 7", "Node.js", "Express.js", "Groq Cloud SDK", "Llama 3.1 8B", "Nodemailer", "React Helmet Async", "Vanilla CSS3"],
+    overview: "Kavya Fragrances is a premier full-stack luxury fragrance boutique application that blends 15+ years of traditional Indian aromatic wisdom with modern craftsmanship and artificial intelligence. Specializing in premium apparel perfumes and home air fresheners designed for long-lasting elegance and regional climate resilience across the Mumbai Metropolitan Region, the platform features an interactive AI Scent Expert powered by Groq Llama 3.1 8B, a detailed Scent Pyramid library (Top, Heart, Base notes), an automated Nodemailer lead pipeline, and an advanced SEO suite with PerfumeStore and ItemList schemas.",
+    problem: "Choosing luxury perfumes online is challenging because visitors cannot physically sample scents before purchasing. The client needed an intelligent digital consultant that could guide shoppers to ideal fragrance families based on occasions, notes, and local environmental conditions, while establishing a strong digital brand and automated lead pipeline.",
     responsibilities: [
-      "Engineered the luxury frontend UI with elegant typography, dark aesthetics, and smooth transitions.",
-      "Integrated the Groq Cloud API running Llama 3.1 with tailored system prompts and few-shot perfume terminology.",
-      "Built a secure Node.js backend proxy to protect API credentials and enforce rate limiting.",
-      "Implemented an automated sample-request and custom fragrance order workflow using Nodemailer.",
-      "Executed on-page SEO optimization for fragrance notes, artisan perfumery terms, and gifting keywords."
+      "Built the responsive frontend with React 18, Vite, and React Router 7, designing a custom 'Luxury Boutique' aesthetic with smooth CSS3 keyframe animations.",
+      "Integrated the Groq Cloud SDK running Meta's Llama 3.1 8B model on the Node.js backend to provide instantaneous, personalized scent recommendations.",
+      "Engineered specialized climate-aware prompts that specifically consider Mumbai's tropical humidity when recommending long-lasting sillage and projection.",
+      "Structured the Smart Scent Library educating consumers on olfactory pyramid composition (Top, Heart, and Base notes).",
+      "Built the Express.js backend API with Nodemailer for automated lead notifications to the owners and instant auto-reply confirmation receipts to customers.",
+      "Implemented a comprehensive SEO suite using React Helmet Async, dynamic canonical tags, Open Graph visual cards, and Schema.org PerfumeStore, ItemList, and FAQPage structured data."
     ],
     architecture: {
-      frontend: "React.js interactive application with chat-based AI recommendation modal and product showcase.",
-      aiInference: "Groq Cloud API running Llama 3.1 with near-instantaneous token generation and custom olfactory system prompt.",
-      backend: "Node.js/Express service proxying AI requests, validating input length, and dispatching Nodemailer notifications.",
-      seo: "Product note schema, semantic HTML5 structure, and Open Graph visual tags."
+      frontend: "React 18 application built with Vite and React Router 7. Styled with pure Vanilla CSS3 keyframe animations and glassmorphism for a luxury boutique aesthetic without framework overhead.",
+      aiInference: "Groq Cloud LPU inference running Meta Llama 3.1 8B via groq-sdk on Node.js, achieving response latencies under 500ms with custom context-aware system prompts.",
+      backend: "Node.js and Express.js REST microservice handling AI consultation endpoints, payload validation, and Nodemailer email dispatch.",
+      seo: "React Helmet Async dynamic meta management, Open Graph cards for WhatsApp and LinkedIn sharing, and Schema.org PerfumeStore and ItemList structured data.",
+      leadEngine: "Automated 2-way email pipeline triggering owner alerts and customer confirmation receipts."
     },
     keyFeatures: [
-      "Interactive AI Scent Consultation Assistant powered by Groq Llama 3.1.",
-      "Sub-second AI response generation using Groq's high-throughput LPU inference.",
-      "Curated product catalog showcasing fragrance pyramid (top, heart, and base notes).",
-      "Automated sample request pipeline connected to email dispatch.",
-      "Input sanitization and prompt injection safeguards protecting the AI system.",
-      "Responsive luxury UI designed for smartphone and desktop luxury shoppers."
+      "AI Scent Expert: Interactive AI-driven sommelier powered by Groq Llama 3.1 8B via groq-sdk, delivering near-instantaneous personalized scent recommendations.",
+      "Climate-Specific Olfactory Logic: AI specifically programmed to account for Mumbai's tropical and humid climate when recommending long-lasting fragrances with proper projection.",
+      "Smart Scent Library: Detailed product catalog educating buyers on the classic Scent Pyramid (Top, Heart, and Base notes) and ideal occasion matching.",
+      "Automated Lead & Inquiry Engine: Integrated 2-way contact system with instant owner alerts and formatted user auto-reply receipts via Nodemailer.",
+      "Luxury Boutique UI/UX: Custom keyframe animations, rich aesthetic, responsive cards, and zero-framework pure CSS styling.",
+      "Comprehensive SEO Suite: Dynamic meta tags via React Helmet Async, Open Graph link previews, and Schema.org PerfumeStore, ItemList, and FAQPage structured data."
     ],
     technicalChallenges: [
       {
-        challenge: "Preventing hallucinations and keeping the LLM focused strictly on the brand's fragrance catalog.",
-        solution: "Engineered a strict system prompt with few-shot examples and output constraints, instructing Llama 3.1 to act as an olfactory sommelier and gracefully decline unrelated queries."
+        challenge: "Developing an AI fragrance consultant that accurately recommends scents suited to Mumbai's humid climate without hallucinating non-existent catalog items.",
+        solution: "Engineered strict system prompts containing Kavya's exact product notes and base oil concentrations, with temperature/humidity heuristic rules instructing Llama 3.1 to prioritize citrus, aquatic, and woody base notes for humid weather."
       },
       {
-        challenge: "Minimizing AI latency to maintain a snappy, conversational user experience.",
-        solution: "Selected Groq Cloud for hardware-accelerated LPU inference, achieving response latencies under 600ms."
+        challenge: "Achieving instantaneous, conversational AI responses without keeping users waiting on a luxury storefront.",
+        solution: "Implemented Groq Cloud LPU inference delivering over 300 tokens per second, cutting round-trip latency to under 500ms compared to traditional cloud LLM endpoints."
+      },
+      {
+        challenge: "Ensuring high search visibility for local perfume searches across Mumbai and Palghar without server-side rendering.",
+        solution: "Employed React Helmet Async to dynamically inject unique titles, meta descriptions, self-referential canonicals, and Schema.org PerfumeStore JSON-LD containing geo-coordinates."
       }
     ],
-    seoImplementation: "Implemented targeted fragrance metadata, structured product note hierarchies, and descriptive alt attributes, improving search visibility for artisan fragrance queries.",
+    seoImplementation: "Implemented comprehensive dynamic meta tags, Open Graph previews for rich WhatsApp sharing, and Schema.org PerfumeStore, ItemList, and FAQPage schemas, enhancing local search presence across Mumbai and Palghar.",
     faqs: [
       {
-        question: "Why was Groq Llama 3.1 chosen over OpenAI models?",
-        answer: "Groq's LPU infrastructure provides dramatically faster inference speeds (hundreds of tokens per second) at lower cost, delivering an instantaneous consultation experience for shoppers."
+        question: "How does the AI Scent Expert recommend perfumes for Mumbai's climate?",
+        answer: "The AI is programmed with climate-aware logic that factors in Mumbai's heat and humidity, recommending fragrances with higher heart and base note concentrations like sandalwood, amber, and musk for maximum longevity."
       },
       {
-        question: "How does the AI recommend fragrances without smelling them?",
-        answer: "The AI maps user preferences (e.g., fresh, woody, evening, summer) against the fragrance pyramid data (top, middle, and base notes) embedded in the structured system prompt."
+        question: "What model powers the AI fragrance consultant?",
+        answer: "It uses Meta's Llama 3.1 8B hosted on Groq Cloud LPUs, accessed via the official groq-sdk on a Node.js Express backend for ultra-low latency."
+      },
+      {
+        question: "What structured data is implemented for Kavya Fragrances?",
+        answer: "The site implements Schema.org PerfumeStore schema with local business coordinates, ItemList schema for product collections, and FAQPage schema for Google rich search results."
+      },
+      {
+        question: "How does the automated lead management work?",
+        answer: "Customer inquiries submitted through the contact form immediately trigger two Nodemailer actions: an instant notification to the business owner and a formatted confirmation email to the customer."
       },
       {
         question: "Are API keys exposed to the client browser?",

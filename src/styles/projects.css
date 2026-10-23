@@ -117,6 +117,7 @@
 
 .case-feature-image img {
   object-fit: cover;
+  object-position: top center;
 }
 
 /* Case Study Content Grid */
