@@ -1,21 +1,22 @@
 /* ==========================================================================
-   SKILLS HUB & SKILL DETAIL PAGE STYLES
+   SKILLS HUB & DETAIL PAGE STYLES - CORPORATE STYLE
    ========================================================================== */
 
 /* --- Skills Hub --- */
 .skills-hub-grid {
   display: flex;
   flex-direction: column;
-  gap: 28px;
-  margin-top: 36px;
+  gap: 24px;
+  margin-top: 28px;
 }
 
 .skill-category-card {
   background-color: var(--bg-surface);
   border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
-  padding: 32px;
-  transition: all var(--transition-normal);
+  border-radius: var(--radius-sm);
+  padding: 24px 28px;
+  box-shadow: var(--shadow-card);
+  transition: all var(--transition-fast);
 }
 
 .skill-category-card:hover {
@@ -25,8 +26,8 @@
 .category-header {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-bottom: 24px;
+  gap: 6px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
@@ -40,17 +41,17 @@
 .category-title-group {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .category-title {
-  font-size: 1.35rem;
-  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 800;
   color: var(--text-primary);
 }
 
 .category-desc {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   color: var(--text-muted);
   max-width: 580px;
 }
@@ -58,7 +59,7 @@
 .skills-pills-wrap {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
 }
 
 .skill-nav-pill {
@@ -66,179 +67,150 @@
   align-items: center;
   gap: 8px;
   background-color: var(--bg-surface-elevated);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 10px 16px;
-  font-size: 0.92rem;
-  font-weight: 600;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  font-size: 0.88rem;
+  font-weight: 700;
   color: var(--text-secondary);
   transition: all var(--transition-fast);
   text-decoration: none;
 }
 
 .skill-nav-pill:hover {
-  background-color: var(--bg-surface-hover);
-  border-color: var(--accent-blue);
-  color: var(--text-primary);
-  transform: translateY(-2px);
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #FFFFFF;
 }
 
 .skill-nav-pill.primary-skill {
-  border-color: rgba(124, 58, 237, 0.35);
-  background: rgba(124, 58, 237, 0.05);
-}
-
-.skill-nav-pill.primary-skill:hover {
-  border-color: var(--accent-purple);
+  border-left: 3px solid var(--accent);
 }
 
 .pill-arrow {
   color: var(--text-muted);
-  font-size: 0.8rem;
-  transition: transform var(--transition-fast);
+  font-size: 0.75rem;
 }
 
 .skill-nav-pill:hover .pill-arrow {
-  transform: translateX(3px);
-  color: var(--accent-blue);
+  color: #FFFFFF;
 }
 
-/* --- Individual Skill Detail Page --- */
+/* --- Skill Detail Page --- */
 .skill-detail-hero {
-  padding: 40px 0 32px 0;
-  border-bottom: 1px solid var(--border-subtle);
-  margin-bottom: 48px;
+  padding: 36px 0 28px 0;
+  border-bottom: 2px solid var(--border-subtle);
+  margin-bottom: 36px;
 }
 
 .skill-title-meta {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 16px;
+  gap: 10px;
+  margin-bottom: 12px;
 }
 
 .skill-hero-h1 {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
   font-weight: 800;
   letter-spacing: -0.02em;
   color: var(--text-primary);
-  margin-bottom: 16px;
-  line-height: 1.2;
+  margin-bottom: 12px;
+  line-height: 1.25;
 }
 
 .skill-hero-summary {
-  font-size: 1.18rem;
+  font-size: 1.1rem;
   color: var(--text-secondary);
   line-height: 1.7;
-  max-width: 800px;
+  max-width: 820px;
 }
 
 .skill-content-layout {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 48px;
+  gap: 40px;
 }
 
 @media (min-width: 992px) {
   .skill-content-layout {
-    grid-template-columns: 2fr 1fr;
-    gap: 56px;
+    grid-template-columns: 2.3fr 1fr;
+    gap: 48px;
   }
 }
 
 .skill-main-body {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 36px;
 }
 
 .skill-section {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
 }
 
 .skill-section-title {
-  font-size: 1.35rem;
-  font-weight: 700;
+  font-size: 1.3rem;
+  font-weight: 800;
   color: var(--text-primary);
-  border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: 10px;
+  border-bottom: 2px solid var(--border-subtle);
+  padding-bottom: 8px;
 }
 
 .skill-prose {
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: var(--text-secondary);
-  line-height: 1.8;
-}
-
-.checklist {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.checklist-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  font-size: 0.98rem;
-  color: var(--text-secondary);
-  line-height: 1.6;
-}
-
-.checklist-bullet {
-  color: var(--accent-emerald);
-  flex-shrink: 0;
-  margin-top: 3px;
+  line-height: 1.75;
 }
 
 /* Sidebar in Skill Page */
 .skill-sidebar {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 24px;
 }
 
 .sidebar-widget {
   background-color: var(--bg-surface);
   border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
-  padding: 24px;
+  border-radius: var(--radius-sm);
+  padding: 20px;
+  box-shadow: var(--shadow-card);
 }
 
 .widget-title {
-  font-size: 1.05rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 800;
   color: var(--text-primary);
-  margin-bottom: 16px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--border-subtle);
 }
 
 .widget-links {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 
 .widget-link-item a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 12px;
+  padding: 8px 10px;
   border-radius: var(--radius-sm);
   background-color: var(--bg-surface-elevated);
-  font-size: 0.9rem;
-  font-weight: 500;
+  font-size: 0.88rem;
+  font-weight: 600;
   color: var(--text-secondary);
   transition: all var(--transition-fast);
 }
 
 .widget-link-item a:hover {
-  background-color: var(--bg-surface-hover);
-  color: var(--accent-blue);
-  transform: translateX(3px);
+  background-color: var(--bg-surface-muted);
+  color: var(--primary);
+  border-left: 2px solid var(--accent);
 }

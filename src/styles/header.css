@@ -1,41 +1,114 @@
 /* ==========================================================================
-   HEADER & NAVIGATION STYLES
+   HEADER & NAVIGATION - INDUSTRIAL / CORPORATE AESTHETIC
    ========================================================================== */
 
+/* --- Top Utility Bar (Direct Contact & Availability) --- */
+.top-header {
+  background-color: var(--bg-topbar);
+  color: #D1D5DB;
+  font-size: 0.8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: block;
+}
+
+.top-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.top-header-contacts {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.top-header-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.top-header-item svg {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.top-header-item a {
+  color: #F3F4F6;
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.top-header-item a:hover {
+  color: var(--accent);
+}
+
+.top-header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.top-header-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #34D399;
+  font-weight: 600;
+  font-size: 0.78rem;
+  background: rgba(5, 150, 105, 0.15);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(5, 150, 105, 0.3);
+}
+
+.top-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #34D399;
+}
+
+/* --- Main Navigation Header --- */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 100;
-  height: var(--header-height);
-  background-color: var(--bg-surface-glass);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border-subtle);
-  transition: all var(--transition-normal);
+  background-color: var(--bg-surface);
+  border-bottom: 2px solid var(--border-subtle);
+  box-shadow: var(--shadow-sm);
+  transition: background-color var(--transition-normal);
 }
 
-.header-container {
+.main-header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100%;
+  height: 78px;
 }
 
+/* Brand Identity */
 .brand-link {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   text-decoration: none;
 }
 
 .brand-avatar {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  border: 2px solid var(--accent-purple);
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--primary);
   overflow: hidden;
   position: relative;
   background-color: var(--bg-surface-elevated);
+  box-shadow: var(--shadow-sm);
 }
 
 .brand-avatar img {
@@ -48,21 +121,22 @@
 }
 
 .brand-name {
-  font-weight: 700;
-  font-size: 1.1rem;
+  font-weight: 800;
+  font-size: 1.25rem;
   color: var(--text-primary);
   line-height: 1.2;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
 
 .brand-role {
-  font-size: 0.75rem;
-  color: var(--accent-cyan);
-  font-weight: 500;
-  letter-spacing: 0.02em;
+  font-size: 0.78rem;
+  color: var(--accent-gold);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
-/* --- Desktop Navigation --- */
+/* Desktop Navigation */
 .desktop-nav {
   display: none;
 }
@@ -76,20 +150,31 @@
 }
 
 .nav-link {
-  padding: 8px 14px;
+  padding: 10px 14px;
   font-size: 0.92rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text-secondary);
   border-radius: var(--radius-sm);
   transition: all var(--transition-fast);
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
+  position: relative;
 }
 
 .nav-link:hover, .nav-link.active {
-  color: var(--text-primary);
-  background-color: var(--bg-surface-elevated);
+  color: var(--primary);
+  background-color: var(--bg-surface-muted);
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 14px;
+  right: 14px;
+  height: 2px;
+  background-color: var(--accent);
 }
 
 /* Dropdown Menu */
@@ -97,17 +182,11 @@
   position: relative;
 }
 
-.dropdown-trigger {
-  cursor: pointer;
-  background: none;
-  border: none;
-}
-
 .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 280px;
+  width: 300px;
   background-color: var(--bg-surface);
   border: 1px solid var(--border-medium);
   border-radius: var(--radius-md);
@@ -115,8 +194,8 @@
   box-shadow: var(--shadow-lg);
   opacity: 0;
   visibility: hidden;
-  transform: translateY(10px);
-  transition: all var(--transition-normal);
+  transform: translateY(8px);
+  transition: all var(--transition-fast);
   z-index: 110;
   display: flex;
   flex-direction: column;
@@ -127,7 +206,7 @@
 .nav-item-dropdown:focus-within .dropdown-menu {
   opacity: 1;
   visibility: visible;
-  transform: translateY(4px);
+  transform: translateY(2px);
 }
 
 .dropdown-item {
@@ -135,16 +214,18 @@
   padding: 8px 12px;
   border-radius: var(--radius-sm);
   transition: background-color var(--transition-fast);
+  border-left: 2px solid transparent;
 }
 
 .dropdown-item:hover {
-  background-color: var(--bg-surface-elevated);
+  background-color: var(--bg-surface-muted);
+  border-left-color: var(--accent);
 }
 
 .dropdown-item-title {
   display: block;
   font-size: 0.88rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-primary);
 }
 
@@ -155,7 +236,7 @@
   margin-top: 2px;
 }
 
-/* --- Header Actions --- */
+/* Header Actions */
 .header-actions {
   display: flex;
   align-items: center;
@@ -163,13 +244,13 @@
 }
 
 .theme-toggle-btn {
-  width: 40px;
-  height: 40px;
-  border-radius: var(--radius-md);
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--bg-surface-elevated);
+  background-color: var(--bg-surface-muted);
   border: 1px solid var(--border-subtle);
   color: var(--text-secondary);
   transition: all var(--transition-fast);
@@ -178,7 +259,7 @@
 .theme-toggle-btn:hover {
   color: var(--text-primary);
   border-color: var(--border-medium);
-  background-color: var(--bg-surface-hover);
+  background-color: var(--border-subtle);
 }
 
 .mobile-menu-btn {
@@ -187,8 +268,8 @@
   justify-content: center;
   width: 40px;
   height: 40px;
-  border-radius: var(--radius-md);
-  background-color: var(--bg-surface-elevated);
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-surface-muted);
   border: 1px solid var(--border-subtle);
   color: var(--text-primary);
 }
@@ -199,12 +280,12 @@
   }
 }
 
-/* --- Mobile Menu Drawer --- */
+/* Mobile Drawer */
 .mobile-nav-backdrop {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(2px);
   z-index: 150;
   opacity: 0;
   visibility: hidden;
@@ -255,7 +336,7 @@
 }
 
 .mobile-nav-item {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 600;
   padding: 10px 14px;
   border-radius: var(--radius-sm);
@@ -263,8 +344,8 @@
 }
 
 .mobile-nav-item:hover, .mobile-nav-item.active {
-  background-color: var(--bg-surface-elevated);
-  color: var(--text-primary);
+  background-color: var(--bg-surface-muted);
+  color: var(--primary);
 }
 
 .mobile-dropdown-section {
@@ -283,5 +364,5 @@
 }
 
 .mobile-dropdown-link:hover {
-  color: var(--text-primary);
+  color: var(--primary);
 }

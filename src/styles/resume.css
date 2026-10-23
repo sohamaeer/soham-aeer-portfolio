@@ -1,16 +1,18 @@
 /* ==========================================================================
-   RESUME PAGE STYLES
+   RESUME PAGE STYLES - CORPORATE STYLE
    ========================================================================== */
 
 .resume-header-bar {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
   background-color: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
-  padding: 24px 32px;
-  margin-bottom: 40px;
+  border: 1px solid var(--border-medium);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius-sm);
+  padding: 20px 28px;
+  margin-bottom: 32px;
+  box-shadow: var(--shadow-sm);
 }
 
 @media (min-width: 768px) {
@@ -23,70 +25,74 @@
 
 .resume-paper {
   background-color: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
-  padding: 40px 32px;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  padding: 36px 28px;
   box-shadow: var(--shadow-md);
-  max-width: 900px;
+  max-width: 920px;
   margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .resume-paper {
-    padding: 56px 48px;
+    padding: 48px 44px;
   }
 }
 
 .resume-sheet-header {
-  border-bottom: 2px solid var(--border-subtle);
-  padding-bottom: 28px;
-  margin-bottom: 32px;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .resume-name {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   font-weight: 800;
   letter-spacing: -0.02em;
   color: var(--text-primary);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .resume-headline {
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: var(--accent-cyan);
-  margin-bottom: 12px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+[data-theme="dark"] .resume-headline {
+  color: #60A5FA;
 }
 
 .resume-contact-inline {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
-  font-size: 0.88rem;
+  gap: 14px;
+  font-size: 0.85rem;
   color: var(--text-muted);
 }
 
 .resume-contact-inline a:hover {
-  color: var(--accent-blue);
+  color: var(--primary);
 }
 
 .resume-section {
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .resume-section-title {
-  font-size: 1.15rem;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--text-primary);
-  border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: 6px;
-  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border-medium);
+  padding-bottom: 4px;
+  margin-bottom: 14px;
 }
 
 .resume-body-text {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   color: var(--text-secondary);
   line-height: 1.7;
 }
@@ -94,14 +100,14 @@
 .resume-skills-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 12px;
+  gap: 10px;
 }
 
 .resume-skill-row {
   display: grid;
   grid-template-columns: 160px 1fr;
-  gap: 12px;
-  font-size: 0.92rem;
+  gap: 10px;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 576px) {
@@ -120,14 +126,14 @@
 }
 
 .resume-job {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .resume-job-header {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  margin-bottom: 8px;
+  gap: 2px;
+  margin-bottom: 6px;
 }
 
 @media (min-width: 768px) {
@@ -139,18 +145,22 @@
 }
 
 .resume-job-title {
-  font-size: 1.05rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 800;
   color: var(--text-primary);
 }
 
 .resume-job-company {
-  color: var(--accent-blue);
-  font-weight: 600;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+[data-theme="dark"] .resume-job-company {
+  color: #60A5FA;
 }
 
 .resume-job-date {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--text-muted);
   font-family: var(--font-mono);
 }
@@ -159,14 +169,14 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-top: 10px;
+  gap: 6px;
+  margin-top: 8px;
 }
 
 .resume-bullet-list li {
   position: relative;
-  padding-left: 18px;
-  font-size: 0.9rem;
+  padding-left: 16px;
+  font-size: 0.88rem;
   color: var(--text-secondary);
   line-height: 1.6;
 }
@@ -175,6 +185,6 @@
   content: "•";
   position: absolute;
   left: 0;
-  color: var(--accent-purple-light);
+  color: var(--primary);
   font-weight: bold;
 }

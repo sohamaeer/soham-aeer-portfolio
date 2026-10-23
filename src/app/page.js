@@ -21,34 +21,59 @@ export default function HomePage() {
   return (
     <>
       {/* ===================================================================
-          1. HERO SECTION
+          1. CORPORATE HERO BANNER
           =================================================================== */}
-      <section className="hero-section" aria-label="Introduction">
+      <section className="hero-section" aria-label="Professional Introduction">
         <div className="container">
           <div className="hero-grid">
             <div className="hero-content">
-              <div className="status-pill">
-                <span className="status-dot"></span>
-                <span>Full-Stack Engineer & DevOps Practitioner</span>
+              <div className="hero-badge">
+                ★ Full Stack Developer &bull; DevOps &bull; Technical SEO
               </div>
 
               <h1 className="hero-title">
-                Engineering <span className="hero-title-accent">Production Web Apps</span> & Resilient Cloud Infrastructure.
+                Engineering <span>Production Web Applications</span> &amp; Self-Hosted Linux Infrastructure.
               </h1>
 
               <p className="hero-bio">
-                I am <strong>{personalInfo.name}</strong>, a Full Stack Developer based in Virar, Maharashtra. 
-                I bridge modern frontend engineering in <strong>React & Next.js</strong> with scalable <strong>Node.js</strong> backends, 
-                hands-on <strong>Linux VPS server deployment</strong> (Apache/Nginx, PM2, SSL), <strong>Technical SEO</strong> across 20+ production websites, and real-time <strong>AI API integrations</strong>.
+                I am <strong>{personalInfo.name}</strong>, a Full Stack Developer at <strong>Integral Web Solution</strong>. 
+                I deliver complete web platforms from responsive <strong>React &amp; Next.js</strong> frontends with zero framework bloat 
+                to scalable <strong>Node.js</strong> backends, <strong>Contabo Linux VPS hosting</strong> (Apache, Nginx, PM2, SSL), 
+                <strong>Technical SEO</strong> across 20+ international websites, and high-speed <strong>AI API integrations</strong>.
               </p>
 
-              <div className="hero-actions">
-                <Link href="/projects" className="btn btn-primary btn-lg">
-                  View My Projects
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
+              {/* Concrete Capabilities Checkpoints */}
+              <div className="hero-checkpoints">
+                <div className="hero-checkpoint-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
+                  <span>Full-Stack Engineering: React.js, Next.js App Router, Node.js &amp; Express</span>
+                </div>
+                <div className="hero-checkpoint-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Linux VPS Hosting: Contabo VPS, Ubuntu, Apache Virtual Hosts, Nginx &amp; PM2</span>
+                </div>
+                <div className="hero-checkpoint-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Technical SEO: 20+ Websites Ranked in US &amp; Middle East Search Markets</span>
+                </div>
+                <div className="hero-checkpoint-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Modern Integrations: Headless Shopify, GraphQL, OAuth 2.0 PKCE &amp; Groq Llama 3.1</span>
+                </div>
+              </div>
+
+              {/* High-Impact Actions */}
+              <div className="hero-actions">
+                <Link href="/projects" className="btn btn-accent btn-lg">
+                  Explore Production Projects ↗
                 </Link>
 
                 <a
@@ -57,7 +82,7 @@ export default function HomePage() {
                   className="btn btn-secondary btn-lg"
                   aria-label="Download Soham Aeer's verified Resume (PDF)"
                 >
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                     <polyline points="7 10 12 15 17 10"></polyline>
                     <line x1="12" y1="15" x2="12" y2="3"></line>
@@ -65,50 +90,53 @@ export default function HomePage() {
                   Download Resume (PDF)
                 </a>
 
-                <Link href="/contact" className="btn btn-outline btn-lg">
-                  Contact Me
-                </Link>
-              </div>
-
-              <div className="hero-meta">
-                <div className="hero-meta-item">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12 6 12 12 14 14"></polyline>
-                  </svg>
-                  <span>Integral Web Solution (Full-Stack Dev)</span>
-                </div>
-                <div className="hero-meta-item">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                    <circle cx="12" cy="10" r="3"></circle>
-                  </svg>
-                  <span>{personalInfo.location}</span>
-                </div>
+                <a href={`tel:${personalInfo.phone}`} className="btn btn-outline btn-lg" style={{ borderColor: "rgba(255,255,255,0.3)", color: "#FFFFFF" }}>
+                  Call Direct: {personalInfo.phoneDisplay}
+                </a>
               </div>
             </div>
 
-            {/* Hero Visual Composition with Real Photograph & Technical Overlay */}
-            <div className="hero-visual">
-              <div className="hero-image-wrapper">
+            {/* Profile & Live Server Metrics Card */}
+            <div className="hero-profile-card">
+              <div className="hero-photo-wrap">
                 <Image
                   src={personalInfo.profileImage}
                   alt="Soham Aeer, Full Stack Developer and DevOps Engineer"
                   fill
-                  sizes="(max-width: 992px) 100vw, 450px"
+                  sizes="(max-width: 992px) 100vw, 420px"
                   priority
                 />
               </div>
 
-              <div className="hero-floating-card">
-                <div>
-                  <div className="floating-stat-value">20+ Sites</div>
-                  <div className="floating-stat-label">SEO Optimized (US & Middle East)</div>
+              <div className="hero-card-meta">
+                <div className="hero-card-name">{personalInfo.name}</div>
+                <div className="hero-card-role">Full Stack Developer &bull; Integral Web Solution</div>
+              </div>
+
+              <div className="hero-infra-box">
+                <div className="hero-infra-row">
+                  <span className="hero-infra-label">Active Role</span>
+                  <span className="hero-infra-val" style={{ color: "#F3F4F6" }}>Full Stack Developer</span>
                 </div>
-                <div style={{ height: "36px", width: "1px", background: "var(--border-subtle)" }} />
-                <div>
-                  <div className="floating-stat-value">Linux VPS</div>
-                  <div className="floating-stat-label">Apache / Nginx / PM2</div>
+                <div className="hero-infra-row">
+                  <span className="hero-infra-label">VPS Hosting</span>
+                  <span className="hero-infra-val">Contabo Ubuntu Linux</span>
+                </div>
+                <div className="hero-infra-row">
+                  <span className="hero-infra-label">Web Servers</span>
+                  <span className="hero-infra-val">Apache &amp; Nginx Reverse Proxy</span>
+                </div>
+                <div className="hero-infra-row">
+                  <span className="hero-infra-label">Process Daemons</span>
+                  <span className="hero-infra-val">PM2 Cluster Active</span>
+                </div>
+                <div className="hero-infra-row">
+                  <span className="hero-infra-label">SEO Track Record</span>
+                  <span className="hero-infra-val">20+ Sites (US &amp; Middle East)</span>
+                </div>
+                <div className="hero-infra-row">
+                  <span className="hero-infra-label">Availability</span>
+                  <span className="hero-infra-val">Full-Time &amp; High-Impact Roles</span>
                 </div>
               </div>
             </div>
@@ -117,34 +145,86 @@ export default function HomePage() {
       </section>
 
       {/* ===================================================================
-          2. METRICS & CORE IMPACT
+          2. CORPORATE STATS RIBBON
           =================================================================== */}
-      <section className="metrics-section" aria-label="Core Technical Metrics">
+      <section className="stats-ribbon" aria-label="Key Production Statistics">
         <div className="container">
-          <div className="metrics-grid">
-            {personalInfo.metrics.map((metric, i) => (
-              <div key={i} className="metric-card">
-                <div className="metric-value">{metric.value}</div>
-                <div className="metric-label">{metric.label}</div>
-              </div>
-            ))}
+          <div className="stats-grid">
+            <div className="stat-box">
+              <div className="stat-number">6+</div>
+              <div className="stat-text">Production Web Platforms Deployed</div>
+            </div>
+            <div className="stat-box">
+              <div className="stat-number">20+</div>
+              <div className="stat-text">Websites SEO-Optimized (US &amp; Middle East)</div>
+            </div>
+            <div className="stat-box">
+              <div className="stat-number">100%</div>
+              <div className="stat-text">Self-Hosted VPS &amp; Server Independence</div>
+            </div>
+            <div className="stat-box">
+              <div className="stat-number">99.9%</div>
+              <div className="stat-text">Focus on Production Uptime &amp; Reliability</div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* ===================================================================
-          3. SELECTED PROJECTS SHOWCASE
+          3. CORPORATE BRIEFING: ABOUT SOHAM AEER
+          =================================================================== */}
+      <section className="section-py" style={{ backgroundColor: "var(--bg-surface-elevated)" }} aria-labelledby="about-brief-title">
+        <div className="container">
+          <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "48px", alignItems: "center" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "40px", alignItems: "center" }}>
+              <div style={{ position: "relative", aspectRatio: "4/3", borderRadius: "var(--radius-md)", overflow: "hidden", border: "1px solid var(--border-medium)", boxShadow: "var(--shadow-md)" }}>
+                <Image
+                  src={personalInfo.workspaceImage}
+                  alt="Soham Aeer in development workspace"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 500px"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+
+              <div>
+                <span className="section-eyebrow">Professional Profile</span>
+                <h2 id="about-brief-title" className="section-title">
+                  Bridging Application Development with Infrastructure Management
+                </h2>
+                <p style={{ color: "var(--text-secondary)", fontSize: "1.02rem", lineHeight: "1.7", marginBottom: "16px" }}>
+                  Most web developers stop once the code runs on their local machine. At <strong>Integral Web Solution</strong>, my responsibilities extend across the entire production lifecycle: writing clean React and Next.js applications, building resilient Node.js backends, provisioning Contabo Linux VPS servers, setting up Apache and Nginx reverse proxies, automating Let&apos;s Encrypt SSL certificates, configuring domain DNS and business email systems, and resolving critical server errors.
+                </p>
+                <p style={{ color: "var(--text-muted)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "24px" }}>
+                  Holding a B.Sc. in Information Technology from Viva College (2022–2025) and verified certifications from CodeSignal and Microsoft Learn, I bring an engineering mindset focused on measurable business outcomes, speed, and reliability.
+                </p>
+
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
+                  <Link href="/about" className="btn btn-primary">
+                    Read Full Profile &amp; Workflow ↗
+                  </Link>
+                  <Link href="/experience" className="btn btn-secondary">
+                    View Integral Web Solution Timeline
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===================================================================
+          4. FEATURED PRODUCTION PROJECTS (CATALOG STYLE)
           =================================================================== */}
       <section className="section-py" aria-labelledby="featured-projects-title">
         <div className="container">
           <div className="section-header">
-            <span className="section-eyebrow">Proven Engineering</span>
+            <span className="section-eyebrow">Production Portfolio</span>
             <h2 id="featured-projects-title" className="section-title">
-              Selected Real-World Production Projects
+              Featured Web Applications &amp; Infrastructure Case Studies
             </h2>
             <p className="section-desc">
-              Every project below represents hands-on full-stack development, real technical problem-solving, 
-              and verified architectural decisions—from headless Shopify stores to enterprise B2B calculators.
+              Real projects engineered for production: verified source code repositories, actual live deployments, and documented technical problem-solving.
             </p>
           </div>
 
@@ -154,161 +234,107 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div style={{ textAlign: "center", marginTop: "48px" }}>
+          <div style={{ textAlign: "center", marginTop: "40px" }}>
             <Link href="/projects" className="btn btn-secondary btn-lg">
-              View All Production Projects & Case Studies (6) ↗
+              Explore All 6 Production Case Studies ↗
             </Link>
           </div>
         </div>
       </section>
 
       {/* ===================================================================
-          4. FULL-STACK & DEVOPS CAPABILITIES
+          5. "WHY CHOOSE SOHAM AEER" (Modeled after Nikam Scientific & Mahadev Plastic)
           =================================================================== */}
-      <section className="section-py" style={{ backgroundColor: "var(--bg-surface-elevated)" }} aria-labelledby="capabilities-title">
+      <section className="section-py" style={{ backgroundColor: "var(--bg-surface-elevated)" }} aria-labelledby="why-choose-title">
         <div className="container">
-          <div className="section-header">
-            <span className="section-eyebrow">End-to-End Delivery</span>
-            <h2 id="capabilities-title" className="section-title">
-              Beyond Frontend: Complete Web Lifecycle Capabilities
+          <div className="section-header section-header-center">
+            <span className="section-eyebrow">The Engineering Difference</span>
+            <h2 id="why-choose-title" className="section-title">
+              Why Companies &amp; Engineering Teams Hire Me
             </h2>
             <p className="section-desc">
-              Recruiters and companies choose me because I eliminate handoff friction between design, frontend, backend API, server deployment, and search engine discovery.
+              I eliminate the friction between frontend UI design, backend API engineering, self-hosted Linux server deployment, and search engine discovery.
             </p>
           </div>
 
-          <div className="capabilities-grid">
-            <div className="capability-card">
-              <div className="capability-icon-wrap">
+          <div className="why-grid">
+            <div className="why-card">
+              <div className="why-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                   <line x1="8" y1="21" x2="16" y2="21"></line>
                   <line x1="12" y1="17" x2="12" y2="21"></line>
                 </svg>
               </div>
-              <h3 className="capability-title">Next.js & React UI Architecture</h3>
-              <p className="capability-desc">
-                High-performance user interfaces using Next.js App Router, React Server Components, clean component hierarchies, custom hooks, and pure responsive CSS with zero framework bloat.
+              <h3 className="why-title">1. End-to-End Technical Ownership</h3>
+              <p className="why-desc">
+                From initial component architecture in Next.js to database modeling, Nodemailer email workflows, and production server setup, I take complete responsibility for delivering functioning systems.
               </p>
             </div>
 
-            <div className="capability-card">
-              <div className="capability-icon-wrap">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
-                </svg>
-              </div>
-              <h3 className="capability-title">Node.js & Express REST APIs</h3>
-              <p className="capability-desc">
-                Scalable server-side routing, automated transactional email workflows with Nodemailer, input sanitization, rate limiting, and secure authentication (OAuth 2.0 PKCE).
-              </p>
-            </div>
-
-            <div className="capability-card">
-              <div className="capability-icon-wrap">
+            <div className="why-card">
+              <div className="why-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <polyline points="4 17 10 11 4 5"></polyline>
                   <line x1="12" y1="19" x2="20" y2="19"></line>
                 </svg>
               </div>
-              <h3 className="capability-title">Linux VPS & Reverse Proxying</h3>
-              <p className="capability-desc">
-                Hands-on Contabo VPS provisioning on Ubuntu, Apache Virtual Hosts, Nginx reverse proxying, Let&apos;s Encrypt SSL automation, PM2 process daemons, and DNS administration.
+              <h3 className="why-title">2. Self-Hosted VPS Independence</h3>
+              <p className="why-desc">
+                Proven hands-on experience provisioning Contabo Linux VPS servers, configuring Apache Virtual Hosts, setting up Nginx reverse proxies, and maintaining 24/7 uptime via PM2 process daemons.
               </p>
             </div>
 
-            <div className="capability-card">
-              <div className="capability-icon-wrap">
+            <div className="why-card">
+              <div className="why-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <circle cx="11" cy="11" r="8"></circle>
                   <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                 </svg>
               </div>
-              <h3 className="capability-title">Technical SEO & Schema Markup</h3>
-              <p className="capability-desc">
-                Optimized 20+ production sites for international search markets (US & Middle East). Dynamic XML sitemaps, robots.txt, canonical tags, 50+ 301 redirects, and JSON-LD schemas.
+              <h3 className="why-title">3. Proven International SEO Results</h3>
+              <p className="why-desc">
+                Successfully contributed to ranking 20+ production websites in competitive search markets across the United States and Middle East countries via schema markup, XML sitemaps, and 301 redirects.
               </p>
             </div>
 
-            <div className="capability-card">
-              <div className="capability-icon-wrap">
+            <div className="why-card">
+              <div className="why-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
                   <line x1="3" y1="6" x2="21" y2="6"></line>
                   <path d="M16 10a4 4 0 0 1-8 0"></path>
                 </svg>
               </div>
-              <h3 className="capability-title">Shopify Headless & GraphQL</h3>
-              <p className="capability-desc">
-                Decoupled modern e-commerce stores using Shopify Storefront API over GraphQL, localized GST calculations, cart synchronization, and customer authentication.
+              <h3 className="why-title">4. Headless Commerce &amp; Integrations</h3>
+              <p className="why-desc">
+                Deep experience decoupling storefronts using Shopify Storefront API over GraphQL, building customer accounts via OAuth 2.0 PKCE, Stripe checkouts, and custom calculation engines.
               </p>
             </div>
 
-            <div className="capability-card">
-              <div className="capability-icon-wrap">
+            <div className="why-card">
+              <div className="why-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
                   <polyline points="2 17 12 22 22 17"></polyline>
                   <polyline points="2 12 12 17 22 12"></polyline>
                 </svg>
               </div>
-              <h3 className="capability-title">AI & LLM API Integration</h3>
-              <p className="capability-desc">
-                Ultra-low latency inference using Groq Cloud running Meta&apos;s Llama 3.1, structured prompt engineering, and context-aware recommendation workflows in commercial web apps.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ===================================================================
-          5. DEVELOPMENT WORKFLOW & TECHNICAL PHILOSOPHY
-          =================================================================== */}
-      <section className="section-py" aria-labelledby="philosophy-title">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-eyebrow">Engineering Methodology</span>
-            <h2 id="philosophy-title" className="section-title">
-              How I Build Web Applications for Production
-            </h2>
-            <p className="section-desc">
-              Writing code is only 30% of engineering. The remaining 70% is security, performance, server stability, search discovery, and long-term maintainability.
-            </p>
-          </div>
-
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
-            <div className="card">
-              <span className="badge badge-purple" style={{ marginBottom: "12px" }}>Phase 1</span>
-              <h3 style={{ fontSize: "1.2rem", marginBottom: "8px" }}>Zero-Bloat Architecture</h3>
-              <p style={{ color: "var(--text-muted)", fontSize: "0.95rem", lineHeight: "1.6" }}>
-                I write semantic HTML and pure CSS without loading heavy UI frameworks that slow down mobile Core Web Vitals.
+              <h3 className="why-title">5. High-Speed AI &amp; LLM Integrations</h3>
+              <p className="why-desc">
+                Integrating Groq Cloud LPU inference running Meta&apos;s Llama 3.1 to build sub-second personalized consultation engines, structured system prompt engineering, and input sanitization.
               </p>
             </div>
 
-            <div className="card">
-              <span className="badge badge-blue" style={{ marginBottom: "12px" }}>Phase 2</span>
-              <h3 style={{ fontSize: "1.2rem", marginBottom: "8px" }}>Defensive Backend APIs</h3>
-              <p style={{ color: "var(--text-muted)", fontSize: "0.95rem", lineHeight: "1.6" }}>
-                Every incoming API payload is validated on the server, sanitized against injection, rate-limited, and logged cleanly.
-              </p>
-            </div>
-
-            <div className="card">
-              <span className="badge badge-cyan" style={{ marginBottom: "12px" }}>Phase 3</span>
-              <h3 style={{ fontSize: "1.2rem", marginBottom: "8px" }}>Infrastructure Hardening</h3>
-              <p style={{ color: "var(--text-muted)", fontSize: "0.95rem", lineHeight: "1.6" }}>
-                Whether on Vercel or a Linux VPS, services run under process supervisors (PM2/Supervisor), firewalls (UFW), and automated SSL certs.
-              </p>
-            </div>
-
-            <div className="card">
-              <span className="badge badge-emerald" style={{ marginBottom: "12px" }}>Phase 4</span>
-              <h3 style={{ fontSize: "1.2rem", marginBottom: "8px" }}>Search Discovery Ready</h3>
-              <p style={{ color: "var(--text-muted)", fontSize: "0.95rem", lineHeight: "1.6" }}>
-                Technical SEO is built into the codebase from day one: canonical tags, JSON-LD entities, XML sitemaps, and clean redirect maps.
+            <div className="why-card">
+              <div className="why-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h3 className="why-title">6. Production Troubleshooting &amp; Uptime</h3>
+              <p className="why-desc">
+                Direct experience resolving live production outages, diagnosing SSL certificate conflicts, fixing 403 Forbidden permission errors, and recovering server resources under heavy load.
               </p>
             </div>
           </div>
@@ -318,34 +344,34 @@ export default function HomePage() {
       {/* ===================================================================
           6. SKILLS DIRECTORY PREVIEW
           =================================================================== */}
-      <section className="section-py" style={{ backgroundColor: "var(--bg-surface-elevated)" }} aria-labelledby="skills-preview-title">
+      <section className="section-py" aria-labelledby="skills-preview-title">
         <div className="container">
           <div className="section-header">
             <span className="section-eyebrow">Technical Competencies</span>
             <h2 id="skills-preview-title" className="section-title">
-              Explore My Technical Skills Directory
+              Explore the Technical Skills Directory
             </h2>
             <p className="section-desc">
-              Every skill listed below has a dedicated, indexable detail page documenting how I apply it in production, architectural trade-offs, and practical FAQs.
+              Every skill below links to an indexable, production-validated detail page with implementation notes and concrete FAQs.
             </p>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "24px" }}>
-            {skillCategories.slice(0, 4).map((cat) => (
-              <div key={cat.id} className="card">
-                <h3 style={{ fontSize: "1.2rem", marginBottom: "6px" }}>{cat.title}</h3>
-                <p style={{ color: "var(--text-muted)", fontSize: "0.9rem", marginBottom: "16px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px" }}>
+            {skillCategories.map((cat) => (
+              <div key={cat.id} className="card" style={{ padding: "20px" }}>
+                <h3 style={{ fontSize: "1.1rem", fontWeight: 700, marginBottom: "6px" }}>{cat.title}</h3>
+                <p style={{ color: "var(--text-muted)", fontSize: "0.85rem", marginBottom: "14px", lineHeight: "1.5" }}>
                   {cat.description}
                 </p>
-                <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-                  {cat.skills.slice(0, 4).map((skill) => (
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
+                  {cat.skills.slice(0, 3).map((skill) => (
                     <Link
                       key={skill.name}
                       href={`/skills/${skill.slug}`}
-                      className="skill-nav-pill"
-                      style={{ padding: "6px 12px", fontSize: "0.85rem" }}
+                      className="badge badge-navy"
+                      style={{ textDecoration: "none", fontSize: "0.78rem", padding: "4px 8px" }}
                     >
-                      {skill.name} <span className="pill-arrow">→</span>
+                      {skill.name} →
                     </Link>
                   ))}
                 </div>
@@ -353,9 +379,9 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div style={{ textAlign: "center", marginTop: "40px" }}>
-            <Link href="/skills" className="btn btn-secondary btn-lg">
-              Explore Full Skills Hub (8 Categories & 16 Detail Pages) ↗
+          <div style={{ textAlign: "center", marginTop: "32px" }}>
+            <Link href="/skills" className="btn btn-secondary">
+              View Complete Skills Hub &amp; Detail Pages ↗
             </Link>
           </div>
         </div>
@@ -364,22 +390,22 @@ export default function HomePage() {
       {/* ===================================================================
           7. SELECTED CERTIFICATIONS
           =================================================================== */}
-      <section className="section-py" aria-labelledby="certifications-preview-title">
+      <section className="section-py" style={{ backgroundColor: "var(--bg-surface-elevated)" }} aria-labelledby="certifications-title">
         <div className="container">
           <div className="section-header">
             <span className="section-eyebrow">Verified Credentials</span>
-            <h2 id="certifications-preview-title" className="section-title">
+            <h2 id="certifications-title" className="section-title">
               Professional Certifications
             </h2>
             <p className="section-desc">
-              Verified certifications evaluating full-stack software development competency and distributed version control.
+              Industry-recognized credentials verifying full-stack software development competency and distributed version control.
             </p>
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
             {certifications.map((cert) => (
-              <div key={cert.id} className="card card-hover" style={{ display: "flex", flexDirection: "column" }}>
-                <div style={{ position: "relative", height: "180px", marginBottom: "16px", borderRadius: "8px", overflow: "hidden", background: "var(--bg-surface-elevated)" }}>
+              <div key={cert.id} className="card" style={{ display: "flex", flexDirection: "column" }}>
+                <div style={{ position: "relative", height: "180px", marginBottom: "14px", borderRadius: "var(--radius-sm)", overflow: "hidden", background: "#FFFFFF", border: "1px solid var(--border-subtle)" }}>
                   <Image
                     src={cert.image}
                     alt={cert.alt}
@@ -388,16 +414,16 @@ export default function HomePage() {
                     style={{ objectFit: "contain", padding: "8px" }}
                   />
                 </div>
-                <span className="badge badge-cyan" style={{ width: "fit-content", marginBottom: "8px" }}>
+                <span className="badge badge-gold" style={{ width: "fit-content", marginBottom: "8px" }}>
                   {cert.issuer}
                 </span>
-                <h3 style={{ fontSize: "1.15rem", marginBottom: "8px" }}>{cert.title}</h3>
-                <p style={{ color: "var(--text-muted)", fontSize: "0.9rem", flex: 1, lineHeight: "1.6" }}>
+                <h3 style={{ fontSize: "1.1rem", fontWeight: 700, marginBottom: "8px" }}>{cert.title}</h3>
+                <p style={{ color: "var(--text-muted)", fontSize: "0.88rem", flex: 1, lineHeight: "1.6" }}>
                   {cert.description}
                 </p>
-                <div style={{ marginTop: "16px", paddingTop: "12px", borderTop: "1px solid var(--border-subtle)" }}>
+                <div style={{ marginTop: "14px", paddingTop: "12px", borderTop: "1px solid var(--border-subtle)" }}>
                   <Link href="/certifications" className="btn btn-outline btn-sm">
-                    View Verification ↗
+                    View Verification Details ↗
                   </Link>
                 </div>
               </div>
@@ -407,27 +433,30 @@ export default function HomePage() {
       </section>
 
       {/* ===================================================================
-          8. CALL TO ACTION BANNER
+          8. CORPORATE CALL TO ACTION BANNER
           =================================================================== */}
       <section className="section-py" style={{ paddingTop: 0 }}>
         <div className="container">
           <div className="cta-banner">
             <div className="cta-banner-content">
-              <span className="badge badge-purple" style={{ marginBottom: "16px" }}>
-                Open for Opportunities
+              <span className="badge badge-gold" style={{ marginBottom: "16px", background: "rgba(245, 158, 11, 0.2)", color: "#FCD34D" }}>
+                Available for Immediate Opportunities
               </span>
               <h2 className="cta-title">
-                Ready to Build, Deploy, or Scale Your Next Production Application?
+                Need an Experienced Full-Stack Developer &amp; DevOps Specialist?
               </h2>
               <p className="cta-desc">
-                Whether you need a full-stack Next.js developer, a Linux VPS deployment engineer, or a technical SEO overhaul, let&apos;s discuss how I can create immediate value.
+                Whether you need a full-stack Next.js developer, self-hosted Linux VPS deployment, or an international Technical SEO overhaul, let&apos;s discuss how I can create immediate value for your business.
               </p>
-              <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "16px" }}>
-                <Link href="/contact" className="btn btn-primary btn-lg">
-                  Start a Conversation ↗
+              <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "14px" }}>
+                <Link href="/contact" className="btn btn-accent btn-lg">
+                  Get in Touch Today ↗
                 </Link>
-                <a href={personalInfo.resumePath} download className="btn btn-secondary btn-lg">
+                <a href={personalInfo.resumePath} download className="btn btn-secondary btn-lg" style={{ color: "#00072A" }}>
                   Download Resume (PDF)
+                </a>
+                <a href={`tel:${personalInfo.phone}`} className="btn btn-outline btn-lg" style={{ borderColor: "rgba(255,255,255,0.4)", color: "#FFFFFF" }}>
+                  Direct Call: {personalInfo.phoneDisplay}
                 </a>
               </div>
             </div>
