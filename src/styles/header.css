@@ -74,6 +74,37 @@
   background-color: #34D399;
 }
 
+.top-header-socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #CBD5E1;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.top-social-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #38BDF8;
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+.top-social-btn svg {
+  flex-shrink: 0;
+}
+
 /* --- Main Navigation Header --- */
 .site-header {
   position: sticky;
