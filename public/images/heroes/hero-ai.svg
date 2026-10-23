@@ -1,45 +1,98 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
   <defs>
     <linearGradient id="ai-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090E1B" />
-      <stop offset="50%" stop-color="#0E1628" />
-      <stop offset="100%" stop-color="#070A14" />
+      <stop offset="0%" stop-color="#050C1A" />
+      <stop offset="50%" stop-color="#081836" />
+      <stop offset="100%" stop-color="#0F2852" />
     </linearGradient>
-    <linearGradient id="deep-indigo" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0.15" />
-    </linearGradient>
-    <pattern id="hex-grid" width="60" height="104" patternUnits="userSpaceOnUse" patternTransform="scale(1)">
-      <path d="M 30 0 L 60 17.3 L 60 52 L 30 69.3 L 0 52 L 0 17.3 Z" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1" />
-      <path d="M 30 52 L 60 69.3 L 60 104 L 30 121.3 L 0 104 L 0 69.3 Z" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1" />
+    <pattern id="ai-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="rgba(2, 132, 199, 0.12)" stroke-width="1.2" />
+      <circle cx="24" cy="24" r="1.5" fill="rgba(2, 132, 199, 0.2)" />
     </pattern>
   </defs>
 
   <rect width="100%" height="100%" fill="url(#ai-bg)" />
-  <rect width="100%" height="100%" fill="url(#hex-grid)" />
+  <rect width="100%" height="100%" fill="url(#ai-grid)" />
 
-  <circle cx="30%" cy="50%" r="600" fill="url(#deep-indigo)" />
-  <circle cx="75%" cy="30%" r="500" fill="url(#deep-indigo)" />
+  <!-- VISIBLE SHOPIFY HEADLESS & GROQ AI SCENE (RIGHT SIDE) -->
+  <g transform="translate(100, 20)">
+    <!-- Storefront Showcase Window -->
+    <rect x="960" y="140" width="800" height="740" rx="14" fill="#060E1E" stroke="#2563EB" stroke-width="2.5" />
+    
+    <!-- Window Header -->
+    <rect x="960" y="140" width="800" height="48" rx="14" fill="#0A1832" />
+    <circle cx="986" cy="164" r="6" fill="#EF4444" />
+    <circle cx="1006" cy="164" r="6" fill="#F59E0B" />
+    <circle cx="1026" cy="164" r="6" fill="#10B981" />
+    <text x="1050" y="170" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="800">FITCART • SHOPIFY HEADLESS STOREFRONT + GROQ LLAMA 3.1 AI</text>
 
-  <!-- Neural Mesh and Headless API Vector Rays -->
-  <g stroke="rgba(99, 102, 241, 0.25)" stroke-width="1.5" fill="none">
-    <line x1="300" y1="300" x2="600" y2="450" />
-    <line x1="600" y1="450" x2="900" y2="350" />
-    <line x1="900" y1="350" x2="1200" y2="550" />
-    <line x1="1200" y1="550" x2="1500" y2="400" />
-    <line x1="600" y1="450" x2="650" y2="700" />
-    <line x1="900" y1="350" x2="950" y2="650" />
-    <line x1="650" y1="700" x2="950" y2="650" />
-    <line x1="950" y1="650" x2="1200" y2="550" />
-  </g>
+    <!-- Headless Commerce Architecture Flow -->
+    <g transform="translate(990, 215)">
+      <!-- Box 1: Next.js Storefront -->
+      <rect width="230" height="150" rx="8" fill="#0B1C3D" stroke="#00D2FF" stroke-width="2" />
+      <text x="20" y="35" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="13" font-weight="800">NEXT.JS FRONTEND</text>
+      <text x="20" y="65" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="16" font-weight="800">React Server Components</text>
+      <text x="20" y="95" fill="#93C5FD" font-family="system-ui, sans-serif" font-size="12">Static &amp; Dynamic ISR</text>
+      <text x="20" y="125" fill="#10B981" font-family="monospace" font-size="11">Sub-second Transitions</text>
 
-  <g fill="#818CF8">
-    <circle cx="300" cy="300" r="4" />
-    <circle cx="600" cy="450" r="5" />
-    <circle cx="900" cy="350" r="5" />
-    <circle cx="1200" cy="550" r="5" />
-    <circle cx="1500" cy="400" r="4" />
-    <circle cx="650" cy="700" r="4" />
-    <circle cx="950" cy="650" r="5" />
+      <!-- Arrow -->
+      <path d="M 235 90 L 275 90" stroke="#00D2FF" stroke-width="3" />
+      <polygon points="275,85 285,90 275,95" fill="#00D2FF" />
+
+      <!-- Box 2: Shopify GraphQL -->
+      <rect x="290" width="220" height="150" rx="8" fill="#0B1C3D" stroke="#2563EB" stroke-width="2" />
+      <text x="310" y="35" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="13" font-weight="800">SHOPIFY GRAPHQL</text>
+      <text x="310" y="65" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="16" font-weight="800">Storefront API</text>
+      <text x="310" y="95" fill="#93C5FD" font-family="system-ui, sans-serif" font-size="12">OAuth 2.0 PKCE Auth</text>
+      <text x="310" y="125" fill="#10B981" font-family="monospace" font-size="11">Secure Customer Tokens</text>
+
+      <!-- Arrow -->
+      <path d="M 515 90 L 555 90" stroke="#2563EB" stroke-width="3" />
+      <polygon points="555,85 565,90 555,95" fill="#2563EB" />
+
+      <!-- Box 3: Checkout Gateway -->
+      <rect x="570" width="170" height="150" rx="8" fill="#0B1C3D" stroke="#10B981" stroke-width="2" />
+      <text x="585" y="35" fill="#10B981" font-family="system-ui, sans-serif" font-size="13" font-weight="800">CHECKOUT</text>
+      <text x="585" y="65" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="16" font-weight="800">Stripe / Webhook</text>
+      <text x="585" y="95" fill="#93C5FD" font-family="system-ui, sans-serif" font-size="12">Cart Mutation</text>
+      <text x="585" y="125" fill="#10B981" font-family="monospace" font-size="11">Zero PCI Friction</text>
+    </g>
+
+    <!-- AI Intelligence Engine Window (Bottom Box) -->
+    <g transform="translate(990, 395)">
+      <rect width="740" height="320" rx="10" fill="#040A17" stroke="#0284C7" stroke-width="2" />
+      <rect width="740" height="40" rx="10" fill="#0A1C38" />
+      <text x="24" y="26" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="14" font-weight="800">GROQ LLAMA 3.1 AI RECOMMENDATION ENGINE</text>
+      <rect x="590" y="8" width="130" height="24" rx="12" fill="#2563EB" />
+      <text x="605" y="24" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="800">FAST INFERENCE</text>
+
+      <!-- Live AI Interaction Simulation -->
+      <rect x="25" y="60" width="690" height="85" rx="8" fill="#0B1A36" stroke="#1D4ED8" stroke-width="1.2" />
+      <text x="45" y="88" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">USER INPUT PROMPT:</text>
+      <text x="45" y="115" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14">"Recommend optimal workout nutrition supplement for marathon endurance training under $40."</text>
+
+      <rect x="25" y="160" width="690" height="135" rx="8" fill="#071329" stroke="#10B981" stroke-width="1.5" />
+      <text x="45" y="188" fill="#10B981" font-family="system-ui, sans-serif" font-size="12" font-weight="800">GROQ LLAMA 3.1 INFERENCE RESPONSE (320 tokens/sec • 180ms latency):</text>
+      <text x="45" y="215" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="13">✓ Filtered catalog matching endurance electrolytes + clean carbohydrates</text>
+      <text x="45" y="240" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="13">✓ Matched: Optimum Endurance Hydro-Boost ($34.99) — 98% Relevance Score</text>
+      <text x="45" y="268" fill="#38BDF8" font-family="monospace" font-size="12">Direct Add-to-Cart Action Injected into Client Session State</text>
+    </g>
+
+    <g transform="translate(990, 735)">
+      <rect width="230" height="115" rx="8" fill="#0B1A36" stroke="#2563EB" stroke-width="1.5" />
+      <text x="18" y="32" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">INFERENCE SPEED</text>
+      <text x="18" y="68" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="26" font-weight="800">300+ t/s</text>
+      <text x="18" y="95" fill="#10B981" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Groq LPUs Sub-second</text>
+
+      <rect x="255" width="230" height="115" rx="8" fill="#0B1A36" stroke="#0284C7" stroke-width="1.5" />
+      <text x="273" y="32" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">DATA TRANSMISSION</text>
+      <text x="273" y="68" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="26" font-weight="800">GraphQL</text>
+      <text x="273" y="95" fill="#93C5FD" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Precise Payload Queries</text>
+
+      <rect x="510" width="220" height="115" rx="8" fill="#0B1A36" stroke="#10B981" stroke-width="1.5" />
+      <text x="528" y="32" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">AUTH PROTOCOL</text>
+      <text x="528" y="68" fill="#10B981" font-family="system-ui, sans-serif" font-size="26" font-weight="800">PKCE 2.0</text>
+      <text x="528" y="95" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Client Secret Shielded</text>
+    </g>
   </g>
 </svg>

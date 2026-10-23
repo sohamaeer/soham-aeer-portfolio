@@ -101,22 +101,37 @@ export default function Header() {
       <header className="site-header">
         <div className="container">
           <div className="main-header-inner">
-            {/* Brand Logo with Custom Emblem (No Photo) */}
-            <Link href="/" className="brand-link" aria-label="Soham Aeer - Home">
-              <div className="brand-logo-emblem">
-                <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="48" height="48" rx="10" fill="#0F172A" stroke="#1E3A8A" strokeWidth="2" />
-                  <path d="M12 18L7 24L12 30" stroke="#38BDF8" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M36 18L41 24L36 30" stroke="#38BDF8" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M22 17C22 15.5 20.5 14.5 19 14.5C17 14.5 16 16 16 17.5C16 20.5 22 20 22 23C22 25.5 20 26.5 18 26.5C16 26.5 15 25 15 23.5" stroke="#60A5FA" strokeWidth="2.2" strokeLinecap="round"/>
-                  <path d="M26 26.5L29.5 14.5L33 26.5" stroke="#60A5FA" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M27.5 22.5H31.5" stroke="#60A5FA" strokeWidth="2" strokeLinecap="round"/>
-                </svg>
-              </div>
-              <div className="brand-text">
-                <span className="brand-name">{personalInfo.name}</span>
-                <span className="brand-role">Full Stack Developer</span>
-              </div>
+            {/* Brand Logo - High Precision Corporate Vector Mark */}
+            <Link href="/" className="brand-link" aria-label="Soham Aeer - Full Stack Developer">
+              <svg className="site-logo-svg" viewBox="0 0 240 44" width="220" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="hdr-logo-left" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#1E40AF" />
+                    <stop offset="100%" stopColor="#1D4ED8" />
+                  </linearGradient>
+                  <linearGradient id="hdr-logo-right" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#0284C7" />
+                    <stop offset="100%" stopColor="#0369A1" />
+                  </linearGradient>
+                  <linearGradient id="hdr-logo-top" x1="0%" y1="100%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#38BDF8" />
+                    <stop offset="100%" stopColor="#60A5FA" />
+                  </linearGradient>
+                </defs>
+                <g transform="translate(2, 2)">
+                  <polygon points="20,2 38,12 20,22 2,12" fill="url(#hdr-logo-top)" />
+                  <polygon points="2,12 20,22 20,38 2,28" fill="url(#hdr-logo-left)" />
+                  <polygon points="20,22 38,12 38,28 20,38" fill="url(#hdr-logo-right)" />
+                  <polyline points="10,18 20,24 20,32" stroke="#FFFFFF" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+                  <polyline points="30,18 20,12 10,18" stroke="#0F172A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" opacity="0.6" />
+                  <circle cx="20" cy="22" r="3" fill="#FFFFFF" />
+                </g>
+                <g transform="translate(54, 8)">
+                  <text x="0" y="18" className="logo-text-title" fontFamily="'Plus Jakarta Sans', system-ui, sans-serif" fontSize="18" fontWeight="800" letterSpacing="0.04em">SOHAM AEER</text>
+                  <circle cx="132" cy="13" r="3" fill="#0052CC" />
+                  <text x="0" y="31" className="logo-text-sub" fontFamily="'Plus Jakarta Sans', system-ui, sans-serif" fontSize="9.5" fontWeight="700" letterSpacing="0.14em">FULL STACK DEVELOPER</text>
+                </g>
+              </svg>
             </Link>
 
             {/* Desktop Navigation */}

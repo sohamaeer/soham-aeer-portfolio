@@ -1,34 +1,105 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
   <defs>
     <linearGradient id="seo-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#070C18" />
-      <stop offset="50%" stop-color="#0E172A" />
-      <stop offset="100%" stop-color="#091124" />
+      <stop offset="0%" stop-color="#050E1C" />
+      <stop offset="50%" stop-color="#081A36" />
+      <stop offset="100%" stop-color="#0D2C54" />
     </linearGradient>
-    <linearGradient id="sapphire-glow" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0" />
+    <linearGradient id="chart-fill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.02" />
     </linearGradient>
-    <pattern id="diagonal-lines" width="50" height="50" patternUnits="userSpaceOnUse">
-      <path d="M 0 50 L 50 0" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1" />
+    <pattern id="seo-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="rgba(56, 189, 248, 0.12)" stroke-width="1.2" />
     </pattern>
   </defs>
 
   <rect width="100%" height="100%" fill="url(#seo-bg)" />
-  <rect width="100%" height="100%" fill="url(#diagonal-lines)" />
+  <rect width="100%" height="100%" fill="url(#seo-grid)" />
 
-  <circle cx="50%" cy="40%" r="550" fill="url(#sapphire-glow)" />
+  <!-- VISIBLE TECHNICAL SEO ANALYTICS DASHBOARD (RIGHT SIDE) -->
+  <g transform="translate(100, 20)">
+    <!-- Main SEO Performance Dashboard Card -->
+    <rect x="960" y="140" width="820" height="740" rx="14" fill="#060F1E" stroke="#1E40AF" stroke-width="2.5" />
+    
+    <!-- Dashboard Header -->
+    <rect x="960" y="140" width="820" height="50" rx="14" fill="#0B1A36" />
+    <text x="990" y="172" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="16" font-weight="800">TECHNICAL SEO PERFORMANCE AUDIT • 20+ WEBSITES OPTIMIZED</text>
+    <rect x="1600" y="152" width="150" height="26" rx="13" fill="#10B981" />
+    <text x="1615" y="169" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="800">GOOGLE SEARCH CONSOLE</text>
 
-  <!-- Global Network & Search Performance Curves -->
-  <g stroke="rgba(59, 130, 246, 0.25)" stroke-width="2" fill="none">
-    <path d="M 100 850 C 400 800, 700 700, 1000 450 C 1300 200, 1600 150, 1850 120" />
-    <path d="M 100 900 C 400 860, 700 780, 1000 580 C 1300 380, 1600 300, 1850 250" stroke-dasharray="8, 6" stroke="rgba(2, 132, 199, 0.2)" />
-  </g>
+    <!-- Top KPI Row -->
+    <g transform="translate(990, 215)">
+      <!-- KPI 1 -->
+      <rect width="240" height="95" rx="8" fill="#0B1B38" stroke="#2563EB" stroke-width="1.5" />
+      <text x="18" y="32" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">ORGANIC KEYWORD VISIBILITY</text>
+      <text x="18" y="68" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="28" font-weight="800">+240%</text>
+      <text x="18" y="86" fill="#10B981" font-family="system-ui, sans-serif" font-size="11" font-weight="700">▲ US &amp; Middle East Rankings</text>
 
-  <g fill="#60A5FA">
-    <circle cx="1000" cy="450" r="5" />
-    <circle cx="1300" cy="200" r="5" />
-    <circle cx="1600" cy="150" r="5" />
-    <circle cx="1850" cy="120" r="6" />
+      <!-- KPI 2 -->
+      <rect x="260" width="240" height="95" rx="8" fill="#0B1B38" stroke="#0284C7" stroke-width="1.5" />
+      <text x="278" y="32" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">CORE WEB VITALS SCORE</text>
+      <text x="278" y="68" fill="#10B981" font-family="system-ui, sans-serif" font-size="28" font-weight="800">100 / 100</text>
+      <text x="278" y="86" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="11" font-weight="700">LCP 0.8s • CLS 0.00 • FID 8ms</text>
+
+      <!-- KPI 3 -->
+      <rect x="520" width="240" height="95" rx="8" fill="#0B1B38" stroke="#3B82F6" stroke-width="1.5" />
+      <text x="538" y="32" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">INDEXED PAGES IN SERP</text>
+      <text x="538" y="68" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="28" font-weight="800">100% Index</text>
+      <text x="538" y="86" fill="#60A5FA" font-family="system-ui, sans-serif" font-size="11" font-weight="700">XML Sitemaps + Zero 404s</text>
+    </g>
+
+    <!-- Large Organic Traffic Growth Chart -->
+    <g transform="translate(990, 335)">
+      <rect width="760" height="300" rx="10" fill="#071326" stroke="#1D4ED8" stroke-width="1.5" />
+      <text x="25" y="36" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="15" font-weight="800">Organic Clicks &amp; Impressions Trendline (Post-Migration)</text>
+      
+      <!-- Chart Grid Lines -->
+      <line x1="40" y1="70" x2="720" y2="70" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+      <line x1="40" y1="120" x2="720" y2="120" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+      <line x1="40" y1="170" x2="720" y2="170" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+      <line x1="40" y1="220" x2="720" y2="220" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+      <line x1="40" y1="260" x2="720" y2="260" stroke="#334155" stroke-width="1.5" />
+
+      <!-- Area Growth Chart -->
+      <path d="M 40 250 Q 140 240 220 220 T 400 160 T 560 110 T 720 70 L 720 260 L 40 260 Z" fill="url(#chart-fill)" />
+      <path d="M 40 250 Q 140 240 220 220 T 400 160 T 560 110 T 720 70" fill="none" stroke="#00D2FF" stroke-width="3.5" />
+
+      <!-- Data Dots on Curve -->
+      <circle cx="220" cy="220" r="5" fill="#FFFFFF" stroke="#00D2FF" stroke-width="2" />
+      <circle cx="400" cy="160" r="5" fill="#FFFFFF" stroke="#00D2FF" stroke-width="2" />
+      <circle cx="560" cy="110" r="5" fill="#FFFFFF" stroke="#00D2FF" stroke-width="2" />
+      <circle cx="720" cy="70" r="6" fill="#10B981" stroke="#FFFFFF" stroke-width="2.5" />
+
+      <rect x="620" y="40" width="100" height="24" rx="4" fill="#10B981" />
+      <text x="632" y="56" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="800">#1 RANKING</text>
+    </g>
+
+    <!-- Technical SEO Architecture Badges (Bottom Row) -->
+    <g transform="translate(990, 660)">
+      <rect width="240" height="190" rx="8" fill="#0B1A36" stroke="#2563EB" stroke-width="1.5" />
+      <text x="18" y="32" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="13" font-weight="800">JSON-LD SCHEMAS</text>
+      <text x="18" y="60" fill="#E2E8F0" font-family="monospace" font-size="12">✓ Organization</text>
+      <text x="18" y="85" fill="#E2E8F0" font-family="monospace" font-size="12">✓ Product &amp; Offer</text>
+      <text x="18" y="110" fill="#E2E8F0" font-family="monospace" font-size="12">✓ BreadcrumbList</text>
+      <text x="18" y="135" fill="#E2E8F0" font-family="monospace" font-size="12">✓ FAQPage</text>
+      <text x="18" y="165" fill="#10B981" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Rich Snippets Enabled</text>
+
+      <rect x="260" width="240" height="190" rx="8" fill="#0B1A36" stroke="#0284C7" stroke-width="1.5" />
+      <text x="278" y="32" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="13" font-weight="800">REDIRECT MAPPING</text>
+      <text x="278" y="60" fill="#E2E8F0" font-family="monospace" font-size="12">✓ 50+ 301 Redirects</text>
+      <text x="278" y="85" fill="#E2E8F0" font-family="monospace" font-size="12">✓ Canonical Tags</text>
+      <text x="278" y="110" fill="#E2E8F0" font-family="monospace" font-size="12">✓ Zero Link Equity Loss</text>
+      <text x="278" y="135" fill="#E2E8F0" font-family="monospace" font-size="12">✓ Regex Slug Normalization</text>
+      <text x="278" y="165" fill="#10B981" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Smooth Domain Migrations</text>
+
+      <rect x="520" width="240" height="190" rx="8" fill="#0B1A36" stroke="#3B82F6" stroke-width="1.5" />
+      <text x="538" y="32" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="13" font-weight="800">CRAWL &amp; INDEX SPEED</text>
+      <text x="538" y="60" fill="#E2E8F0" font-family="monospace" font-size="12">✓ Dynamic XML Sitemap</text>
+      <text x="538" y="85" fill="#E2E8F0" font-family="monospace" font-size="12">✓ Robots.txt Optimization</text>
+      <text x="538" y="110" fill="#E2E8F0" font-family="monospace" font-size="12">✓ OpenGraph &amp; Twitter Cards</text>
+      <text x="538" y="135" fill="#E2E8F0" font-family="monospace" font-size="12">✓ Server-Side Rendering (SSR)</text>
+      <text x="538" y="165" fill="#10B981" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Zero Crawl Budget Waste</text>
+    </g>
   </g>
 </svg>

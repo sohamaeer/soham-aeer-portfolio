@@ -96,20 +96,42 @@
 .brand-link {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
   text-decoration: none;
+  transition: opacity var(--transition-fast);
+}
+
+.brand-link:hover {
+  opacity: 0.92;
+}
+
+.site-logo-svg {
+  display: block;
+  height: 40px;
+  width: auto;
+  max-width: 230px;
+}
+
+.logo-text-title {
+  fill: #0F172A;
+}
+
+[data-theme="dark"] .logo-text-title {
+  fill: #FFFFFF;
+}
+
+.logo-text-sub {
+  fill: #0052CC;
+}
+
+[data-theme="dark"] .logo-text-sub {
+  fill: #38BDF8;
 }
 
 .brand-logo-emblem {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: var(--radius-sm);
-  transition: transform var(--transition-fast);
-}
-
-.brand-link:hover .brand-logo-emblem {
-  transform: scale(1.04);
 }
 
 .brand-text {
@@ -119,17 +141,17 @@
 
 .brand-name {
   font-weight: 800;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: var(--text-primary);
   line-height: 1.2;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 .brand-role {
-  font-size: 0.78rem;
-  color: var(--accent-gold);
+  font-size: 0.76rem;
+  color: var(--primary);
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 

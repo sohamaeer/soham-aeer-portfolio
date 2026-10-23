@@ -126,7 +126,7 @@ export default function HeroSlider() {
                       {slide.secondaryCta.label}
                     </a>
                   ) : (
-                    <Link href={slide.secondaryCta.href} className="btn btn-outline btn-lg">
+                    <Link href={slide.secondaryCta.href} className="btn btn-secondary btn-lg">
                       {slide.secondaryCta.label}
                     </Link>
                   )}

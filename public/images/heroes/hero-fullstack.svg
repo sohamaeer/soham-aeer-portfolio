@@ -1,41 +1,102 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090D1A" />
-      <stop offset="50%" stop-color="#0F172A" />
-      <stop offset="100%" stop-color="#0A1128" />
+    <linearGradient id="fs-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060E1E" />
+      <stop offset="50%" stop-color="#0A1832" />
+      <stop offset="100%" stop-color="#0E234A" />
     </linearGradient>
-    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.3" />
-      <stop offset="50%" stop-color="#0284C7" stop-opacity="0.2" />
-      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0" />
+    <linearGradient id="blue-beam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#00D2FF" stop-opacity="0.9" />
     </linearGradient>
-    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
-      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" />
-      <circle cx="60" cy="0" r="1.5" fill="rgba(37, 99, 235, 0.4)" />
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1E3E" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#081429" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="glow-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#00D2FF" stop-opacity="0" />
+    </linearGradient>
+    <pattern id="fs-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="rgba(56, 189, 248, 0.12)" stroke-width="1.2" />
+      <circle cx="0" cy="0" r="1.5" fill="rgba(56, 189, 248, 0.25)" />
     </pattern>
   </defs>
 
-  <rect width="100%" height="100%" fill="url(#bg)" />
-  <rect width="100%" height="100%" fill="url(#grid)" />
+  <!-- Deep Corporate Gradient Background -->
+  <rect width="100%" height="100%" fill="url(#fs-bg)" />
+  <rect width="100%" height="100%" fill="url(#fs-grid)" />
 
-  <!-- Ambient light gradients -->
-  <circle cx="20%" cy="20%" r="500" fill="url(#glow)" />
-  <circle cx="85%" cy="75%" r="600" fill="url(#glow)" />
+  <!-- Ambient Light Orbs -->
+  <circle cx="1500" cy="400" r="450" fill="url(#glow-cyan)" />
+  <circle cx="1200" cy="800" r="350" fill="url(#glow-cyan)" />
 
-  <!-- Code/Structure Architecture Lines -->
-  <g stroke="rgba(37, 99, 235, 0.25)" stroke-width="1.5" fill="none">
-    <path d="M 100 200 L 400 200 L 500 300 L 900 300" />
-    <path d="M 300 800 L 600 800 L 700 700 L 1200 700" />
-    <path d="M 1200 150 L 1400 150 L 1500 250 L 1800 250" />
-    <path d="M 1000 900 L 1300 900 L 1400 800 L 1700 800" />
-  </g>
+  <!-- ARCHITECTURE & FULL STACK DIAGRAM (RIGHT SIDE, FULL VISIBILITY) -->
+  <g transform="translate(100, 20)">
+    <!-- Main Browser Application Window -->
+    <rect x="960" y="160" width="760" height="480" rx="14" fill="url(#card-grad)" stroke="#1E40AF" stroke-width="2.5" />
+    <!-- Browser Top Bar -->
+    <path d="M 960 174 Q 960 160 974 160 L 1706 160 Q 1720 160 1720 174 L 1720 208 L 960 208 Z" fill="#0A152A" />
+    <circle cx="986" cy="184" r="6" fill="#EF4444" />
+    <circle cx="1006" cy="184" r="6" fill="#F59E0B" />
+    <circle cx="1026" cy="184" r="6" fill="#10B981" />
+    <!-- Address Bar -->
+    <rect x="1050" y="172" width="420" height="24" rx="6" fill="#0E2042" stroke="#1E3A8A" stroke-width="1" />
+    <text x="1066" y="188" fill="#93C5FD" font-family="system-ui, sans-serif" font-size="12" font-weight="600">https://production-app.sohamaeer.com/dashboard</text>
+    
+    <!-- Code Editor UI Box -->
+    <rect x="990" y="230" width="420" height="380" rx="10" fill="#060C18" stroke="#1D4ED8" stroke-width="1.8" />
+    <!-- Editor Header Tab -->
+    <rect x="990" y="230" width="160" height="30" rx="6" fill="#1E3A8A" />
+    <text x="1006" y="250" fill="#FFFFFF" font-family="monospace" font-size="12" font-weight="700">AppRouter.jsx</text>
+    
+    <!-- Syntax Highlighted Code Lines -->
+    <text x="1010" y="290" fill="#38BDF8" font-family="monospace" font-size="13" font-weight="600">import { NextServer } from 'next/server';</text>
+    <text x="1010" y="315" fill="#38BDF8" font-family="monospace" font-size="13" font-weight="600">import { createStore } from '@/lib/store';</text>
+    <text x="1010" y="340" fill="#60A5FA" font-family="monospace" font-size="13" font-weight="600">import express from 'express';</text>
+    <text x="1010" y="375" fill="#93C5FD" font-family="monospace" font-size="13">// Production Full-Stack Pipeline</text>
+    <text x="1010" y="400" fill="#F43F5E" font-family="monospace" font-size="13" font-weight="700">export async function <tspan fill="#38BDF8">GET</tspan>(req, res) {</text>
+    <text x="1030" y="425" fill="#93C5FD" font-family="monospace" font-size="13">const data = await db.query(payload);</text>
+    <text x="1030" y="450" fill="#34D399" font-family="monospace" font-size="13">return res.status(200).json({</text>
+    <text x="1050" y="475" fill="#FBBF24" font-family="monospace" font-size="13">status: "success",</text>
+    <text x="1050" y="500" fill="#FBBF24" font-family="monospace" font-size="13">latency: "14ms",</text>
+    <text x="1050" y="525" fill="#FBBF24" font-family="monospace" font-size="13">environment: "Production-VPS"</text>
+    <text x="1030" y="550" fill="#34D399" font-family="monospace" font-size="13">});</text>
+    <text x="1010" y="575" fill="#F43F5E" font-family="monospace" font-size="13">}</text>
 
-  <!-- Glowing Nodes -->
-  <g fill="#38BDF8">
-    <circle cx="500" cy="300" r="4" />
-    <circle cx="700" cy="700" r="4" />
-    <circle cx="1500" cy="250" r="4" />
-    <circle cx="1400" cy="800" r="4" />
+    <!-- High-Performance Metrics & UI Cards beside Code -->
+    <rect x="1430" y="230" width="265" height="110" rx="8" fill="#0A1832" stroke="#2563EB" stroke-width="1.5" />
+    <text x="1448" y="260" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">PAGE PERFORMANCE</text>
+    <text x="1448" y="295" fill="#10B981" font-family="system-ui, sans-serif" font-size="28" font-weight="800">99 / 100</text>
+    <text x="1448" y="322" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Core Web Vitals Validated</text>
+
+    <rect x="1430" y="360" width="265" height="110" rx="8" fill="#0A1832" stroke="#0284C7" stroke-width="1.5" />
+    <text x="1448" y="390" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">BACKEND LATENCY</text>
+    <text x="1448" y="425" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="28" font-weight="800">~24 ms</text>
+    <text x="1448" y="452" fill="#93C5FD" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Express + Node.js API</text>
+
+    <rect x="1430" y="490" width="265" height="120" rx="8" fill="#0A1832" stroke="#3B82F6" stroke-width="1.5" />
+    <text x="1448" y="520" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">ARCHITECTURE</text>
+    <text x="1448" y="552" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="16" font-weight="800">Next.js App Router</text>
+    <text x="1448" y="578" fill="#60A5FA" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Zero-bloat Pure CSS</text>
+
+    <!-- Interconnected Data Pipeline Nodes at Bottom -->
+    <path d="M 1120 640 L 1120 720 L 1380 720 L 1380 760" stroke="#00D2FF" stroke-width="3" fill="none" stroke-dasharray="6,6" />
+    <path d="M 1560 640 L 1560 760" stroke="#2563EB" stroke-width="3" fill="none" />
+
+    <!-- Database Container Node -->
+    <rect x="1050" y="760" width="220" height="90" rx="8" fill="#060E1E" stroke="#0284C7" stroke-width="2" />
+    <text x="1070" y="795" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="14" font-weight="800">REST API / STORE</text>
+    <text x="1070" y="825" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">JSON Payloads &amp; SSR</text>
+
+    <!-- VPS / PM2 Daemon Node -->
+    <rect x="1330" y="760" width="240" height="90" rx="8" fill="#060E1E" stroke="#10B981" stroke-width="2" />
+    <circle cx="1352" cy="790" r="5" fill="#10B981" />
+    <text x="1368" y="795" fill="#10B981" font-family="system-ui, sans-serif" font-size="14" font-weight="800">PM2 SERVER CLUSTER</text>
+    <text x="1352" y="825" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">Cluster Mode • 24/7 Active</text>
+
+    <rect x="1620" y="760" width="180" height="90" rx="8" fill="#060E1E" stroke="#60A5FA" stroke-width="2" />
+    <text x="1638" y="795" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="800">NGINX PROXY</text>
+    <text x="1638" y="825" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">SSL/TLS • Let's Encrypt</text>
   </g>
 </svg>

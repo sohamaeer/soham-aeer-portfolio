@@ -162,7 +162,7 @@
 .challenge-card {
   background-color: var(--bg-surface);
   border: 1px solid var(--border-subtle);
-  border-left: 4px solid var(--accent-gold);
+  border-left: 4px solid var(--accent-cyan);
   border-radius: var(--radius-sm);
   padding: 18px 20px;
   margin-bottom: 14px;

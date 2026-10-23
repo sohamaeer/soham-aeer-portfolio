@@ -4,19 +4,19 @@
    ========================================================================== */
 
 :root {
-  /* Primary Executive Slate & Navy */
-  --primary: #1E40AF; /* Deep Royal Sapphire */
-  --primary-dark: #1E3A8A;
-  --primary-light: #3B82F6;
-  --primary-hover: #1D4ED8;
+  /* Primary Corporate Royal Blue (Like Nikam Scientific & Enterprise Engineering) */
+  --primary: #0052CC; 
+  --primary-dark: #0747A6;
+  --primary-light: #2684FF;
+  --primary-hover: #0047B3;
 
   --secondary: #0F172A;
   --secondary-light: #334155;
 
-  /* Premium Accents (Cobalt, Sapphire, Cyan) */
-  --accent: #2563EB;
-  --accent-light: #60A5FA;
-  --accent-subtle: rgba(37, 99, 235, 0.1);
+  /* Premium Accents (Azure, Sapphire, Cyan) */
+  --accent: #0052CC;
+  --accent-light: #38BDF8;
+  --accent-subtle: rgba(0, 82, 204, 0.08);
   --accent-cyan: #0284C7;
   --accent-cyan-light: #38BDF8;
 
@@ -25,36 +25,37 @@
   --success-subtle: rgba(16, 185, 129, 0.12);
   --danger: #EF4444;
 
-  /* Clean Light Theme Surfaces */
-  --bg-primary: #F8FAFC;
+  /* Clean Luminous Light Surfaces */
+  --bg-primary: #FFFFFF;
   --bg-surface: #FFFFFF;
-  --bg-surface-elevated: #F1F5F9;
-  --bg-surface-muted: #E2E8F0;
+  --bg-surface-elevated: #F8FAFC;
+  --bg-surface-muted: #F1F5F9;
   --bg-surface-dark: #0F172A;
-  --bg-topbar: #0B0F19;
+  --bg-topbar: #0F172A;
 
-  /* Text Colors */
+  /* High-Contrast Corporate Typography */
   --text-primary: #0F172A;
   --text-secondary: #334155;
   --text-muted: #64748B;
   --text-light: #94A3B8;
   --text-inverse: #FFFFFF;
 
-  /* Borders & Dividers */
+  /* Precision Crisp Borders */
   --border-subtle: #E2E8F0;
   --border-medium: #CBD5E1;
   --border-dark: #1E293B;
-  --border-focus: #2563EB;
+  --border-focus: #0052CC;
 
-  /* Shadows */
-  --shadow-sm: 0 1px 3px 0 rgba(15, 23, 42, 0.06);
-  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
-  --shadow-lg: 0 10px 20px -3px rgba(15, 23, 42, 0.1), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
-  --shadow-card: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03);
+  /* Modern Subtle Shadows */
+  --shadow-sm: 0 1px 3px 0 rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.03);
+  --shadow-lg: 0 10px 25px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.03);
+  --shadow-card: 0 2px 8px rgba(15, 23, 42, 0.04);
 
-  /* Typography */
-  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* Clean Corporate Typography */
+  --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
   /* Radius */
   --radius-sm: 6px;
@@ -204,12 +205,15 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
    PAGE HERO BANNER WITH BACKGROUND IMAGE FOR ALL SUBPAGES
    ========================================================================== */
 .page-hero-banner {
-  background-color: #080E1C;
-  background-image: url('/images/heroes/page-hero-bg.svg');
+  background-color: #061224;
+  background-image: 
+    linear-gradient(90deg, rgba(6, 18, 36, 0.92) 0%, rgba(8, 24, 48, 0.78) 50%, rgba(10, 30, 60, 0.35) 100%),
+    url('/images/heroes/page-hero-bg.svg');
   background-size: cover;
-  background-position: center;
+  background-position: center right;
+  background-repeat: no-repeat;
   color: #FFFFFF;
-  padding: 48px 0 40px 0;
+  padding: 56px 0 48px 0;
   border-bottom: 3px solid var(--primary);
   margin-bottom: 40px;
   position: relative;
@@ -221,26 +225,42 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 .page-hero-banner .breadcrumbs a,
 .page-hero-banner .breadcrumbs li {
-  color: #94A3B8;
+  color: #93C5FD;
 }
 
 .page-hero-banner .breadcrumbs a:hover {
-  color: #38BDF8;
+  color: #FFFFFF;
+  text-decoration: underline;
 }
 
 .page-hero-banner .breadcrumbs .current {
   color: #FFFFFF;
+  font-weight: 700;
 }
 
 .page-hero-banner .section-eyebrow {
   color: #38BDF8;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  display: inline-block;
+  margin-bottom: 8px;
 }
 
 .page-hero-banner .section-title {
   color: #FFFFFF;
-  margin-bottom: 10px;
+  font-size: clamp(2rem, 3.8vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .page-hero-banner .section-desc {
-  color: #CBD5E1;
+  color: #E2E8F0;
+  font-size: 1.08rem;
+  line-height: 1.65;
+  max-width: 800px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }

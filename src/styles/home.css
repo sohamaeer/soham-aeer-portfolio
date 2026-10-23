@@ -39,7 +39,7 @@
 .hero-slide-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(7, 11, 20, 0.94) 0%, rgba(11, 19, 36, 0.86) 55%, rgba(14, 22, 40, 0.72) 100%);
+  background: linear-gradient(90deg, rgba(6, 12, 24, 0.88) 0%, rgba(8, 18, 38, 0.72) 48%, rgba(10, 24, 52, 0.38) 100%);
   pointer-events: none;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .hero-slide-content {
-  max-width: 820px;
+  max-width: 840px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -59,8 +59,8 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(37, 99, 235, 0.16);
-  border: 1px solid rgba(59, 130, 246, 0.4);
+  background: rgba(37, 99, 235, 0.2);
+  border: 1px solid rgba(96, 165, 250, 0.5);
   color: #38BDF8;
   font-size: 0.8rem;
   font-weight: 700;
@@ -85,13 +85,15 @@
   letter-spacing: -0.025em;
   line-height: 1.16;
   color: #FFFFFF;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .hero-slide-subtitle {
   font-size: 1.1rem;
-  color: #CBD5E1;
+  color: #E2E8F0;
   line-height: 1.7;
   max-width: 740px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-slide-tags {
@@ -104,9 +106,9 @@
 .hero-slide-tag {
   font-size: 0.8rem;
   font-family: var(--font-mono);
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  color: #E2E8F0;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #F8FAFC;
   padding: 4px 10px;
   border-radius: var(--radius-sm);
   font-weight: 600;
@@ -120,19 +122,58 @@
   margin-top: 10px;
 }
 
+/* Explicit High-Contrast Action Buttons on Hero Slides */
+.hero-slide-actions .btn-primary {
+  background-color: #2563EB !important;
+  color: #FFFFFF !important;
+  border: 1px solid #3B82F6 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.45);
+}
+
+.hero-slide-actions .btn-primary:hover {
+  background-color: #1D4ED8 !important;
+  border-color: #1D4ED8 !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.65);
+}
+
+.hero-slide-actions .btn-secondary,
+.hero-slide-actions .btn-outline {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+  border: 1.5px solid #E2E8F0 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero-slide-actions .btn-secondary:hover,
+.hero-slide-actions .btn-outline:hover {
+  background-color: #F8FAFC !important;
+  color: #1E40AF !important;
+  border-color: #CBD5E1 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
 .hero-direct-call {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #94A3B8;
+  color: #FFFFFF !important;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--radius-sm);
   font-size: 0.9rem;
-  font-weight: 600;
-  padding: 8px 12px;
-  transition: color var(--transition-fast);
+  font-weight: 700;
+  padding: 10px 16px;
+  transition: all var(--transition-fast);
 }
 
 .hero-direct-call:hover {
-  color: #38BDF8;
+  background: rgba(255, 255, 255, 0.24);
+  color: #38BDF8 !important;
 }
 
 /* --- Slider Controls (Arrows & Indicators) --- */

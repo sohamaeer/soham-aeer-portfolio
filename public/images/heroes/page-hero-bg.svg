@@ -1,24 +1,81 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600" width="100%" height="100%">
   <defs>
-    <linearGradient id="page-hero-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#080E1C" />
-      <stop offset="60%" stop-color="#0F172A" />
-      <stop offset="100%" stop-color="#0B132B" />
+    <linearGradient id="page-banner-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#061224" />
+      <stop offset="60%" stop-color="#0A1D3B" />
+      <stop offset="100%" stop-color="#0E2852" />
     </linearGradient>
-    <linearGradient id="accent-glow" x1="100%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.22" />
-      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0" />
-    </linearGradient>
-    <pattern id="page-grid" width="48" height="48" patternUnits="userSpaceOnUse">
-      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="rgba(255, 255, 255, 0.035)" stroke-width="1" />
+    <pattern id="page-banner-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(56, 189, 248, 0.15)" stroke-width="1" />
+      <circle cx="20" cy="20" r="1.5" fill="rgba(56, 189, 248, 0.25)" />
     </pattern>
   </defs>
 
-  <rect width="100%" height="100%" fill="url(#page-hero-grad)" />
-  <rect width="100%" height="100%" fill="url(#page-grid)" />
-  <circle cx="85%" cy="30%" r="450" fill="url(#accent-glow)" />
+  <!-- Deep Corporate Navy Background -->
+  <rect width="100%" height="100%" fill="url(#page-banner-bg)" />
+  <rect width="100%" height="100%" fill="url(#page-banner-grid)" />
 
-  <g stroke="rgba(37, 99, 235, 0.2)" stroke-width="1.5" fill="none">
-    <path d="M 0 350 L 500 350 L 650 250 L 1400 250 L 1550 350 L 1920 350" />
+  <!-- VISIBLE TECHNICAL BLUEPRINT & ARCHITECTURE LATTICE (RIGHT SIDE) -->
+  <g transform="translate(1000, 40)">
+    <!-- Main Architectural Panel Box -->
+    <rect x="180" y="40" width="660" height="440" rx="12" fill="#07152B" stroke="#1E40AF" stroke-width="2.5" />
+    
+    <!-- Top Blueprint Bar -->
+    <rect x="180" y="40" width="660" height="38" rx="12" fill="#0C2042" />
+    <circle cx="205" cy="59" r="5" fill="#EF4444" />
+    <circle cx="225" cy="59" r="5" fill="#F59E0B" />
+    <circle cx="245" cy="59" r="5" fill="#10B981" />
+    <text x="270" y="64" fill="#93C5FD" font-family="system-ui, sans-serif" font-size="12" font-weight="700">TECHNICAL ARCHITECTURE SPECIFICATION</text>
+    <rect x="680" y="47" width="140" height="24" rx="4" fill="#2563EB" />
+    <text x="696" y="63" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="800">VERIFIED PROD</text>
+
+    <!-- Node 1: Full-Stack Interface -->
+    <g transform="translate(210, 100)">
+      <rect width="280" height="75" rx="8" fill="#0A1C38" stroke="#00D2FF" stroke-width="1.8" />
+      <text x="18" y="28" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="12" font-weight="800">WEB APPLICATION LAYER</text>
+      <text x="18" y="52" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Next.js 14 App Router &amp; React.js</text>
+    </g>
+
+    <!-- Connection Line 1 to 2 -->
+    <path d="M 490 137 L 550 137 L 550 205 L 570 205" stroke="#00D2FF" stroke-width="2.5" fill="none" />
+    <circle cx="550" cy="137" r="4" fill="#00D2FF" />
+    <circle cx="550" cy="205" r="4" fill="#00D2FF" />
+
+    <!-- Node 2: API Gateway & Runtime -->
+    <g transform="translate(570, 165)">
+      <rect width="240" height="80" rx="8" fill="#0A1C38" stroke="#2563EB" stroke-width="1.8" />
+      <text x="16" y="28" fill="#60A5FA" font-family="system-ui, sans-serif" font-size="12" font-weight="800">API GATEWAY &amp; DAEMON</text>
+      <text x="16" y="50" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Node.js + Express REST</text>
+      <text x="16" y="68" fill="#10B981" font-family="monospace" font-size="11">PM2 Cluster: Active</text>
+    </g>
+
+    <!-- Connection Line 2 to 3 -->
+    <path d="M 690 245 L 690 295 L 430 295 L 430 330" stroke="#2563EB" stroke-width="2.5" fill="none" />
+    <circle cx="690" cy="295" r="4" fill="#2563EB" />
+    <circle cx="430" cy="295" r="4" fill="#2563EB" />
+
+    <!-- Node 3: Linux VPS Infrastructure -->
+    <g transform="translate(210, 310)">
+      <rect width="280" height="85" rx="8" fill="#0A1C38" stroke="#10B981" stroke-width="1.8" />
+      <text x="18" y="28" fill="#10B981" font-family="system-ui, sans-serif" font-size="12" font-weight="800">INFRASTRUCTURE LAYER</text>
+      <text x="18" y="52" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Contabo Linux VPS (Ubuntu)</text>
+      <text x="18" y="70" fill="#93C5FD" font-family="monospace" font-size="11">Nginx Reverse Proxy • Let's Encrypt</text>
+    </g>
+
+    <!-- Node 4: Technical SEO Matrix -->
+    <g transform="translate(520, 310)">
+      <rect width="290" height="85" rx="8" fill="#0A1C38" stroke="#38BDF8" stroke-width="1.8" />
+      <text x="16" y="28" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="12" font-weight="800">SEARCH OPTIMIZATION</text>
+      <text x="16" y="52" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="700">20+ Production Sites Optimized</text>
+      <text x="16" y="70" fill="#10B981" font-family="monospace" font-size="11">JSON-LD • 301 Redirects • XML Maps</text>
+    </g>
+
+    <!-- Blueprint Circuit Traces in Background -->
+    <g stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.5" fill="none">
+      <circle cx="100" cy="260" r="50" stroke-dasharray="4,4" />
+      <circle cx="100" cy="260" r="8" fill="#38BDF8" />
+      <line x1="150" y1="260" x2="180" y2="260" />
+      <path d="M 50 260 L 0 260" />
+    </g>
   </g>
 </svg>
