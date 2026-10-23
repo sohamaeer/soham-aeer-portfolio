@@ -1,0 +1,64 @@
+export const experienceData = [
+  {
+    company: "Integral Web Solution",
+    role: "Full Stack Developer",
+    location: "Virar (W), Maharashtra, India",
+    period: "Nov 2025 – Present",
+    type: "Full-Time",
+    headline: "End-to-end full stack development, Linux VPS server infrastructure, technical SEO for 20+ websites, and business email administration.",
+    summary: "At Integral Web Solution, I operate across the complete software delivery lifecycle. My role bridges modern frontend user interface development with React and Next.js, resilient backend API engineering in Node.js and Express, Contabo Linux VPS server provisioning, multi-tenant Apache/Nginx reverse proxying, Technical SEO execution across international search markets, and troubleshooting live production incidents.",
+    responsibilities: [
+      {
+        category: "Full-Stack Application Engineering",
+        items: [
+          "Developed and deployed multiple full-stack production applications using React.js, Next.js, Node.js, and Express.js.",
+          "Built and deployed client websites including corporate agency platforms, industrial portals, and e-commerce stores.",
+          "Integrated third-party services including Stripe payments, Nodemailer, and AI LLM APIs (Groq Llama 3.1).",
+          "Engineered secure backend services with defensive input sanitization, rate limiting, and CORS policies."
+        ]
+      },
+      {
+        category: "DevOps & Linux VPS Infrastructure",
+        items: [
+          "Configured Linux VPS servers (Contabo) with Apache Virtual Hosts and reverse proxy routing for multiple live domains.",
+          "Managed background application processes and zero-downtime reboots using PM2 process manager on Ubuntu Linux.",
+          "Deployed ERPNext v15 on Ubuntu 22.04 LTS with MariaDB, Redis, Supervisor process management, and Nginx reverse proxy.",
+          "Automated Let's Encrypt SSL/TLS certificates via Certbot, maintaining continuous encryption and security compliance.",
+          "Diagnosed and resolved production issues including SSL conflicts, 403 Forbidden permission errors, and server misconfigurations."
+        ]
+      },
+      {
+        category: "Technical SEO & International Search Rankings",
+        items: [
+          "Executed Technical SEO optimizations across 20+ client websites, including keyword research, metadata optimization, and backlink strategies.",
+          "Contributed to ranking websites in competitive international search regions, including US and Middle East countries.",
+          "Implemented comprehensive on-page SEO: React Helmet, dynamic JSON-LD schema markup, XML sitemaps, and Open Graph previews.",
+          "Mapped and deployed 50+ legacy 301 permanent redirects during major website redesigns to eliminate 404 drops and protect search equity."
+        ]
+      },
+      {
+        category: "Domain, DNS & Business Email Administration",
+        items: [
+          "Managed domain and DNS records (A, CNAME, MX, TXT, SPF, DKIM, DMARC) across domain registrars and web servers.",
+          "Administered Google Workspace and Microsoft 365 business email environments, provisioning user accounts and configuring Gmail client routing.",
+          "Successfully migrated legacy webmail mailboxes to newly provisioned Google Workspace accounts with zero data loss or communication downtime."
+        ]
+      }
+    ],
+    techUsed: [
+      "React.js", "Next.js", "Node.js", "Express.js", "Contabo Linux VPS", "Ubuntu", 
+      "Apache", "Nginx", "PM2", "MariaDB", "Redis", "Supervisor", "ERPNext v15", 
+      "Nodemailer", "Stripe API", "Groq Llama 3.1", "Technical SEO", "JSON-LD", "DNS / Google Workspace"
+    ]
+  }
+];
+
+export const educationData = [
+  {
+    institution: "Viva College",
+    location: "Virar, Maharashtra, India",
+    degree: "Bachelor of Science in Information Technology (B.Sc. IT)",
+    period: "2022 – 2025",
+    focus: "Software Engineering, Database Management Systems, Data Structures & Algorithms, Computer Networks, Web Technologies, and Operating Systems."
+  }
+];

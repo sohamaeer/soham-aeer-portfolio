@@ -1,0 +1,209 @@
+/* ==========================================================================
+   PROJECTS HUB & CASE STUDY PAGE STYLES
+   ========================================================================== */
+
+/* --- Category Filter Bar --- */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.filter-btn {
+  padding: 8px 18px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  background-color: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background-color: var(--bg-surface-hover);
+  color: var(--text-primary);
+}
+
+.filter-btn.active {
+  background: var(--gradient-accent);
+  color: #FFFFFF;
+  border-color: transparent;
+  box-shadow: 0 2px 10px rgba(124, 58, 237, 0.3);
+}
+
+/* --- Project Case Study Details --- */
+.case-study-hero {
+  padding: 40px 0 32px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 40px;
+}
+
+.case-study-title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.case-study-tagline {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 840px;
+  margin-bottom: 28px;
+}
+
+.case-meta-bar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+}
+
+@media (min-width: 768px) {
+  .case-meta-bar {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.case-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.case-meta-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.case-meta-val {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.case-actions-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+/* Featured Case Study Image */
+.case-feature-image {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-medium);
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 16 / 9;
+  background-color: var(--bg-surface-elevated);
+  margin-bottom: 48px;
+}
+
+.case-feature-image img {
+  object-fit: cover;
+}
+
+/* Case Study Content Grid */
+.case-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+}
+
+@media (min-width: 992px) {
+  .case-grid {
+    grid-template-columns: 2.2fr 1fr;
+    gap: 60px;
+  }
+}
+
+.case-main {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.case-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.case-block-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 10px;
+}
+
+.case-prose {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.challenge-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  margin-bottom: 16px;
+}
+
+.challenge-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #F87171;
+  margin-bottom: 8px;
+}
+
+.solution-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #34D399;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.architecture-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.architecture-table th, .architecture-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.92rem;
+}
+
+.architecture-table th {
+  background-color: var(--bg-surface-elevated);
+  color: var(--text-primary);
+  font-weight: 700;
+  width: 30%;
+}
+
+.architecture-table td {
+  color: var(--text-secondary);
+}
