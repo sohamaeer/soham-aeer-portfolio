@@ -4,7 +4,7 @@ export const personalInfo = {
   subHeadline: "Full Stack Developer with hands-on experience engineering production web applications using React.js, Next.js, Node.js, and Express.js, backed by self-hosted Linux VPS & DNS management, Technical & AI-assisted On-Page SEO across 20+ websites, and AI API integrations.",
   shortBio: "Full Stack Developer with hands-on experience engineering and deploying production web applications using React.js, Next.js, Node.js, and Express.js. Specialized in Linux VPS infrastructure, domain DNS records management, Technical & AI-assisted On-Page SEO across 20+ websites, and AI API integrations.",
   location: "Mumbai, Maharashtra, India",
-  email: "sohamayer516@gmail.com",
+  email: "sohamaeer@gmail.com",
   phone: "+91 9322577858",
   phoneDisplay: "+91 93225 77858",
   github: "https://github.com/sohamaeer/",
@@ -13,6 +13,7 @@ export const personalInfo = {
   resumePath: "/Soham_Aeer_Resume.pdf",
   profileImage: "/images/soham-aeer-profile.webp",
   workspaceImage: "/images/soham-aeer-workspace.webp",
+  aboutImage: "/images/soham-aeer-full.webp",
   currentRole: {
     title: "Full Stack Developer",
     company: "Integral Web Solution",

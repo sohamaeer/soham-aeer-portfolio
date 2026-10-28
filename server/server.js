@@ -5,6 +5,31 @@
  * Run: node server/server.js
  */
 
+const fs = require("fs");
+const path = require("path");
+
+// Load .env.local if present
+const envPath = path.resolve(__dirname, "../.env.local");
+if (fs.existsSync(envPath)) {
+  const envContent = fs.readFileSync(envPath, "utf8");
+  envContent.split("\n").forEach((line) => {
+    const trimmed = line.trim();
+    if (trimmed && !trimmed.startsWith("#")) {
+      const idx = trimmed.indexOf("=");
+      if (idx !== -1) {
+        const key = trimmed.slice(0, idx).trim();
+        let val = trimmed.slice(idx + 1).trim();
+        if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
+          val = val.slice(1, -1);
+        }
+        if (!process.env[key]) {
+          process.env[key] = val;
+        }
+      }
+    }
+  });
+}
+
 const express = require("express");
 const cors = require("cors");
 const nodemailer = require("nodemailer");
@@ -95,7 +120,7 @@ app.post("/api/contact", async (req, res) => {
   const smtpPort = parseInt(process.env.SMTP_PORT || "587", 10);
   const smtpUser = process.env.SMTP_USER;
   const smtpPass = process.env.SMTP_PASS;
-  const toEmail = process.env.CONTACT_TO_EMAIL || "sohamayer516@gmail.com";
+  const toEmail = process.env.CONTACT_TO_EMAIL || "sohamaeer@gmail.com";
 
   if (!smtpHost || !smtpUser || !smtpPass) {
     console.log("Express API received inquiry (mock mode - configure SMTP):", {

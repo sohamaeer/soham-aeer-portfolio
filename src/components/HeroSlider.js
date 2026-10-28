@@ -7,7 +7,7 @@ import { personalInfo } from "@/data/personalInfo";
 const slides = [
   {
     id: 1,
-    bgImage: "/images/heroes/hero-fullstack.svg",
+    bgImage: "/images/heroes/hero-fullstack.jpg",
     badge: "Core Specialization • Full Stack Developer",
     title: "Engineering Production Web Applications with Next.js, React & Node",
     subtitle: "Full Stack Developer focused on building clean, high-performance web applications using React.js, Next.js App Router, Node.js, and Express.js. Designed for sub-second page transitions, modular component architecture, and zero-bloat CSS.",
@@ -17,7 +17,7 @@ const slides = [
   },
   {
     id: 2,
-    bgImage: "/images/heroes/hero-devops.svg",
+    bgImage: "/images/heroes/hero-devops.jpg",
     badge: "DevOps & Server Deployment • Force Multiplier",
     title: "Self-Hosted Linux VPS Infrastructure & Domain DNS Management",
     subtitle: "Hands-on experience provisioning Contabo Linux VPS environments, configuring domain DNS records (A, CNAME, MX, TXT, Cloudflare), Apache Virtual Hosts, Nginx reverse proxies, SSL automation, and PM2 process daemons.",
@@ -27,7 +27,7 @@ const slides = [
   },
   {
     id: 3,
-    bgImage: "/images/heroes/hero-seo.svg",
+    bgImage: "/images/heroes/hero-seo.jpg",
     badge: "Technical & On-Page SEO • International Search Growth",
     title: "Technical & AI-Assisted On-Page SEO Across 20+ Production Websites",
     subtitle: "Proven track record ranking in US and Middle East markets. Combining JSON-LD schema, sitemaps, and 301 redirects with AI-crafted on-page content written in natural human tone satisfying all on-page parameters.",
@@ -37,7 +37,7 @@ const slides = [
   },
   {
     id: 4,
-    bgImage: "/images/heroes/hero-ai.svg",
+    bgImage: "/images/heroes/hero-ai.jpg",
     badge: "Modern Commerce & Artificial Intelligence",
     title: "Shopify Headless Commerce & Groq Llama 3.1 AI Integration",
     subtitle: "Decoupled headless storefronts powered by Next.js and Shopify Storefront GraphQL, secure OAuth 2.0 PKCE customer authentication, and sub-second AI recommendation engines using Groq Cloud inference.",
@@ -108,7 +108,7 @@ export default function HeroSlider() {
                 </div>
 
                 <div className="hero-slide-actions">
-                  <Link href={slide.primaryCta.href} className="btn btn-primary btn-lg">
+                  <Link href={slide.primaryCta.href} className="btn btn-primary btn-lg btn-mobile-full">
                     {slide.primaryCta.label}
                   </Link>
 
@@ -116,7 +116,7 @@ export default function HeroSlider() {
                     <a
                       href={slide.secondaryCta.href}
                       download
-                      className="btn btn-secondary btn-lg"
+                      className="btn btn-secondary btn-lg btn-mobile-full"
                     >
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -126,7 +126,7 @@ export default function HeroSlider() {
                       {slide.secondaryCta.label}
                     </a>
                   ) : (
-                    <Link href={slide.secondaryCta.href} className="btn btn-secondary btn-lg">
+                    <Link href={slide.secondaryCta.href} className="btn btn-secondary btn-lg btn-mobile-full">
                       {slide.secondaryCta.label}
                     </Link>
                   )}

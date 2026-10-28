@@ -92,7 +92,7 @@ export default function ContactForm() {
     } catch (err) {
       setStatus({
         state: "error",
-        message: err.message || "Something went wrong. Please email directly at sohamayer516@gmail.com.",
+        message: err.message || "Something went wrong. Please email directly at sohamaeer@gmail.com.",
         isPartial: false
       });
     }

@@ -57,8 +57,8 @@ export default function HomePage() {
           =================================================================== */}
       <section className="section-py" style={{ backgroundColor: "var(--bg-surface-elevated)" }} aria-labelledby="about-brief-title">
         <div className="container">
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "48px", alignItems: "center" }}>
-            <div style={{ position: "relative", aspectRatio: "4/3", borderRadius: "var(--radius-md)", overflow: "hidden", border: "1px solid var(--border-medium)", boxShadow: "var(--shadow-md)" }}>
+          <div className="home-about-grid">
+            <div className="home-about-image-card">
               <Image
                 src={personalInfo.workspaceImage}
                 alt="Soham Aeer in development workspace"
@@ -81,7 +81,7 @@ export default function HomePage() {
                 As powerful force multipliers, I manage self-hosted <strong>Contabo Linux VPS servers</strong> (domain DNS records management, Apache Virtual Hosts, Nginx reverse proxy, Let&apos;s Encrypt SSL, PM2), execute <strong>Technical &amp; AI-assisted On-Page SEO</strong> (natural human tone, all on-page parameters) across 20+ websites targeting US and Middle East search regions, and integrate modern <strong>AI/LLM APIs</strong> (Groq Cloud Llama 3.1).
               </p>
 
-              <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
                 <Link href="/about" className="btn btn-primary">
                   Read Full Developer Bio ↗
                 </Link>
@@ -240,7 +240,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 260px), 1fr))", gap: "20px" }}>
             {skillCategories.map((cat) => (
               <div key={cat.id} className="card" style={{ padding: "20px" }}>
                 <h3 style={{ fontSize: "1.1rem", fontWeight: 700, marginBottom: "6px" }}>{cat.title}</h3>
@@ -286,7 +286,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))", gap: "24px" }}>
             {certifications.map((cert) => (
               <div key={cert.id} className="card" style={{ display: "flex", flexDirection: "column" }}>
                 <div style={{ position: "relative", height: "180px", marginBottom: "14px", borderRadius: "var(--radius-sm)", overflow: "hidden", background: "#FFFFFF", border: "1px solid var(--border-subtle)" }}>

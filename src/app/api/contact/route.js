@@ -122,7 +122,7 @@ export async function POST(request) {
     const smtpSecure = process.env.SMTP_SECURE === "true";
     const smtpUser = process.env.SMTP_USER;
     const smtpPass = process.env.SMTP_PASS;
-    const toEmail = process.env.CONTACT_TO_EMAIL || "sohamayer516@gmail.com";
+    const toEmail = process.env.CONTACT_TO_EMAIL || "sohamaeer@gmail.com";
     const fromEmail = process.env.CONTACT_FROM_EMAIL || `"Soham Aeer Portfolio" <${smtpUser || "notifications@sohamaeer.com"}>`;
 
     if (!smtpHost || !smtpUser || !smtpPass) {
@@ -246,7 +246,7 @@ Best regards,
 Soham Aeer
 Full Stack Developer | React.js | Next.js | Node.js | DevOps
 Mumbai, Maharashtra, India
-Email: sohamayer516@gmail.com
+Email: sohamaeer@gmail.com
 Phone: +91 9322577858
 GitHub: https://github.com/sohamaeer/
 LinkedIn: https://www.linkedin.com/in/soham-aeer/
@@ -289,7 +289,7 @@ LinkedIn: https://www.linkedin.com/in/soham-aeer/
               <div class="sign-links">
                 <a href="https://github.com/sohamaeer/">GitHub</a>
                 <a href="https://www.linkedin.com/in/soham-aeer/">LinkedIn</a>
-                <a href="mailto:sohamayer516@gmail.com">sohamayer516@gmail.com</a>
+                <a href="mailto:sohamaeer@gmail.com">sohamaeer@gmail.com</a>
               </div>
             </div>
           </div>
@@ -308,7 +308,7 @@ LinkedIn: https://www.linkedin.com/in/soham-aeer/
     } catch (adminErr) {
       console.error("Failed to send admin notification email:", adminErr.message);
       return Response.json(
-        { error: "Unable to deliver inquiry message right now. Please email directly at sohamayer516@gmail.com." },
+        { error: "Unable to deliver inquiry message right now. Please email directly at sohamaeer@gmail.com." },
         { status: 500 }
       );
     }

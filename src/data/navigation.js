@@ -64,7 +64,6 @@ export const navLinks = [
   },
   { label: "Experience", href: "/experience" },
   { label: "Certifications", href: "/certifications" },
-  { label: "Resume", href: "/resume" },
   { label: "Contact", href: "/contact" }
 ];
 
@@ -100,7 +99,7 @@ export const footerLinks = {
   socials: [
     { label: "GitHub", href: "https://github.com/sohamaeer/", icon: "github", external: true },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/soham-aeer/", icon: "linkedin", external: true },
-    { label: "Email", href: "mailto:sohamayer516@gmail.com", icon: "email", external: false },
+    { label: "Email", href: "mailto:sohamaeer@gmail.com", icon: "email", external: false },
     { label: "Phone", href: "tel:+919322577858", icon: "phone", external: false }
   ]
 };

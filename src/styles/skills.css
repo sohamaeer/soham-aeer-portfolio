@@ -14,9 +14,15 @@
   background-color: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
-  padding: 24px 28px;
+  padding: 18px 16px;
   box-shadow: var(--shadow-card);
   transition: all var(--transition-fast);
+}
+
+@media (min-width: 640px) {
+  .skill-category-card {
+    padding: 24px 28px;
+  }
 }
 
 .skill-category-card:hover {
@@ -59,22 +65,36 @@
 .skills-pills-wrap {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
+}
+
+@media (min-width: 640px) {
+  .skills-pills-wrap {
+    gap: 8px;
+  }
 }
 
 .skill-nav-pill {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   background-color: var(--bg-surface-elevated);
   border: 1px solid var(--border-medium);
   border-radius: var(--radius-sm);
-  padding: 8px 14px;
-  font-size: 0.88rem;
+  padding: 6px 11px;
+  font-size: 0.82rem;
   font-weight: 700;
   color: var(--text-secondary);
   transition: all var(--transition-fast);
   text-decoration: none;
+}
+
+@media (min-width: 640px) {
+  .skill-nav-pill {
+    padding: 8px 14px;
+    font-size: 0.88rem;
+    gap: 8px;
+  }
 }
 
 .skill-nav-pill:hover {
@@ -111,7 +131,7 @@
 }
 
 .skill-hero-h1 {
-  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-size: clamp(1.5rem, 3.5vw, 2.6rem);
   font-weight: 800;
   letter-spacing: -0.02em;
   color: var(--text-primary);
@@ -120,7 +140,7 @@
 }
 
 .skill-hero-summary {
-  font-size: 1.1rem;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
   color: var(--text-secondary);
   line-height: 1.7;
   max-width: 820px;

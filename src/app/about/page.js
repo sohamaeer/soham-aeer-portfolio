@@ -38,8 +38,8 @@ export default function AboutPage() {
           <div className="about-grid">
             <div className="about-image-card">
               <Image
-                src={personalInfo.workspaceImage}
-                alt="Soham Aeer working on full stack application development"
+                src={personalInfo.aboutImage}
+                alt="Soham Aeer - Full Stack Developer"
                 fill
                 sizes="(max-width: 992px) 100vw, 480px"
                 priority

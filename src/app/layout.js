@@ -10,6 +10,16 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import JsonLd from "@/components/JsonLd";
 import { personalInfo } from "@/data/personalInfo";
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#FFFFFF" },
+    { media: "(prefers-color-scheme: dark)", color: "#070B14" }
+  ]
+};
+
 export const metadata = {
   metadataBase: new URL(personalInfo.siteUrl),
   title: {

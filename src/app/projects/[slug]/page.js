@@ -159,18 +159,20 @@ export default function ProjectCaseStudyPage({ params }) {
             {project.architecture && (
               <section className="case-block">
                 <h2 className="case-block-title">Technical Architecture &amp; Infrastructure</h2>
-                <table className="architecture-table">
-                  <tbody>
-                    {Object.entries(project.architecture).map(([layer, desc]) => (
-                      <tr key={layer}>
-                        <th style={{ textTransform: "capitalize" }}>
-                          {layer.replace(/([A-Z])/g, " $1")}
-                        </th>
-                        <td>{desc}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+                <div className="architecture-table-wrapper">
+                  <table className="architecture-table">
+                    <tbody>
+                      {Object.entries(project.architecture).map(([layer, desc]) => (
+                        <tr key={layer}>
+                          <th style={{ textTransform: "capitalize" }}>
+                            {layer.replace(/([A-Z])/g, " $1")}
+                          </th>
+                          <td>{desc}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               </section>
             )}
 
